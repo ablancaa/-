@@ -2,13 +2,14 @@
   <div class="home">
     <div id="contenido">
   
-   <CardList :materiales="materiales"/>
+   <CardList :materiales2="materiales2"/>
   </div>
   </div>
 </template>
 
 <script>
 import Materiales from "../json/materiales.json";
+import Materiales2 from "../json/materialesLocal.json";
 import CardList from '@/components/CardList.vue'
 
 export default {
@@ -18,6 +19,7 @@ export default {
   data(){
       return{
         materiales: Materiales.data,
+        materiales2: Materiales2.data,
       }
 
     }

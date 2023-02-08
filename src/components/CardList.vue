@@ -1,6 +1,6 @@
 <template>
   <div class="lista-material">
-    <div v-for="material in materiales" :key="material.id">
+    <div v-for="material in materiales2" :key="material.id">
         <MaterialCard :material="material"/>
     </div>
 </div>
@@ -11,7 +11,10 @@ import MaterialCard from '@/components/Card.vue'
 export default {
     name: 'Card-List',
     components:{ MaterialCard },
-    props: {materiales: Array},
+    props: {
+        materiales: Array,
+        materiales2: Array
+        },
 
 }
 </script>
