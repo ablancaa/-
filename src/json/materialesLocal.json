@@ -6,7 +6,7 @@
             "ubicacio": "Unitat de Cremats",
             "extensio": "3856",
             "title": "Bomba FreeGo Abbott",
-            "image": "../assets/img/Bomba_FreeGo_Abbott.png",
+            "image": "assets/img/Bomba_FreeGo_Abbott.png",
             "info": "Sistema de administración para Bomba FreeGo. Bomba peristáltica segura y fácil de utilizar y transportar con amplia pantalla LCD para una mejor visibilidad.",
             "estado": "Disponible",
             "prestado": true
@@ -17,7 +17,7 @@
             "ubicacio": "Tallers",
             "extensio": "3856",
             "title": "Bomba Volumétrica Alaris",
-            "image": "http://clarys.ddns.net/ImgVueInventario/Bomba_volumetrica_Alaris.png",
+            "image": "http://clarys.ddns.net/ImgVueInventario/Bomba_volumetrica_Alaris.png?nf_resize=fit&w=100&h=100",
             "info": "Sistemas de Bomba de infusión volumétrica, fiables, sencillos, versátiles y flexibles para infusión de soluciones IV de grandes volúmenes.",
             "estado": "En Manteniment",
             "prestado": false
