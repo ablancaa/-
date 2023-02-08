@@ -1,18 +1,31 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div id="contenido">
+    <!--<img alt="Vue logo" src="../assets/logo.png"> -->
+   <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+   <CardList :materiales="materiales"/>
+  </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Materiales from "../json/materiales.json";
+import CardList from '@/components/CardList.vue'
 
 export default {
   name: 'HomeView',
-  components: {
-    HelloWorld
-  }
+  components: { CardList },
+
+  data(){
+      return{
+        materiales: Materiales.data,
+      }
+
+    }
 }
 </script>
+<style scoped>
+#contenido{
+ width: 1204; margin: 0 auto; 
+}
+</style>

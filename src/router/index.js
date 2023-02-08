@@ -1,11 +1,23 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import VistaCards from '../views/VistaCards.vue'
+import VistaInfo from '../views/VistaInfo.vue'
 
 const routes = [
   {
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: '/VistaCards',
+    name: 'VistaCards',
+    component: VistaCards
+  },
+  {
+    path: '/VistaInfo/:id',
+    name: 'VistaInfo',
+    component: VistaInfo
   },
   {
     path: '/about',
