@@ -1,8 +1,7 @@
 <template>
   <div class="home">
     <div id="contenido">
-    <!--<img alt="Vue logo" src="../assets/logo.png"> -->
-   <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+  
    <CardList :materiales="materiales"/>
   </div>
   </div>
