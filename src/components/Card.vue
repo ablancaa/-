@@ -26,7 +26,7 @@
           <strong>Extensió:</strong>{{ material.extensio }}
         </p>
         </div>
-        <div class="hijo2 estado" v-if="material.estado =='Disponible'"><img src="http://clarys.ddns.net/ImgVueInventario/ico/Disponible.png" class="ico"  title="DISPONIBLE"/><span >{{material.estado}}</span></div>
+        <div class="hijo2 estado" v-if="material.estado =='Disponible'"><img src="../assets/ico/Disponible.png" class="ico"  title="DISPONIBLE"/><span >{{material.estado}}</span></div>
         <div class="hijo2 estado" v-if="material.estado =='No Disponible'"><img src="http://clarys.ddns.net/ImgVueInventario/ico/NoDisponible.png" class="ico"  title="NO DISPONIBLE"/><span>{{material.estado}}</span></div>
         <div class="hijo2 estado" v-if="material.estado =='En Manteniment'"><img src="http://clarys.ddns.net/ImgVueInventario/ico/Mantenimiento.png" class="ico"  title="EN MANTENIMENT"/><span>{{material.estado}}</span></div>
   </div>
@@ -37,7 +37,7 @@
     </div>
   </div>
   <footer class="card-footer">
-    <a href="#" class="card-footer-item">Prèstec</a>
+    <a href="#" class="card-footer-item">Préstec</a>
     <a href="#" class="card-footer-item">Tornada</a>
     <router-link :to="{name: 'VistaInfo', params: {id:material.id}}"  class="card-footer-item">+ Info</router-link>
   </footer>
