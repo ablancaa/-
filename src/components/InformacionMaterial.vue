@@ -10,12 +10,12 @@
 </template>
 
 <script>
-import Materiales from "../json/materiales.json";
+import Materiales2 from "../json/materialesLocal.json";
 export default {
     name: 'InfoMateriales',
     data(){
       return{
-        materiales: Materiales.data,
+        materiales: Materiales2.data,
         material: null,
       }
     },

@@ -1,7 +1,7 @@
 <template>
   <h1>Vista info</h1>
   <div>
-    <InfoMaterial :materiales="materiales"/>
+    <InfoMaterial/>
 </div>
   
 </template>

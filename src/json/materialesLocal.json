@@ -140,8 +140,8 @@
             "title": "Bomba Volumétrica de jeringa Alaris",
             "image": "http://clarys.ddns.net/ImgVueInventario/Bomba_volumetrica_jeringa_Alaris.png",
             "info": "Sistemas de Bomba de jeringa de alta precisión, fiables para la administración de todo tipo de fármacos por vía IV, así como para transfusión de sangre.",
-            "estado": "No Disponible",
-            "prestado": true
+            "estado": "Disponible",
+            "prestado": false
         },
         {
             "id": 14,
@@ -162,8 +162,8 @@
             "title": "Bomba Volumétrica de jeringa Alaris",
             "image": "http://clarys.ddns.net/ImgVueInventario/Bomba_volumetrica_jeringa_Alaris.png",
             "info": "Sistemas de Bomba de jeringa de alta precisión, fiables para la administración de todo tipo de fármacos por vía IV, así como para transfusión de sangre.",
-            "estado": "No Disponible",
-            "prestado": true
+            "estado": "Disponible",
+            "prestado": false
         }
     ]
     }
