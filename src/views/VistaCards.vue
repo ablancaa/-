@@ -33,7 +33,6 @@
     <td>{{ item.datein }}</td>
     <td>{{ item.ubicacio }}</td>
     <td>{{ item.extensio }}</td>
-    
   </tr>
 </tbody>
 </table>
