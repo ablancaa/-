@@ -23,7 +23,7 @@
     <div class="content">
       <div id="info">
         <div class="hijo">
-          <strong>Estat: </strong> {{ material.estado }} 
+          <strong>Estat: </strong> {{ material.estado }}
           <p><strong>Núm. Inventari: </strong>{{ material.numinventari }} <!--<span  v-if="material.estado">{{ material.prestado }}</span> -->
           <strong>Ubicació: </strong>{{ material.ubicacio }}
           <strong>Extensió:</strong>{{ material.extensio }}
