@@ -1,11 +1,15 @@
 <template>
-  <div>
-    <h1>{{ material.title }}</h1>
-    <div>
-      <p class="left">{{ material.info }}</p>
+  <div id="contenido">
+    <h1><strong>{{ material.title }}</strong></h1>
+    <br/>
+    <div class="columns">
+  <div class="column">
+    <p class="left">{{ material.info }}</p>
+  </div>
+  <div class="column">
+    <img :src="material.image"/>
+  </div>
     </div>
-    <div><img :src="material.image"/></div>
-    
   </div>
 </template>
 
