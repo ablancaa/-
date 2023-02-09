@@ -21,7 +21,7 @@
   
   <tr>
    
-    <td><img :src="item.image" width="50"></td>
+    <td><img :src="item.image" width="80"></td>
     <td>{{ item.title }}
       <router-link :to="{name: 'VistaInfo', params: {id:item.id}}"  class="card-footer-item">+ Info</router-link></td>
     <td><strong>{{ item.estado }}</strong><br/>
