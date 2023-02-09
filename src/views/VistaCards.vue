@@ -1,5 +1,5 @@
 <template>
-  <div><h1>Vista Cards</h1></div>
+  <div><h1>Llistat de material</h1></div>
   <br/>
   <div id="contenido">
   <!--<card-list :materiales2="materiales"></card-list>-->
@@ -20,8 +20,10 @@
 <tbody >
   
   <tr>
+   
     <td><img :src="item.image" width="70"></td>
-    <td>{{ item.title }}</td>
+    <td>{{ item.title }}
+      <router-link :to="{name: 'VistaInfo', params: {id:item.id}}"  class="card-footer-item">+ Info</router-link></td>
     <td>{{ item.estado }}<br/>
       <span v-if="item.estado =='Disponible'"><img src="../assets/ico/Disponible.png" width="40"  title="DISPONIBLE"/></span>
       <span v-if="item.estado =='No Disponible'"><img src="../assets/ico/NoDisponible.png" width="40" title="NO DISPONIBLE"/></span>

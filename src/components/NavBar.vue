@@ -19,23 +19,23 @@
     </span>
 
       <span class="navbar-item">
-        <router-link to="/VistaCards"><span class="color">Vista Cards</span></router-link>
+        <router-link to="/VistaCards"><span class="color">Llistat</span></router-link>
       </span>
 
       <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">
-          <span class="color">Más</span>
+          <span class="color">Més</span>
         </a>
 
         <div class="navbar-dropdown">
           <a class="navbar-item">
-            <span class="color">Intrucciones</span> 
+            <span class="color">Instruccions</span> 
           </a>
           <a class="navbar-item">
-            <span class="color"> Operativas </span>
+            <span class="color"> Operatives </span>
           </a>
           <a class="navbar-item">
-            <span class="color"> Contacto</span>
+            <span class="color"> Contacte</span>
           </a>
           <hr class="navbar-divider">
           <a class="navbar-item">
