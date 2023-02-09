@@ -13,8 +13,11 @@
       -->
         
         <i class="fas fa-angle-down" aria-hidden="true"></i>
+        
       </span>
+      
     </button>
+    
   </header>
   <div class="card-content">
     <div class="content">
@@ -26,7 +29,7 @@
           <strong>Extensió:</strong>{{ material.extensio }}
         </p>
         </div>
-        <div class="hijo2 estado" v-if="material.estado =='Disponible'"><img src="../assets/ico/Disponible.png" width="85"  title="DISPONIBLE"/><span >{{material.estado}}</span></div>
+        <div class="hijo2 estado" v-if="material.estado =='Disponible'"><img src="../assets/ico/Disponible.png" class="ico"  title="DISPONIBLE"/><span >{{material.estado}}</span></div>
         <div class="hijo2 estado" v-if="material.estado =='No Disponible'"><img src="../assets/ico/NoDisponible.png" class="ico"  title="NO DISPONIBLE"/><span>{{material.estado}}</span></div>
         <div class="hijo2 estado" v-if="material.estado =='En Manteniment'"><img src="../assets/ico/Mantenimiento.png" class="ico"  title="EN MANTENIMENT"/><span>{{material.estado}}</span></div>
   </div>
@@ -60,12 +63,19 @@ export default {
   width: 360px;
 }
 
+.bordeRojo{
+  -webkit-box-shadow: inset 2px 2px 2px 0px rgba(255,3,3,1);
+-moz-box-shadow: inset 2px 2px 2px 0px rgba(255,3,3,1);
+box-shadow: inset 2px 2px 2px 0px rgba(255,3,3,1);
+}
+
 .content{
-  text-align: left;
+text-align: left;
+
 }
 
 .ico {
-width: 70px;
+width: 75px;
 height: 60px;
   
 }
@@ -85,7 +95,7 @@ height: 60px;
 }
 
 .estado{
-  font-size: 10px;
+  font-size: 12px;
   text-align: center;
   margin-left: 12px;
 }
