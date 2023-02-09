@@ -9,7 +9,7 @@
             "image": "http://clarys.ddns.net/ImgVueInventario/Bomba_FreeGo_Abbott.png?nf_resize=fit&w=150&h=150",
             "info": "Sistema de administración para Bomba FreeGo. Bomba peristáltica segura y fácil de utilizar y transportar con amplia pantalla LCD para una mejor visibilidad.",
             "estado": "Disponible",
-            "prestado": true
+            "prestado": false
         },
         {
             "id": 2,
@@ -20,7 +20,7 @@
             "image": "http://clarys.ddns.net/ImgVueInventario/Bomba_volumetrica_Alaris.png?nf_resize=fit&w=150&h=150",
             "info": "Sistemas de Bomba de infusión volumétrica, fiables, sencillos, versátiles y flexibles para infusión de soluciones IV de grandes volúmenes.",
             "estado": "En Manteniment",
-            "prestado": false
+            "prestado": true
         },
         {
             "id": 3,
@@ -31,7 +31,7 @@
             "image": "http://clarys.ddns.net/ImgVueInventario/Bomba_volumetrica_jeringa_Alaris.png",
             "info": "Sistemas de Bomba de jeringa de alta precisión, fiables para la administración de todo tipo de fármacos por vía IV, así como para transfusión de sangre.",
             "estado": "No Disponible",
-            "prestado": false
+            "prestado": true
         },
         {
             "id": 4,
@@ -42,7 +42,7 @@
             "image": "http://clarys.ddns.net/ImgVueInventario/Hotline.png",
             "info": "Los calentadores de sangre y fluidos HOTLINE® administran líquidos normotérmicos. Mantiene calientes la sangre y los fluidos entre 37 y 42 °C",
             "estado": "No Disponible",
-            "prestado": false
+            "prestado": true
         },
                 {
             "id": 5,
@@ -53,7 +53,7 @@
             "image": "http://clarys.ddns.net/ImgVueInventario/Calentador3M.png",
             "info": " El sistema de irrigación Ranger calienta el líquido a medida que se administra al paciente y permite controlar el calor de forma rápida y precisa.",
             "estado": "En Manteniment",
-            "prestado": false
+            "prestado": true
         },
         {
             "id": 6,
@@ -64,7 +64,7 @@
             "image": "http://clarys.ddns.net/ImgVueInventario/Airvo2.png",
             "info": "El humidificar AIRVO 2 con generador de flujo integrado genera gases respiratorios calentados y humificados de alto flujo a pacientes con respiración espontánea.",
             "estado": "Disponible",
-            "prestado": true
+            "prestado": false
         },
         {
             "id": 7,
@@ -86,7 +86,7 @@
             "image": "http://clarys.ddns.net/ImgVueInventario/Bis.png",
             "info": "Los monitores BIS están destinados a reemplazar o complementar el sistema de clasificación de Guedel para determinar la profundidad de la anestesia.",
             "estado": "No Disponible",
-            "prestado": false
+            "prestado": true
         },
         {
            "id": 9,
@@ -97,7 +97,73 @@
            "image": "http://clarys.ddns.net/ImgVueInventario/Fibroscopio.png",
            "info": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard. Lorem Ipsum has been the industry's.",
            "estado": "No Disponible",
-           "prestado": false
+           "prestado": true
+        },
+        {
+            "id": 10,
+            "numinventari": "1596644",
+            "ubicacio": "Unitat de Cremats",
+            "extensio": "3856",
+            "title": "Bomba FreeGo Abbott",
+            "image": "http://clarys.ddns.net/ImgVueInventario/Bomba_FreeGo_Abbott.png?nf_resize=fit&w=150&h=150",
+            "info": "Sistema de administración para Bomba FreeGo. Bomba peristáltica segura y fácil de utilizar y transportar con amplia pantalla LCD para una mejor visibilidad.",
+            "estado": "No Disponible",
+            "prestado": true
+        },
+        {
+            "id": 11,
+            "numinventari": "1596645",
+            "ubicacio": "Unitat de Cremats",
+            "extensio": "3856",
+            "title": "Bomba FreeGo Abbott",
+            "image": "http://clarys.ddns.net/ImgVueInventario/Bomba_FreeGo_Abbott.png?nf_resize=fit&w=150&h=150",
+            "info": "Sistema de administración para Bomba FreeGo. Bomba peristáltica segura y fácil de utilizar y transportar con amplia pantalla LCD para una mejor visibilidad.",
+            "estado": "En Manteniment",
+            "prestado": true
+        },
+        {
+            "id": 12,
+            "numinventari": "1596646",
+            "ubicacio": "Unitat de Cremats",
+            "extensio": "3856",
+            "title": "Bomba FreeGo Abbott",
+            "image": "http://clarys.ddns.net/ImgVueInventario/Bomba_FreeGo_Abbott.png?nf_resize=fit&w=150&h=150",
+            "info": "Sistema de administración para Bomba FreeGo. Bomba peristáltica segura y fácil de utilizar y transportar con amplia pantalla LCD para una mejor visibilidad.",
+            "estado": "En Manteniment",
+            "prestado": true
+        },
+        {
+            "id": 13,
+            "numinventari": "1555550",
+            "ubicacio": "Planta 2 Parells ",
+            "extensio": "3856",
+            "title": "Bomba Volumétrica de jeringa Alaris",
+            "image": "http://clarys.ddns.net/ImgVueInventario/Bomba_volumetrica_jeringa_Alaris.png",
+            "info": "Sistemas de Bomba de jeringa de alta precisión, fiables para la administración de todo tipo de fármacos por vía IV, así como para transfusión de sangre.",
+            "estado": "No Disponible",
+            "prestado": true
+        },
+        {
+            "id": 14,
+            "numinventari": "1555551",
+            "ubicacio": "Planta 2 Parells ",
+            "extensio": "3856",
+            "title": "Bomba Volumétrica de jeringa Alaris",
+            "image": "http://clarys.ddns.net/ImgVueInventario/Bomba_volumetrica_jeringa_Alaris.png",
+            "info": "Sistemas de Bomba de jeringa de alta precisión, fiables para la administración de todo tipo de fármacos por vía IV, así como para transfusión de sangre.",
+            "estado": "No Disponible",
+            "prestado": true
+        },
+        {
+            "id": 15,
+            "numinventari": "1555552",
+            "ubicacio": "Planta 2 Parells ",
+            "extensio": "3856",
+            "title": "Bomba Volumétrica de jeringa Alaris",
+            "image": "http://clarys.ddns.net/ImgVueInventario/Bomba_volumetrica_jeringa_Alaris.png",
+            "info": "Sistemas de Bomba de jeringa de alta precisión, fiables para la administración de todo tipo de fármacos por vía IV, así como para transfusión de sangre.",
+            "estado": "No Disponible",
+            "prestado": true
         }
     ]
     }
