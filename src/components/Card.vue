@@ -23,13 +23,13 @@
     <div class="content">
       <div id="info">
         <div class="hijo">
-          <strong>Estat: </strong> {{ material.estado }} 
+          <strong>Estat: </strong> {{ material.estado }}
           <p><strong>Núm. Inventari: </strong>{{ material.numinventari }} <!--<span  v-if="material.estado">{{ material.prestado }}</span> -->
           <strong>Ubicació: </strong>{{ material.ubicacio }}
           <strong>Extensió:</strong>{{ material.extensio }}
         </p>
         </div>
-        <div class="hijo2 estado" v-if="material.estado =='Disponible'"><img src="../assets/ico/Disponible.png"  width="85" title="DISPONIBLE"/><span>{{material.estado}}</span></div>
+        <div class="hijo2 estado" v-if="material.estado =='Disponible'"><img src="../assets/ico/Disponible.png" class="ico"  title="DISPONIBLE"/><span >{{material.estado}}</span></div>
         <div class="hijo2 estado" v-if="material.estado =='No Disponible'"><img src="../assets/ico/NoDisponible.png" class="ico"  title="NO DISPONIBLE"/><span>{{material.estado}}</span></div>
         <div class="hijo2 estado" v-if="material.estado =='En Manteniment'"><img src="../assets/ico/Mantenimiento.png" class="ico"  title="EN MANTENIMENT"/><span>{{material.estado}}</span></div>
   </div>
@@ -95,7 +95,7 @@ height: 60px;
 }
 
 .estado{
-  font-size: 10px;
+  font-size: 12px;
   text-align: center;
   margin-left: 12px;
 }
