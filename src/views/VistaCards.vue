@@ -1,17 +1,18 @@
 <template>
   <div><h1>Vista Cards</h1></div>
+  <br/>
   <div id="contenido">
   <!--<card-list :materiales2="materiales"></card-list>-->
   <div>
     <table>
       <tr>
-      <td> IMAGE </td>
-      <td> TITLE </td>
-      <td> ESTAT </td>
-      <td> DATA SORTIDA </td>
-      <td> DATA ENTRADA </td>
-      <td> UBICACIÓ </td>
-      <td> EXTENSIÓ </td>
+      <td> <strong>IMAGE</strong> </td>
+      <td> <strong>TITLE</strong> </td>
+      <td> <strong>ESTAT</strong> </td>
+      <td> <strong>DATA SORTIDA</strong> </td>
+      <td> <strong>DATA ENTRADA</strong> </td>
+      <td> <strong>UBICACIÓ</strong> </td>
+      <td> <strong>EXTENSIÓ</strong> </td>
   </tr>
   </table>
  <br/>
@@ -19,7 +20,7 @@
 <tbody >
   
   <tr>
-    <td ><img :src="item.image" width="70"></td>
+    <td><img :src="item.image" width="70"></td>
     <td>{{ item.title }}</td>
     <td>{{ item.estado }}<br/>
       <span v-if="item.estado =='Disponible'"><img src="../assets/ico/Disponible.png" width="40"  title="DISPONIBLE"/></span>
@@ -63,13 +64,14 @@ export default {
 }
 td{
   border-collapse: collapse;
-  border: 1px solid purple;
+  border: 2px, solid, blue;
+  
 }
 table{
   table-layout: fixed;
   width: 100%;
   border-collapse: collapse;
-  border: 1px solid purple;
+  border: 1px solid blue;
 }
 
 td {
