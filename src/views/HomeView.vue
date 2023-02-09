@@ -2,8 +2,7 @@
   <div class="home">
     <br/>
     <div id="contenido">
- 
-   <CardList :materiales2="materiales"/>
+   <CardList :materiales2="materiales2"/>
   </div>
   </div>
 </template>
