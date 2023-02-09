@@ -8,7 +8,7 @@
       <tr>
       <td> <strong>IMAGE</strong> </td>
       <td> <strong>TITLE</strong> </td>
-      <td> <strong>ESTAT</strong> </td>
+      <td> <strong>ESTAT / INVENTARI</strong> </td>
       <td> <strong>DATA SORTIDA</strong> </td>
       <td> <strong>DATA ENTRADA</strong> </td>
       <td> <strong>UBICACIÓ</strong> </td>
@@ -21,13 +21,15 @@
   
   <tr>
    
-    <td><img :src="item.image" width="70"></td>
+    <td><img :src="item.image" width="50"></td>
     <td>{{ item.title }}
       <router-link :to="{name: 'VistaInfo', params: {id:item.id}}"  class="card-footer-item">+ Info</router-link></td>
-    <td>{{ item.estado }}<br/>
+    <td><strong>{{ item.estado }}</strong><br/>
       <span v-if="item.estado =='Disponible'"><img src="../assets/ico/Disponible.png" width="40"  title="DISPONIBLE"/></span>
       <span v-if="item.estado =='No Disponible'"><img src="../assets/ico/NoDisponible.png" width="40" title="NO DISPONIBLE"/></span>
       <span v-if="item.estado =='En Manteniment'"><img src="../assets/ico/Mantenimiento.png" width="40"  title="EN MANTENIMENT"/></span>
+      <br/>
+      <span><!--<strong>Inventari:</strong>--> {{ item.numinventari }}</span>
     </td>
     <td>{{ item.dateout }}</td>
     <td>{{ item.datein }}</td>

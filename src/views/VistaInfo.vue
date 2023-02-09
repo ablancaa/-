@@ -1,5 +1,6 @@
 <template>
   <h1>Vista info</h1>
+  <br/>
   <div>
     <InfoMaterial/>
 </div>
