@@ -194,6 +194,71 @@
             "prestado": false,
             "dateout": "01/01/2023",
             "datein": "01/01/2023"
+        },
+        {
+            "id": 16,
+            "numinventari": "1555552",
+            "ubicacio": "Planta 2 Parells ",
+            "extensio": "3856",
+            "title": "Bomba Volumétrica de jeringa Alaris",
+            "image": "http://clarys.ddns.net/ImgVueInventario/Bomba_volumetrica_jeringa_Alaris.png",
+            "info": "Sistemas de Bomba de jeringa de alta precisión, fiables para la administración de todo tipo de fármacos por vía IV, así como para transfusión de sangre.",
+            "estado": "Disponible",
+            "prestado": false,
+            "dateout": "01/01/2023",
+            "datein": "01/01/2023"
+        },
+        {
+            "id": 17,
+            "numinventari": "1555552",
+            "ubicacio": "Planta 2 Parells ",
+            "extensio": "3856",
+            "title": "Bomba Volumétrica de jeringa Alaris",
+            "image": "http://clarys.ddns.net/ImgVueInventario/Bomba_volumetrica_jeringa_Alaris.png",
+            "info": "Sistemas de Bomba de jeringa de alta precisión, fiables para la administración de todo tipo de fármacos por vía IV, así como para transfusión de sangre.",
+            "estado": "Disponible",
+            "prestado": false,
+            "dateout": "01/01/2023",
+            "datein": "01/01/2023"
+        },
+        {
+            "id": 18,
+            "numinventari": "1555552",
+            "ubicacio": "Planta 2 Parells ",
+            "extensio": "3856",
+            "title": "Bomba Volumétrica de jeringa Alaris",
+            "image": "http://clarys.ddns.net/ImgVueInventario/Bomba_volumetrica_jeringa_Alaris.png",
+            "info": "Sistemas de Bomba de jeringa de alta precisión, fiables para la administración de todo tipo de fármacos por vía IV, así como para transfusión de sangre.",
+            "estado": "Disponible",
+            "prestado": false,
+            "dateout": "01/01/2023",
+            "datein": "01/01/2023"
+        },
+        {
+            "id": 19,
+            "numinventari": "1555552",
+            "ubicacio": "Tallers",
+            "extensio": "3856",
+            "title": "Bomba Volumétrica de jeringa Alaris",
+            "image": "http://clarys.ddns.net/ImgVueInventario/Bomba_volumetrica_jeringa_Alaris.png",
+            "info": "Sistemas de Bomba de jeringa de alta precisión, fiables para la administración de todo tipo de fármacos por vía IV, así como para transfusión de sangre.",
+            "estado": "En Manteniment",
+            "prestado": true,
+            "dateout": "01/01/2023",
+            "datein": "01/01/2023"
+        },
+        {
+            "id": 20,
+            "numinventari": "1555552",
+            "ubicacio": "Planta 2 Parells ",
+            "extensio": "3856",
+            "title": "Bomba Volumétrica de jeringa Alaris",
+            "image": "http://clarys.ddns.net/ImgVueInventario/Bomba_volumetrica_jeringa_Alaris.png",
+            "info": "Sistemas de Bomba de jeringa de alta precisión, fiables para la administración de todo tipo de fármacos por vía IV, así como para transfusión de sangre.",
+            "estado": "No Disponible",
+            "prestado": true,
+            "dateout": "01/01/2023",
+            "datein": "01/01/2023"
         }
     ]
     }
