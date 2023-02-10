@@ -465,13 +465,13 @@
             "video": "https://www.youtube.com/embed/LQJIr6ubMtA",
             "estado": "Disponible",
             "prestado": false,
-            "dateout": "11/01/2022",
-            "datein": ""
+            "dateout": "",
+            "datein": "11/01/2022"
         },
         {
             "numinventari": "1116870",
             "ubicacio": "Tallers",
-            "extensio": "3856",
+            "extensio": "3737",
             "title": "Bomba Volumétrica Alaris",
             "image": "http://clarys.ddns.net/ImgVueInventario/Bomba_volumetrica_Alaris.png",
             "info": "Sistemas de Bomba de infusión volumétrica, fiables, sencillos, versátiles y flexibles para infusión de soluciones IV de grandes volúmenes.",
