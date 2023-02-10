@@ -1,18 +1,23 @@
 <template>
-<nav-bar></nav-bar>
+ <cabecera/>
 
-<!--  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/VistaCards">Cards</router-link>
-  </nav> -->
+
+<div id="contenido">
+  <nav-bar></nav-bar>
   <router-view/>
+</div>
+<Footer/>
 </template>
 <script>
+import Cabecera from '@/components/Cabecera.vue'
+import Footer from '@/components/Footer.vue'
 import NavBar from '@/components/NavBar.vue'
 export default {
   name: 'App',
   components: {
-    NavBar
+    NavBar,
+    Cabecera,
+    Footer
   }
 }
 </script>

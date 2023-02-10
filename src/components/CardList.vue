@@ -1,7 +1,7 @@
 <template>
   <div class="lista-material">
-    <div v-for="material in materiales2" :key="material.id">
-        <MaterialCard :material="material"/>
+    <div v-for="material in inventario" :key="material.numinventari">
+        <MaterialCard :material="material" v-on:tornadaNum="tornada"/>
     </div>
 </div>
 </template>
@@ -13,8 +13,15 @@ export default {
     components:{ MaterialCard },
     props: {
         materiales: Array,
-        materiales2: Array
+        materiales2: Array,
+        inventario: Array,
         },
+    methods:{
+        tornada(numItem) {
+        this.$emit("tornadaNum", numItem);
+        console.log("Desde CardList: "+numItem);
+    },
+    }
 
 }
 </script>

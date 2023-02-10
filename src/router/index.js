@@ -15,7 +15,7 @@ const routes = [
     component: VistaCards
   },
   {
-    path: '/VistaInfo/:id',
+    path: '/VistaInfo/:numinventari',
     name: 'VistaInfo',
     component: VistaInfo
   },
