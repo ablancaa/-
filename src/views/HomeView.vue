@@ -1,19 +1,20 @@
 <template>
-  <div class="home">
-    <br/>
-    
+  <div id="contenido">
+
+    <SearchBar v-on:showForm="toggleForm" v-on:search="setSearchTerm"/>
    <CardList :inventario="inventario"/>
   </div>
 
 </template>
 
 <script>
-import Inventario from "../json/inventario.json";
+import Inventario from "../json/inventario.json"
 import CardList from '@/components/CardList.vue'
+import SearchBar from '@/components/SearchBar.vue'
 
 export default {
   name: 'HomeView',
-  components: { CardList },
+  components: { CardList, SearchBar },
 
   data(){
       return{

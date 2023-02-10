@@ -1,10 +1,9 @@
 <template>
   <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item" href="/">
+   <!-- <a class="navbar-item" href="/">
       <img src="../assets/logos/logo-VH-Master-RGB-blue.png" width="112" height="28">
-    </a>
-
+    </a> -->
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
@@ -73,4 +72,5 @@ name: 'Nav-Bar'
     color: blue;
 
 }
+
 </style>
