@@ -3,8 +3,7 @@
   <header class="card-header">
     <img :src="material.image" width="100">
     <p class="card-header-title">
-      {{ material.title }}
-    </p>
+      {{ material.title }}</p>
     <button class="card-header-icon" aria-label="more options">
       <span class="icon">
      <!--   <img src="http://clarys.ddns.net/ImgVueInventario/ico/Disponible.png" v-if="material.estado =='Disponible'" title="DISPONIBLE"/>

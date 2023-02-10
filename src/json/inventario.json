@@ -28,8 +28,8 @@
         },
         {
             "numinventari": "1149537",
-            "ubicacio": "Unitat de Cremats",
-            "extensio": "3856",
+            "ubicacio": "Planta 1 Parells",
+            "extensio": "3155",
             "title": "Bomba FreeGo Abbott",
             "image": "http://clarys.ddns.net/ImgVueInventario/Bomba_FreeGo_Abbott.png?nf_resize=fit&w=150&h=150",
             "info": "Sistema de administración para Bomba FreeGo. Bomba peristáltica segura y fácil de utilizar y transportar con amplia pantalla LCD para una mejor visibilidad.",
@@ -1011,7 +1011,7 @@
             "video": "https://www.youtube.com/embed/LQJIr6ubMtA",
             "estado": "Disponible",
             "prestado": false,
-            "dateout": "11/01/2022",
+            "dateout": "",
             "datein": "11/01/2022"
         },
         {
@@ -1024,21 +1024,21 @@
             "video": "https://www.youtube.com/embed/LQJIr6ubMtA",
             "estado": "Disponible",
             "prestado": false,
-            "dateout": "11/01/2022",
+            "dateout": "",
             "datein": "11/01/2022"
         },
         {
             "numinventari": "1168675",
-            "ubicacio": "Unitat de Cremats",
-            "extensio": "3856",
+            "ubicacio": "Planta 4 Senars",
+            "extensio": "3144",
             "title": "Calefactor Coviden",
             "image": "http://clarys.ddns.net/ImgVueInventario/CalefactorCoviden.png",
             "info": "El sistema de calentamiento por convección WarmTouch™ proporciona una solución sencilla para mantener la normotermia.",
             "video": "https://www.youtube.com/embed/LQJIr6ubMtA",
-            "estado": "Disponible",
-            "prestado": false,
+            "estado": "No Disponible",
+            "prestado": true,
             "dateout": "11/01/2022",
-            "datein": "11/01/2022"
+            "datein": ""
         }
     ]
     }
