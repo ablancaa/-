@@ -24,16 +24,17 @@
       <div id="info">
         <div class="hijo">
           <strong>Estat: </strong> {{ material.estado }}
-          <p><strong>Núm. Inventari: </strong>{{ material.numinventari }} <!--<span  v-if="material.estado">{{ material.prestado }}</span> -->
+          <p><strong>Núm. Inventari:</strong> <i></i>{{ material.numinventari }} <!--<span  v-if="material.estado">{{ material.prestado }}</span> -->
           <strong>Ubicació: </strong>{{ material.ubicacio }}
           <strong>Extensió:</strong>{{ material.extensio }}</p>
           <p><strong>Data Out: </strong>{{ material.dateout }}<br/>
           <strong>Data In: </strong>{{ material.datein }}</p>
         
         </div>
-        <div class="hijo2 estado" v-if="material.estado =='Disponible'"><img src="../assets/ico/Disponible.png" class="ico"  title="DISPONIBLE"/><span >{{material.estado}}</span></div>
-        <div class="hijo2 estado" v-if="material.estado =='No Disponible'"><img src="../assets/ico/NoDisponible.png" class="ico"  title="NO DISPONIBLE"/><span>{{material.estado}}</span></div>
-        <div class="hijo2 estado" v-if="material.estado =='En Manteniment'"><img src="../assets/ico/Mantenimiento.png" class="ico"  title="EN MANTENIMENT"/><span>{{material.estado}}</span></div>
+         
+        <div class="hijo2 estado" v-if="material.estado =='Disponible'"><img src="../assets/ico/Disponible.png" class="ico"  title="DISPONIBLE"/><span><strong>Estat:</strong> {{material.estado}}</span></div>
+        <div class="hijo2 estado" v-if="material.estado =='No Disponible'"><img src="../assets/ico/NoDisponible.png" class="ico"  title="NO DISPONIBLE"/><span><strong>Estat:</strong><br/> {{material.estado}}</span></div>
+        <div class="hijo2 estado" v-if="material.estado =='En Manteniment'"><img src="../assets/ico/Mantenimiento.png" class="ico"  title="EN MANTENIMENT"/><span><strong>Estat:</strong><br/> {{material.estado}}</span></div>
   </div>
     </div>
   <!--   <hr/>
@@ -110,5 +111,8 @@ height: 60px;
   font-size: 12px;
   text-align: center;
   margin-left: 12px;
+}
+.letraGrande{
+  font-size: 16px;
 }
 </style>
