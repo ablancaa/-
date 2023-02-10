@@ -36,10 +36,10 @@
         <div class="hijo2 estado" v-if="material.estado =='En Manteniment'"><img src="../assets/ico/Mantenimiento.png" class="ico"  title="EN MANTENIMENT"/><span>{{material.estado}}</span></div>
   </div>
     </div>
-    <hr/>
-    <div class="content">
+  <!--   <hr/>
+   <div class="content">
      {{ material.info }}
-    </div>
+    </div> -->
   </div>
   <footer class="card-footer">
     <a href="#" class="card-footer-item">Préstec</a>

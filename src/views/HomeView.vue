@@ -2,7 +2,7 @@
   <div id="contenido">
 
     <SearchBar v-on:showForm="toggleForm" v-on:search="setSearchTerm"/>
-   <CardList :inventario="inventario"/>
+   <CardList :inventario="itemListFiltered"/>
   </div>
 
 </template>
@@ -14,13 +14,50 @@ import SearchBar from '@/components/SearchBar.vue'
 
 export default {
   name: 'HomeView',
-  components: { CardList, SearchBar },
+  components: { CardList: CardList, SearchBar },
 
   data(){
       return{
         inventario: Inventario.data,
+        materiales: [],
+        searchTerm: "",
+        showModal: false,
       }
 
+    },
+  mounted(){
+      this.fetchItems();
+    },
+  
+  methods:{
+    setSearchTerm(searchTerm) {
+      console.log(searchTerm);
+      this.searchTerm = searchTerm;
+    },
+    fetchItems() {
+      this.materiales = Inventario.data;
+    },
+    toggleForm() {
+      this.showModal = !this.showModal;
+    }
+    },
+    computed: {
+      itemListFiltered() {
+        if (!this.searchTerm) {
+          return this.materiales;
+        } else if (this.searchTerm) {
+          return this.materiales.filter((item) => {
+            return (
+              item.title.toLowerCase().includes(this.searchTerm.toLowerCase()) ||
+              item.estado.toLowerCase().includes(this.searchTerm.toLowerCase()) ||
+              item.numinventari.includes(this.searchTerm)
+              
+              //item.ubicacio.includes(this.searchTerm)
+          );
+          });
+        }
+        return this.materiales;
+      },
     }
 }
 </script>

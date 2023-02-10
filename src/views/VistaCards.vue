@@ -1,6 +1,7 @@
 <template>
   <div><h1>Llistat de material</h1></div>
   <br/>
+  <SearchBar v-on:showForm="toggleForm" v-on:search="setSearchTerm"/>
   <div id="contenido">
   <!--<card-list :materiales2="materiales"></card-list>-->
   <div>
@@ -16,7 +17,7 @@
   </tr>
   </table>
  <br/>
-<table v-for="(item, index) in materiales" :key="index">
+<table v-for="(item, index) in itemListFiltered" :key="index">
 <tbody >
   
   <tr>
@@ -43,15 +44,53 @@
 </template>
 
 <script>
+import SearchBar from '@/components/SearchBar.vue'
 import Inventario from "../json/inventario.json";
 export default {
-  components: {  },
+  components: { SearchBar },
     name:'VistaCards',
     data(){
       return{
-        materiales: Inventario.data,
+        inventario: Inventario.data,
+        materiales: [],
+        searchTerm: "",
+        showModal: false,
       }
 
+    },
+  mounted(){
+      this.fetchItems();
+    },
+  
+  methods:{
+    setSearchTerm(searchTerm) {
+      console.log(searchTerm);
+      this.searchTerm = searchTerm;
+    },
+    fetchItems() {
+      this.materiales = Inventario.data;
+    },
+    toggleForm() {
+      this.showModal = !this.showModal;
+    }
+    },
+    computed: {
+      itemListFiltered() {
+        if (!this.searchTerm) {
+          return this.materiales;
+        } else if (this.searchTerm) {
+          return this.materiales.filter((item) => {
+            return (
+              item.title.toLowerCase().includes(this.searchTerm.toLowerCase()) ||
+              item.estado.toLowerCase().includes(this.searchTerm.toLowerCase()) ||
+              item.numinventari.includes(this.searchTerm)
+              
+              //item.ubicacio.includes(this.searchTerm)
+          );
+          });
+        }
+        return this.materiales;
+      },
     }
 }
 </script>

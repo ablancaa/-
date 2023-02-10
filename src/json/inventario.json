@@ -404,19 +404,6 @@
             "datein": "11/01/2022"
         },
         {
-            "numinventari": "111",
-            "ubicacio": "Unitat de Cremats",
-            "extensio": "3856",
-            "title": "Bomba Volumétrica Alaris",
-            "image": "http://clarys.ddns.net/ImgVueInventario/Bomba_volumetrica_Alaris.png",
-            "info": "Sistemas de Bomba de infusión volumétrica, fiables, sencillos, versátiles y flexibles para infusión de soluciones IV de grandes volúmenes.",
-            "video": "https://www.youtube.com/embed/LQJIr6ubMtA",
-            "estado": "Disponible",
-            "prestado": false,
-            "dateout": "11/01/2022",
-            "datein": "11/01/2022"
-        },
-        {
             "numinventari": "1114333",
             "ubicacio": "Unitat de Cremats",
             "extensio": "3856",
@@ -482,19 +469,6 @@
             "datein": "11/01/2022"
         },
         {
-            "numinventari": "111",
-            "ubicacio": "Tallers",
-            "extensio": "3856",
-            "title": "Bomba Volumétrica Alaris",
-            "image": "http://clarys.ddns.net/ImgVueInventario/Bomba_volumetrica_Alaris.png",
-            "info": "Sistemas de Bomba de infusión volumétrica, fiables, sencillos, versátiles y flexibles para infusión de soluciones IV de grandes volúmenes.",
-            "video": "https://www.youtube.com/embed/LQJIr6ubMtA",
-            "estado": "En Manteniment",
-            "prestado": true,
-            "dateout": "11/01/2022",
-            "datein": "11/01/2022"
-        },
-        {
             "numinventari": "1116870",
             "ubicacio": "Tallers",
             "extensio": "3856",
@@ -521,7 +495,7 @@
             "datein": "11/01/2022"
         },
         {
-            "numinventari": "Ilegible",
+            "numinventari": "Ilegible1",
             "ubicacio": "Tallers",
             "extensio": "3856",
             "title": "Bomba Volumétrica Alaris",
@@ -898,7 +872,7 @@
             "datein": "11/01/2022"
         },
         {
-            "numinventari": "Ilegible",
+            "numinventari": "Ilegible2",
             "title": "Calentador de insfusión 3M",
             "ubicacio": "Unitat de Cremats",
             "extensio": "3856",
