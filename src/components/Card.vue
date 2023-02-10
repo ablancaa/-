@@ -60,10 +60,10 @@ export default {
     prestec(){
       console.log("Préstec")
     },
-    tornada(){
+    tornada(numItem){
       console.log("Tornada")
-      this.$emit("tornada", this.material.numinventari);
-      console.log("Desde Card: "+this.material.numinventari);
+      this.$emit("tornadaNum", numItem);
+      console.log("Desde Card: "+numItem);
     }
   }
 }

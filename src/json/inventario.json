@@ -10,7 +10,7 @@
             "video": "https://www.youtube.com/embed/LQJIr6ubMtA",
             "estado": "Disponible",
             "prestado": false,
-            "dateout": "11/01/2022",
+            "dateout": "",
             "datein": "11/01/2022"
         },
         {
@@ -24,7 +24,7 @@
             "estado": "En Manteniment",
             "prestado": true,
             "dateout": "11/01/2022",
-            "datein": "11/01/2022"
+            "datein": ""
         },
         {
             "numinventari": "1149537",
@@ -37,7 +37,7 @@
             "estado": "No Disponible",
             "prestado": true,
             "dateout": "11/01/2022",
-            "datein": "11/01/2022"
+            "datein": ""
         },
         {
             "numinventari": "1176212",
@@ -49,7 +49,7 @@
             "video": "https://www.youtube.com/embed/LQJIr6ubMtA",
             "estado": "Disponible",
             "prestado": false,
-            "dateout": "11/01/2022",
+            "dateout": "",
             "datein": "11/01/2022"
         },
         {
@@ -62,7 +62,7 @@
             "video": "https://www.youtube.com/embed/LQJIr6ubMtA",
             "estado": "Disponible",
             "prestado": false,
-            "dateout": "11/01/2022",
+            "dateout": "",
             "datein": "11/01/2022"
         },
         {
@@ -75,7 +75,7 @@
             "video": "https://www.youtube.com/embed/LQJIr6ubMtA",
             "estado": "Disponible",
             "prestado": false,
-            "dateout": "11/01/2022",
+            "dateout": "",
             "datein": "11/01/2022"
         },
         {
@@ -88,7 +88,7 @@
             "video": "https://www.youtube.com/embed/LQJIr6ubMtA",
             "estado": "Disponible",
             "prestado": false,
-            "dateout": "11/01/2022",
+            "dateout": "",
             "datein": "11/01/2022"
         },
         {
@@ -101,7 +101,7 @@
             "video": "https://www.youtube.com/embed/LQJIr6ubMtA",
             "estado": "Disponible",
             "prestado": false,
-            "dateout": "11/01/2022",
+            "dateout": "",
             "datein": "11/01/2022"
         },
         {
@@ -114,8 +114,8 @@
             "video": "https://www.youtube.com/embed/LQJIr6ubMtA",
             "estado": "No Disponible",
             "prestado": true,
-            "dateout": "11/01/2022",
-            "datein": "11/01/2022"
+            "dateout": "31/01/2022",
+            "datein": ""
         },
         {
             "numinventari": "1116865",
@@ -128,7 +128,7 @@
             "estado": "En Manteniment",
             "prestado": true,
             "dateout": "11/01/2022",
-            "datein": "11/01/2022"
+            "datein": ""
         },
         {
             "numinventari": "1118770",
@@ -141,7 +141,7 @@
             "estado": "En Manteniment",
             "prestado": true,
             "dateout": "11/01/2022",
-            "datein": "11/01/2022"
+            "datein": ""
         },
         {
             "numinventari": "1116833",
@@ -154,7 +154,7 @@
             "estado": "En Manteniment",
             "prestado": true,
             "dateout": "11/01/2022",
-            "datein": "11/01/2022"
+            "datein": ""
         },
         {
             "numinventari": "1116834",
@@ -167,7 +167,7 @@
             "estado": "En Manteniment",
             "prestado": true,
             "dateout": "11/01/2022",
-            "datein": "11/01/2022"
+            "datein": ""
         },
         {
             "numinventari": "1116866",
@@ -180,7 +180,7 @@
             "estado": "En Manteniment",
             "prestado": true,
             "dateout": "11/01/2022",
-            "datein": "11/01/2022"
+            "datein": ""
         },
         {
             "numinventari": "1116864",
@@ -193,7 +193,7 @@
             "estado": "En Manteniment",
             "prestado": true,
             "dateout": "11/01/2022",
-            "datein": "11/01/2022"
+            "datein": ""
         },
         {
             "numinventari": "1116858",
@@ -206,7 +206,7 @@
             "estado": "En Manteniment",
             "prestado": true,
             "dateout": "11/01/2022",
-            "datein": "11/01/2022"
+            "datein": ""
         },
         {
             "numinventari": "1116856",
@@ -219,46 +219,46 @@
             "estado": "En Manteniment",
             "prestado": true,
             "dateout": "11/01/2022",
-            "datein": "11/01/2022"
+            "datein": ""
         },
         {
             "numinventari": "1118731",
-            "ubicacio": "Tallers",
+            "ubicacio": "Planta 3 Senars",
             "extensio": "3856",
             "title": "Bomba Volumétrica Alaris",
             "image": "http://clarys.ddns.net/ImgVueInventario/Bomba_volumetrica_Alaris.png",
             "info": "Sistemas de Bomba de infusión volumétrica, fiables, sencillos, versátiles y flexibles para infusión de soluciones IV de grandes volúmenes.",
             "video": "https://www.youtube.com/embed/LQJIr6ubMtA",
-            "estado": "En Manteniment",
+            "estado": "No Disponible",
             "prestado": true,
             "dateout": "11/01/2022",
-            "datein": "11/01/2022"
+            "datein": ""
         },
         {
             "numinventari": "1116349",
-            "ubicacio": "Tallers",
+            "ubicacio": "Planta 2 Parells",
             "extensio": "3856",
             "title": "Bomba Volumétrica Alaris",
             "image": "http://clarys.ddns.net/ImgVueInventario/Bomba_volumetrica_Alaris.png",
             "info": "Sistemas de Bomba de infusión volumétrica, fiables, sencillos, versátiles y flexibles para infusión de soluciones IV de grandes volúmenes.",
             "video": "https://www.youtube.com/embed/LQJIr6ubMtA",
-            "estado": "En Manteniment",
-            "prestado": true,
+            "estado": "No Disponible",
+            "prestado": false,
             "dateout": "11/01/2022",
-            "datein": "11/01/2022"
+            "datein": ""
         },
         {
             "numinventari": "1116818",
-            "ubicacio": "Tallers",
+            "ubicacio": "Planta 1 Parells",
             "extensio": "3856",
             "title": "Bomba Volumétrica Alaris",
             "image": "http://clarys.ddns.net/ImgVueInventario/Bomba_volumetrica_Alaris.png",
             "info": "Sistemas de Bomba de infusión volumétrica, fiables, sencillos, versátiles y flexibles para infusión de soluciones IV de grandes volúmenes.",
             "video": "https://www.youtube.com/embed/LQJIr6ubMtA",
-            "estado": "En Manteniment",
+            "estado": "No Disponible",
             "prestado": true,
             "dateout": "11/01/2022",
-            "datein": "11/01/2022"
+            "datein": ""
         },
         {
             "numinventari": "1116862",
@@ -271,45 +271,45 @@
             "estado": "En Manteniment",
             "prestado": true,
             "dateout": "11/01/2022",
-            "datein": "11/01/2022"
+            "datein": ""
         },
         {
             "numinventari": "1116863",
-            "ubicacio": "Tallers",
+            "ubicacio": "Planta 4 Parells",
             "extensio": "3856",
             "title": "Bomba Volumétrica Alaris",
             "image": "http://clarys.ddns.net/ImgVueInventario/Bomba_volumetrica_Alaris.png",
             "info": "Sistemas de Bomba de infusión volumétrica, fiables, sencillos, versátiles y flexibles para infusión de soluciones IV de grandes volúmenes.",
             "video": "https://www.youtube.com/embed/LQJIr6ubMtA",
-            "estado": "En Manteniment",
+            "estado": "No Disponible",
             "prestado": true,
             "dateout": "11/01/2022",
-            "datein": "11/01/2022"
+            "datein": ""
         },
         {
             "numinventari": "1116878",
-            "ubicacio": "Tallers",
+            "ubicacio": "Unitat de Cremats",
             "extensio": "3856",
             "title": "Bomba Volumétrica Alaris",
             "image": "http://clarys.ddns.net/ImgVueInventario/Bomba_volumetrica_Alaris.png",
             "info": "Sistemas de Bomba de infusión volumétrica, fiables, sencillos, versátiles y flexibles para infusión de soluciones IV de grandes volúmenes.",
             "video": "https://www.youtube.com/embed/LQJIr6ubMtA",
-            "estado": "En Manteniment",
-            "prestado": true,
-            "dateout": "11/01/2022",
+            "estado": "Disponible",
+            "prestado": false,
+            "dateout": "",
             "datein": "11/01/2022"
         },
         {
             "numinventari": "1116848",
-            "ubicacio": "Tallers",
+            "ubicacio": "Unitat de Cremats",
             "extensio": "3856",
             "title": "Bomba Volumétrica Alaris",
             "image": "http://clarys.ddns.net/ImgVueInventario/Bomba_volumetrica_Alaris.png",
             "info": "Sistemas de Bomba de infusión volumétrica, fiables, sencillos, versátiles y flexibles para infusión de soluciones IV de grandes volúmenes.",
             "video": "https://www.youtube.com/embed/LQJIr6ubMtA",
-            "estado": "En Manteniment",
-            "prestado": true,
-            "dateout": "11/01/2022",
+            "estado": "Disponible",
+            "prestado": false,
+            "dateout": "",
             "datein": "11/01/2022"
         },
         {
@@ -327,55 +327,55 @@
         },
         {
             "numinventari": "1116880",
-            "ubicacio": "Tallers",
+            "ubicacio": "Unitat de Cremats",
             "extensio": "3856",
             "title": "Bomba Volumétrica Alaris",
             "image": "http://clarys.ddns.net/ImgVueInventario/Bomba_volumetrica_Alaris.png",
             "info": "Sistemas de Bomba de infusión volumétrica, fiables, sencillos, versátiles y flexibles para infusión de soluciones IV de grandes volúmenes.",
             "video": "https://www.youtube.com/embed/LQJIr6ubMtA",
-            "estado": "En Manteniment",
-            "prestado": true,
-            "dateout": "11/01/2022",
+            "estado": "Disponible",
+            "prestado": false,
+            "dateout": "",
             "datein": "11/01/2022"
         },
         {
             "numinventari": "1116854",
-            "ubicacio": "Tallers",
+            "ubicacio": "Planta 1 Senars",
             "extensio": "3856",
             "title": "Bomba Volumétrica Alaris",
             "image": "http://clarys.ddns.net/ImgVueInventario/Bomba_volumetrica_Alaris.png",
             "info": "Sistemas de Bomba de infusión volumétrica, fiables, sencillos, versátiles y flexibles para infusión de soluciones IV de grandes volúmenes.",
             "video": "https://www.youtube.com/embed/LQJIr6ubMtA",
-            "estado": "En Manteniment",
+            "estado": "No Disponible",
             "prestado": true,
             "dateout": "11/01/2022",
-            "datein": "11/01/2022"
+            "datein": ""
         },
         {
             "numinventari": "1116867",
-            "ubicacio": "Tallers",
+            "ubicacio": "Unitat de Cremats",
             "extensio": "3856",
             "title": "Bomba Volumétrica Alaris",
             "image": "http://clarys.ddns.net/ImgVueInventario/Bomba_volumetrica_Alaris.png",
             "info": "Sistemas de Bomba de infusión volumétrica, fiables, sencillos, versátiles y flexibles para infusión de soluciones IV de grandes volúmenes.",
             "video": "https://www.youtube.com/embed/LQJIr6ubMtA",
-            "estado": "En Manteniment",
-            "prestado": true,
-            "dateout": "11/01/2022",
+            "estado": "Disponible",
+            "prestado": false,
+            "dateout": "",
             "datein": "11/01/2022"
         },
         {
             "numinventari": "1116847",
-            "ubicacio": "Tallers",
+            "ubicacio": "Planta 2 Senars",
             "extensio": "3856",
             "title": "Bomba Volumétrica Alaris",
             "image": "http://clarys.ddns.net/ImgVueInventario/Bomba_volumetrica_Alaris.png",
             "info": "Sistemas de Bomba de infusión volumétrica, fiables, sencillos, versátiles y flexibles para infusión de soluciones IV de grandes volúmenes.",
             "video": "https://www.youtube.com/embed/LQJIr6ubMtA",
-            "estado": "En Manteniment",
+            "estado": "No Disponible",
             "prestado": true,
             "dateout": "11/01/2022",
-            "datein": "11/01/2022"
+            "datein": ""
         },
         {
             "numinventari": "1118804",
@@ -388,7 +388,7 @@
             "estado": "En Manteniment",
             "prestado": true,
             "dateout": "11/01/2022",
-            "datein": "11/01/2022"
+            "datein": ""
         },
         {
             "numinventari": "1116887",
@@ -401,7 +401,7 @@
             "estado": "En Manteniment",
             "prestado": true,
             "dateout": "11/01/2022",
-            "datein": "11/01/2022"
+            "datein": ""
         },
         {
             "numinventari": "1114333",
@@ -413,7 +413,7 @@
             "video": "https://www.youtube.com/embed/LQJIr6ubMtA",
             "estado": "Disponible",
             "prestado": false,
-            "dateout": "11/01/2022",
+            "dateout": "",
             "datein": "11/01/2022"
         },
         {
@@ -426,7 +426,7 @@
             "video": "https://www.youtube.com/embed/LQJIr6ubMtA",
             "estado": "Disponible",
             "prestado": false,
-            "dateout": "11/01/2022",
+            "dateout": "",
             "datein": "11/01/2022"
         },
         {
@@ -440,7 +440,7 @@
             "estado": "En Manteniment",
             "prestado": true,
             "dateout": "11/01/2022",
-            "datein": "11/01/2022"
+            "datein": ""
         },
         {
             "numinventari": "1116869",
@@ -453,7 +453,7 @@
             "estado": "En Manteniment",
             "prestado": true,
             "dateout": "11/01/2022",
-            "datein": "11/01/2022"
+            "datein": ""
         },
         {
             "numinventari": "1118511",
@@ -466,7 +466,7 @@
             "estado": "Disponible",
             "prestado": false,
             "dateout": "11/01/2022",
-            "datein": "11/01/2022"
+            "datein": ""
         },
         {
             "numinventari": "1116870",
@@ -479,32 +479,32 @@
             "estado": "En Manteniment",
             "prestado": true,
             "dateout": "11/01/2022",
-            "datein": "11/01/2022"
+            "datein": ""
         },
         {
             "numinventari": "1116829",
-            "ubicacio": "Tallers",
-            "extensio": "3856",
+            "ubicacio": "Planta 3 Parells",
+            "extensio": "3351",
             "title": "Bomba Volumétrica Alaris",
             "image": "http://clarys.ddns.net/ImgVueInventario/Bomba_volumetrica_Alaris.png",
             "info": "Sistemas de Bomba de infusión volumétrica, fiables, sencillos, versátiles y flexibles para infusión de soluciones IV de grandes volúmenes.",
             "video": "https://www.youtube.com/embed/LQJIr6ubMtA",
-            "estado": "En Manteniment",
+            "estado": "No Disponible",
             "prestado": true,
             "dateout": "11/01/2022",
-            "datein": "11/01/2022"
+            "datein": ""
         },
         {
             "numinventari": "Ilegible1",
-            "ubicacio": "Tallers",
+            "ubicacio": "Unitat de Cremats",
             "extensio": "3856",
             "title": "Bomba Volumétrica Alaris",
             "image": "http://clarys.ddns.net/ImgVueInventario/Bomba_volumetrica_Alaris.png",
             "info": "Sistemas de Bomba de infusión volumétrica, fiables, sencillos, versátiles y flexibles para infusión de soluciones IV de grandes volúmenes.",
             "video": "https://www.youtube.com/embed/LQJIr6ubMtA",
-            "estado": "En Manteniment",
-            "prestado": true,
-            "dateout": "11/01/2022",
+            "estado": "Disponible",
+            "prestado": false,
+            "dateout": "",
             "datein": "11/01/2022"
         },
         {
