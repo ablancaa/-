@@ -24,7 +24,7 @@
       <div id="info">
         <div class="hijo">
           <strong>Estat: </strong> {{ material.estado }}
-          <p><strong>Núm. Inventari:</strong> <i></i>{{ material.numinventari }} <!--<span  v-if="material.estado">{{ material.prestado }}</span> -->
+          <p><strong>Núm. Inventari:</strong>{{ material.numinventari }} <!--<span  v-if="material.estado">{{ material.prestado }}</span> -->
           <strong>Ubicació: </strong>{{ material.ubicacio }}
           <strong>Extensió:</strong>{{ material.extensio }}</p>
           <p><strong>Data Out: </strong>{{ material.dateout }}<br/>
