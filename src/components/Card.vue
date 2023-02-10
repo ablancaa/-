@@ -44,7 +44,7 @@
   <footer class="card-footer">
     <a href="#" class="card-footer-item">Préstec</a>
     <a href="#" class="card-footer-item">Tornada</a>
-    <router-link :to="{name: 'VistaInfo', params: {id:material.id}}"  class="card-footer-item">+ Info</router-link>
+    <router-link :to="{name: 'VistaInfo', params: {numinventari:material.numinventari}}"  class="card-footer-item">+ Info</router-link>
   </footer>
 </div>
 <br/>

@@ -1,6 +1,6 @@
 <template>
   <div class="lista-material">
-    <div v-for="material in materiales2" :key="material.id">
+    <div v-for="material in inventario" :key="material.numinventari">
         <MaterialCard :material="material"/>
     </div>
 </div>
@@ -13,7 +13,8 @@ export default {
     components:{ MaterialCard },
     props: {
         materiales: Array,
-        materiales2: Array
+        materiales2: Array,
+        inventario: Array,
         },
 
 }

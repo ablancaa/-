@@ -1,11 +1,12 @@
 <template>
 <nav-bar></nav-bar>
-
+<div id="contenido">
 <!--  <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/VistaCards">Cards</router-link>
   </nav> -->
   <router-view/>
+</div>
 </template>
 <script>
 import NavBar from '@/components/NavBar.vue'

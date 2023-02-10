@@ -23,7 +23,7 @@
    
     <td><img :src="item.image" width="80"></td>
     <td>{{ item.title }}
-      <router-link :to="{name: 'VistaInfo', params: {id:item.id}}"  class="card-footer-item">+ Info</router-link></td>
+      <router-link :to="{name: 'VistaInfo', params: {numinventari:item.numinventari}}"  class="card-footer-item">+ Info</router-link></td>
     <td><strong>{{ item.estado }}</strong><br/>
       <span v-if="item.estado =='Disponible'"><img src="../assets/ico/Disponible.png" width="40"  title="DISPONIBLE"/></span>
       <span v-if="item.estado =='No Disponible'"><img src="../assets/ico/NoDisponible.png" width="40" title="NO DISPONIBLE"/></span>
@@ -45,15 +45,13 @@
 </template>
 
 <script>
-//import Card from '../components/Card.vue';
-import Materiales from "../json/materialesLocal.json";
-//import CardList from '@/components/CardList.vue'
+import Inventario from "../json/inventario.json";
 export default {
   components: {  },
     name:'VistaCards',
     data(){
       return{
-        materiales: Materiales.data,
+        materiales: Inventario.data,
       }
 
     }
