@@ -1,7 +1,7 @@
 <template>
     <div class="search">
       <div class="search-wrapper">
-        <input type="text" v-model="search" placeholder="Search for a recipe" />
+        <input type="text" v-model="search" placeholder="Cerca el material" />
         <button class="clear" v-if="search.length" @click="clearSearch">
           Clear search
         </button>

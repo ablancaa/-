@@ -1,9 +1,9 @@
 <template>
  <cabecera/>
-<nav-bar></nav-bar>
+
 
 <div id="contenido">
-  
+  <nav-bar></nav-bar>
   <router-view/>
 </div>
 <Footer/>

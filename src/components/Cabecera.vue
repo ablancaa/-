@@ -1,6 +1,6 @@
 <template>
     <div id="logo">
-        <img id="logo" alt="logo" src="@/assets/logos/campus-tots-RGB.png">
+        <router-link to="/"><img id="logo" alt="logo" src="@/assets/logos/campus-tots-RGB.png"></router-link>  
     </div>
 </template>
 <script>
