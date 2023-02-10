@@ -2,7 +2,7 @@
   <div id="contenido">
 
     <SearchBar v-on:showForm="toggleForm" v-on:search="setSearchTerm"/>
-   <CardList :inventario="itemListFiltered"/>
+   <CardList :inventario="itemListFiltered" v-on:tornada="tornada"/>
   </div>
 
 </template>
@@ -39,7 +39,22 @@ export default {
     },
     toggleForm() {
       this.showModal = !this.showModal;
-    }
+    },
+    tornada(numItem) {
+      console.log("Desde Home: " +numItem)
+      for(let i= 0; this.materiales.length; i++){
+        if(this.materiales[i].numinventari == numItem){
+          this.materiales[i].ubicacio = "Unitat de Cremats";
+          this.materiales[i].estado = "Disponible";
+          this.materiales[i].extensio = "3856"
+          this.materiales[i].prestado = false;
+        }
+      }
+      /*this.materiales = this.materiales.filter(
+        (item) => item.numinventari !== numItem
+      );*/
+    },
+    
     },
     computed: {
       itemListFiltered() {

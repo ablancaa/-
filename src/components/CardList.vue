@@ -1,7 +1,7 @@
 <template>
   <div class="lista-material">
     <div v-for="material in inventario" :key="material.numinventari">
-        <MaterialCard :material="material"/>
+        <MaterialCard :material="material" v-on:tornada="tornada"/>
     </div>
 </div>
 </template>
@@ -16,6 +16,12 @@ export default {
         materiales2: Array,
         inventario: Array,
         },
+    methods:{
+        tornada(numItem) {
+        this.$emit("tornada", numItem);
+        console.log("Desde CardList: "+numItem);
+    },
+    }
 
 }
 </script>

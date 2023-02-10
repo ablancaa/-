@@ -42,8 +42,8 @@
     </div> -->
   </div>
   <footer class="card-footer">
-    <a href="#" class="card-footer-item">Préstec</a>
-    <a href="#" class="card-footer-item">Tornada</a>
+    <a @click="prestec()" class="card-footer-item">Préstec</a>
+    <a @click="tornada(material.numinventari)" class="card-footer-item">Tornada</a>
     <router-link :to="{name: 'VistaInfo', params: {numinventari:material.numinventari}}"  class="card-footer-item">+ Info</router-link>
   </footer>
 </div>
@@ -56,6 +56,16 @@ export default {
   props: {
             material: Object,
         },
+  methods:{
+    prestec(){
+      console.log("Préstec")
+    },
+    tornada(){
+      console.log("Tornada")
+      this.$emit("tornada", this.material.numinventari);
+      console.log("Desde Card: "+this.material.numinventari);
+    }
+  }
 }
 </script>
 
