@@ -3,7 +3,7 @@
       <div class="search-wrapper">
         <input type="text" v-model="search" placeholder="Cerca el material" />
         <button class="clear" v-if="search.length" @click="clearSearch">
-          Clear search
+          Esborrar
         </button>
       </div>
       <!-- <button @click="showForm">Add a new recipe</button> -->

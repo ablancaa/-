@@ -37,6 +37,7 @@
     <td>{{ item.ubicacio }}</td>
     <td>{{ item.extensio }}</td>
     <td v-if="item.prestado"><button @click="tornada" v-on:tornadaNum="tornada">Tornada</button></td>
+    <td v-else>A la unitat</td>
   </tr>
 </tbody>
 </table>
