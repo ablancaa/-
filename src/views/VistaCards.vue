@@ -36,7 +36,7 @@
     <td>{{ item.datein }}</td>
     <td>{{ item.ubicacio }}</td>
     <td>{{ item.extensio }}</td>
-    <td><button @click="tornada" v-on:tornadaNum="tornada">Tornada</button></td>
+    <td v-if="item.prestado"><button @click="tornada" v-on:tornadaNum="tornada">Tornada</button></td>
   </tr>
 </tbody>
 </table>

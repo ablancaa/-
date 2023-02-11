@@ -43,7 +43,7 @@
   </div>
   <footer class="card-footer">
     <a @click="prestec()" class="card-footer-item">Préstec</a>
-    <a @click="tornada(material.numinventari)" class="card-footer-item">Tornada</a>
+    <a v-if="material.prestado" @click="tornada(material.numinventari)" class="card-footer-item">Tornada</a>
     <router-link :to="{name: 'VistaInfo', params: {numinventari:material.numinventari}}"  class="card-footer-item">+ Info</router-link>
   </footer>
 </div>

@@ -1,10 +1,11 @@
 <template>
   <div class="home">
     <br/>
+    <SearchBar v-on:showForm="toggleForm" v-on:search="setSearchTerm"/>
     <div id="contenido">
-   <CardList :materiales2="materiales2"/>
+   <CardList :inventario="itemListFiltered" v-on:tornadaNum="tornada"/>
   </div>
-
+</div>
 </template>
 
 <script>
