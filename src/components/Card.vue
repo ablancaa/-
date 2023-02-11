@@ -62,7 +62,7 @@ export default {
     },
     tornada(numItem){
       console.log("Tornada")
-      this.$emit("tornadaNum", numItem);
+      this.$emit("tornada-num", numItem);
       console.log("Desde Card: "+numItem);
     }
   }
