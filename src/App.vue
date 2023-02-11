@@ -3,21 +3,20 @@
 
 
 <div id="contenido">
-  <nav-bar></nav-bar>
   <router-view/>
 </div>
-<Footer/>
+<Pie/>
 </template>
 <script>
 import Cabecera from '@/components/Cabecera.vue'
-import Footer from '@/components/Footer.vue'
-import NavBar from '@/components/NavBar.vue'
+import Pie from '@/components/Footer.vue'
+//import NavBar from '@/components/NavBar.vue'
 export default {
   name: 'App',
   components: {
-    NavBar,
+    //NavBar,
     Cabecera,
-    Footer
+    Pie
   }
 }
 </script>
