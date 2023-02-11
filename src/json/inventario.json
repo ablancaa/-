@@ -60,10 +60,10 @@
             "image": "http://clarys.ddns.net/ImgVueInventario/Bomba_FreeGo_Abbott.png?nf_resize=fit&w=150&h=150",
             "info": "Sistema de administración para Bomba FreeGo. Bomba peristáltica segura y fácil de utilizar y transportar con amplia pantalla LCD para una mejor visibilidad.",
             "video": "https://www.youtube.com/embed/LQJIr6ubMtA",
-            "estado": "Disponible",
-            "prestado": false,
-            "dateout": "",
-            "datein": "11/01/2022"
+            "estado": "No Disponible",
+            "prestado": true,
+            "dateout": "01/01/2023",
+            "datein": ""
         },
         {
             "numinventari": "1147306",
