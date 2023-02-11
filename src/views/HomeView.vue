@@ -1,8 +1,8 @@
 <template>
-  <div id="contenido">
-
-    <SearchBar v-on:showForm="toggleForm" v-on:search="setSearchTerm"/>
-   <CardList :inventario="itemListFiltered" v-on:tornadaNum="tornada"/>
+  <div class="home">
+    <br/>
+    <div id="contenido">
+   <CardList :materiales2="materiales2"/>
   </div>
 
 </template>
