@@ -3,7 +3,7 @@
     <br/>
     <SearchBar v-on:showForm="toggleForm" v-on:search="setSearchTerm"/>
     <div id="contenido">
-   <CardList :materiales2="materiales2"/>
+   <CardList :inventario="itemListFiltered" v-on:tornada-num="tornada"/>
   </div>
 </div>
 </template>
