@@ -31,10 +31,10 @@
             <label for="extensio">Extensió</label>
             <input type="text" id="extensio" v-model="material.extensio" />
           </div>
-          <div class="contact-form-item">
+        <!--  <div class="contact-form-item">
             <label for="dataOut">Data Out</label>
             <input type="date" id="date" v-model="material.dataout" />
-          </div>
+          </div> -->
         <!--  
           <div class="contact-form-item">
             <label for="private">Private contact</label>
@@ -64,8 +64,8 @@
     console.log("addPrectec")
     if (
       material.ubicacio.length === 0 ||
-      material.extensio.length === 0 ||
-      material.dataout.length === 0
+      material.extensio.length === 0 
+     //material.dataout.length === 0
     ) {
       error.value = true;
       return;

@@ -32,12 +32,13 @@
       <br/>
       <span><!--<strong>Inventari:</strong>--> {{ item.numinventari }}</span>
     </td>
-    <td>{{ item.dateout }}</td>
-    <td>{{ item.datein }}</td>
-    <td>{{ item.ubicacio }}</td>
-    <td>{{ item.extensio }}</td>
-    <td v-if="item.prestado"><button @click="tornada" v-on:tornadaNum="tornada">Tornada</button></td>
-    <td v-else>A la unitat</td>
+    <td><br/>{{ item.dateout }}</td>
+    <td><br/>{{ item.datein }}</td>
+    <td><br/>{{ item.ubicacio }}</td>
+    <td><br/>{{ item.extensio }}</td>
+    <td v-if="item.prestado"><br/><button @click="tornada(item.numinventari)">Tornada</button></td>
+    <td v-else><!--A la unitat--><br/> <span v-if="!item.prestado"><button>Préstec</button></span></td>
+   
   </tr>
 </tbody>
 </table>
@@ -86,22 +87,18 @@ export default {
        var year = today.getFullYear();
       // muestra la fecha de hoy en formato `MM/DD/YYYY`
       //console.log(`${month}/${day}/${year}`);
-      console.log("Desde Home: " +numItem)
-      for(let i= 0; this.materiales.length; i++){
-        if(this.materiales[i].numinventari == numItem){
-          this.materiales[i].ubicacio = "Unitat de Cremats";
-          this.materiales[i].estado = "Disponible";
-          this.materiales[i].extensio = "3856"
-          this.materiales[i].prestado = false;
-          
-          this.materiales[i].datein = (`${month}/${day}/${year}`);
-          this.materiales[i].dateout = "";
+      console.log(numItem);
+      this.materiales.map(function(element) {
+        if(element.numinventari == numItem){
+          return element.ubicacio = "Unitat de Cremats",
+              element.extensio = "3856" ,
+              element.estado = "Disponible",
+              element.prestado = false,
+              element.dateout="",
+              element.datein = (`${day}/${month}/${year}`);
         }
-        if(this.materiales[i].estado == false){
-            this.materiales[i].dateout = "";
-          }
-
-      }
+      });      
+      
       /*this.materiales = this.materiales.filter(
         (item) => item.numinventari !== numItem
       );*/

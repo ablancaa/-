@@ -1,7 +1,5 @@
 <template>
   <div class="home">
-    <br/>
-    <nav-bar></nav-bar>
     <SearchBar v-on:showForm="toggleForm" v-on:search="setSearchTerm"/>
     <div id="contenido">
    <CardList :inventario="itemListFiltered" v-on:tornada-num="tornada" v-on:prestec-num="prestec"/>
@@ -16,14 +14,13 @@
 
 <script>
 import Inventario from "../json/inventario.json"
-import NavBar from '@/components/NavBar.vue'
 import CardList from '@/components/CardList.vue'
 import SearchBar from '@/components/SearchBar.vue'
 import FormPrestec from "../components/FormPrestec.vue";
 
 export default {
   name: 'HomeView',
-  components: { CardList, SearchBar, FormPrestec, NavBar },
+  components: { CardList, SearchBar, FormPrestec },
 
   data(){
       return{
@@ -31,13 +28,11 @@ export default {
         materiales: [],
         searchTerm: "",
         showModal: false,
-        numinventari: ""
-
       }
-
     },
   mounted(){
       this.fetchItems();
+      localStorage.setItem("materiales", JSON.stringify(this.inventario));
     },
     computed: {
       itemListFiltered() {
@@ -53,7 +48,6 @@ export default {
           );
           });
         }
-       
         return this.materiales;
       },
     },
@@ -123,6 +117,16 @@ export default {
       });      */
     },
     give(items){
+      //crea un nuevo objeto `Date`
+      var today = new Date();
+      //`getDate()` devuelve el día del mes (del 1 al 31)
+      var day = today.getDate();
+      //`getMonth()` devuelve el mes (de 0 a 11)
+      var month = today.getMonth() + 1;
+      //`getFullYear()` devuelve el año completo
+      var year = today.getFullYear();
+      //muestra la fecha de hoy en formato `MM/DD/YYYY`
+      //console.log(`${day}/${month}/${year}`);
       console.log(items);
       console.log(localStorage.getItem("num"));
       console.log("NUM: "+localStorage.getItem("num"));
@@ -140,14 +144,12 @@ export default {
               element.extensio = items.extensio,
               element.estado = estado,
               element.prestado = true,
-              element.dateout=items.dataout,
+              element.dateout=(`${day}/${month}/${year}`),
               element.datein = "";
         }
       });      
       return items;
     }
-
-    
     },
     
 }
