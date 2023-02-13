@@ -158,4 +158,7 @@ export default {
 #contenido{
  width: 1204; margin: 0 auto; 
 }
+.letraGrande{
+  font-size: 16px;
+}
 </style>

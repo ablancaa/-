@@ -23,14 +23,14 @@
                 <option value="Planta 3 Senars">Planta 3 Senars</option>
                 <option value="Planta 4 Parells">Planta 4 Parells</option>
                 <option value="Planta 4 Senars">Planta 4 Senars</option>
-                <option value="Reanimació">Reanimació</option>
+                <option value="Reanimacio">Reanimació</option>
                 <option value="Tallers">Tallers</option>
             </select>
           </div>
-          <div class="contact-form-item">
+          <!-- <div class="contact-form-item">
             <label for="extensio">Extensió</label>
             <input type="text" id="extensio" v-model="material.extensio" />
-          </div>
+          </div> -->
         <!--  <div class="contact-form-item">
             <label for="dataOut">Data Out</label>
             <input type="date" id="date" v-model="material.dataout" />
@@ -63,12 +63,48 @@
   const addPrestec = () => {
     console.log("addPrectec")
     if (
-      material.ubicacio.length === 0 ||
-      material.extensio.length === 0 
+      material.ubicacio.length === 0 
+     //material.extensio.length === 0 
      //material.dataout.length === 0
     ) {
       error.value = true;
       return;
+    }
+    switch(material.ubicacio){
+      case 'Unitat de cremats':
+        material.extensio="3856";
+        break;
+      case 'Planta 1 Senars':
+        material.extensio="3111";
+        break;
+      case 'Planta 1 Parells':
+        material.extensio="3112";
+        break;
+      case 'Planta 2 Senars':
+        material.extensio="3221";
+        break;
+      case 'Planta 2 Parells':
+        material.extensio="3222";
+        break;
+      case 'Planta 3 Senars':
+        material.extensio="3331";
+        break;
+      case 'Planta 3 Parells':
+        material.extensio="3332";
+        break;
+      case 'Planta 4 Senars':
+        material.extensio="3441";
+        break;
+      case 'Planta 4 Parells':
+        material.extensio="3442";
+        break;
+      case 'Reanimacio':
+        material.extensio="3131";
+        break;
+      case 'Tallers':
+        material.extensio="5555";
+        break;
+        
     }
     //console.log(material)
     emit("add-prestec", material);

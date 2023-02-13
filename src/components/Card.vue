@@ -5,6 +5,7 @@
     <p class="card-header-title">
       {{ material.title }}</p>
     <button class="card-header-icon" aria-label="more options">
+      
       <span class="icon">
      <!--   <img src="http://clarys.ddns.net/ImgVueInventario/ico/Disponible.png" v-if="material.estado =='Disponible'" title="DISPONIBLE"/>
         <img src="http://clarys.ddns.net/ImgVueInventario/ico/NoDisponible.png" v-if="material.estado =='No Disponible'" title="NO DISPONIBLE"/>
@@ -21,19 +22,35 @@
   <div class="card-content">
     <div class="content">
       <div id="info">
-        <div class="hijo">
-          <strong>Estat: </strong> {{ material.estado }}
-          <p><strong>Núm. Inventari:</strong>{{ material.numinventari }} <!--<span  v-if="material.estado">{{ material.prestado }}</span> -->
-          <strong>Ubicació: </strong>{{ material.ubicacio }}
-          <strong>Extensió:</strong>{{ material.extensio }}</p>
-          <p><strong>Data Out: </strong>{{ material.dateout }}<br/>
-          <strong>Data In: </strong>{{ material.datein }}</p>
+        
+        <div class="colorEstadoRojo" v-if="material.estado =='No Disponible'"></div>
+        <div class="colorEstadoNaranja" v-if="material.estado =='En Manteniment'"></div>
+        <div class="colorEstadoVerde" v-if="material.estado =='Disponible'"></div>
+       
+        <div class="hijo">          
+          <p><strong>Núm.Inventari: </strong><span class="letraGrande">{{ material.numinventari }}</span></p>
+          <p><strong>Ubicació: </strong>{{ material.ubicacio }}</p>
+          <p><strong>Extensió: </strong><span class="letraExtension">{{ material.extensio }}</span></p>
+          <p><strong>Data Out: </strong><span class="letraData">{{ material.dateout }}</span><br/>
+            <strong>Data In: </strong><span class="letraData">{{ material.datein }}</span></p>
         
         </div>
          
-        <div class="hijo2 estado" v-if="material.estado =='Disponible'"><img src="../assets/ico/Disponible.png" class="ico"  title="DISPONIBLE"/><span><strong>Estat:</strong> {{material.estado}}</span></div>
-        <div class="hijo2 estado" v-if="material.estado =='No Disponible'"><img src="../assets/ico/NoDisponible.png" class="ico"  title="NO DISPONIBLE"/><span><strong>Estat:</strong><br/> {{material.estado}}</span></div>
-        <div class="hijo2 estado" v-if="material.estado =='En Manteniment'"><img src="../assets/ico/Mantenimiento.png" class="ico"  title="EN MANTENIMENT"/><span><strong>Estat:</strong><br/> {{material.estado}}</span></div>
+        <div class="hijo2 estado" v-if="material.estado =='Disponible'">
+          <img src="../assets/ico/Disponible.png" class="ico"  title="DISPONIBLE"/>
+          <span><strong>Estat:</strong><br/> {{material.estado}}</span>
+          <img src="../assets/img/qr-code.png" class="ico qr"  title="CODE QR"/>
+        </div>
+        <div class="hijo2 estado" v-if="material.estado =='No Disponible'">
+          <img src="../assets/ico/NoDisponible.png" class="ico"  title="NO DISPONIBLE"/>
+          <span><strong>Estat:</strong><br/> {{material.estado}}</span>
+          <img src="../assets/img/qr-code.png" class="ico qr"  title="CODE QR"/>
+        </div>
+        <div class="hijo2 estado" v-if="material.estado =='En Manteniment'">
+          <img src="../assets/ico/Mantenimiento.png" class="ico"  title="EN MANTENIMENT"/>
+          <span><strong>Estat:</strong><br/> {{material.estado}}</span>
+          <img src="../assets/img/qr-code.png" class="ico qr"  title="CODE QR"/>
+        </div>
   </div>
     </div>
   <!--   <hr/>
@@ -81,9 +98,42 @@ export default {
 </script>
 
 <style>
+
+.colorEstadoRojo{
+  background: red;
+  margin-right: 5px;
+  margin-left: -15px;
+  width: 10px;
+  border-radius: 20px;
+}
+.colorEstadoNaranja{
+  background: orange;
+  margin-right: 5px;
+  margin-left: -15px;
+  width: 10px;
+  border-radius: 20px;
+}
+.colorEstadoVerde{
+  background: green;
+  margin-right: 5px;
+  margin-left: -15px;
+  width: 10px;
+  border-radius: 20px;
+}
+
+.qr{
+  margin-top:10px;
+}
+
+.qr-diponible{
+  margin-top:100px;
+}
 .card{
   height: auto;
   width: 360px;
+}
+header{
+  border-radius: 80px;
 }
 
 .bordeRojo{
@@ -110,11 +160,14 @@ height: 60px;
 
 }
 .hijo {
-  width: auto;
-  align-items: center;  
+  width: 340px;
+  align-items: left;  
+  line-height: 1.2;
+  letter-spacing: -0.1px;
 }
 .hijo2{
   align-items: center;
+  width: 150px;
 }
 
 .estado{
@@ -123,6 +176,17 @@ height: 60px;
   margin-left: 12px;
 }
 .letraGrande{
-  font-size: 16px;
+  font-size: 23px;
+  line-height: -1%;
+}
+
+.letraExtension{
+  font-size: 20px;
+  line-height: 1%;
+}
+
+.letraData{
+  font-size: 18px;
+  line-height: -1.5%;
 }
 </style>
