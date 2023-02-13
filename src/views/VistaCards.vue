@@ -6,7 +6,7 @@
     <table>
       <tr>
       <td></td>
-      <td><strong>IMAGE</strong> </td>
+      <td> <strong>IMAGE</strong> </td>
       <td> <strong>TITLE</strong> </td>
       <td> <strong>- ESTAT - INVENTARI</strong> </td>
       <td> <strong>DATA SORTIDA |</strong> </td>
@@ -16,7 +16,6 @@
       <td> <strong>EXTENSIÓ</strong> </td>
   </tr>
   </table>
- <br/>
 <table v-for="(item, index) in itemListFiltered" :key="index" v-on:tornadaNum="tornada">
 <tbody >
   
@@ -44,6 +43,7 @@
 </table>
   </div>
 </div>
+<br/><br/>
 </template>
 
 <script>
@@ -165,10 +165,9 @@ export default {
 .borde {
   border: 1px, solid, blue;
 }
-td{
-  border-collapse: collapse;
-  border: 2px, solid, blue;
-  
+td {
+  text-align: center;
+  background-color:white;
 }
 table{
   table-layout: fixed;
@@ -177,10 +176,6 @@ table{
   border: 1px solid blue;
 }
 
-td {
-  margin-top: 20px;
-  text-align: center;
-}
 .btn {
 /* Color del texo */
 

@@ -131,7 +131,9 @@ export default {
 .card{
   height: auto;
   width: 360px;
+  
 }
+
 header{
   border-radius: 80px;
 }

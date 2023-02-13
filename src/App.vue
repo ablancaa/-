@@ -29,6 +29,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  background: white;
+  background-image: url("assets/logos/BackgroundCorporativo2.png"); 
+  opacity: 50;
 }
 
 nav {
