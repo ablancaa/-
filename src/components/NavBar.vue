@@ -74,7 +74,8 @@ name: 'Nav-Bar'
     color: blue;
 }
 .navbar{
-  height: 70px;
+  height: 75px;
+  border-radius: 10px;
 }
 
 </style>

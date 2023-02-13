@@ -45,6 +45,7 @@
     margin: 0 auto;
     max-width: 500px;
     width: 500px;
+    border-radius: 10px;
   }
   .search button {
     margin-left: 10px;
