@@ -1,33 +1,168 @@
 <template>
-  <h1>Global-View</h1>
+
   <div class="tile is-ancestor">
-  <div class="tile is-parent">
+  <div class="tile is-parent" >
     <article class="tile is-child box">
-      <p class="title">One</p>
-      <p class="subtitle">Subtitle</p>
+      <p class="title"> <img :src="inventario[0].image" width="100"></p>
+      <p class="subtitle"><strong class="subtitle2">{{inventario[0].title}}</strong></p>
+      <div class="content">
+        <br/>
+        <p><strong>Total Unitats:</strong> {{this.contador}}<br/>
+            <strong>Disponibles:</strong>  23 <br/>
+            <strong> No disponibles:</strong> 8 <br/>
+            <strong>En Manteniment:</strong> 5
+         </p>
+      </div>
+      
     </article>
   </div>
   <div class="tile is-parent">
     <article class="tile is-child box">
-      <p class="title">Two</p>
-      <p class="subtitle">Subtitle</p>
+      <p class="title"><img :src="inventario[7].image" width="100"></p>
+      <p class="subtitle"><strong class="subtitle2">{{inventario[7].title}}</strong></p>
+      <div class="content">
+        <p><strong>Total Unitats:</strong> {{this.contador}}<br/>
+            <strong>Disponibles:</strong>  23 <br/>
+            <strong> No disponibles:</strong> 8 <br/>
+            <strong>En Manteniment:</strong> 5
+         </p>
+      </div>
     </article>
   </div>
   <div class="tile is-parent">
     <article class="tile is-child box">
-      <p class="title">Three</p>
-      <p class="subtitle">Subtitle</p>
+      <p class="title"><img :src="inventario[16].image" width="100"></p>
+      <p class="subtitle"><strong class="subtitle2">{{inventario[16].title}}</strong></p>
+      <div class="content">
+        <p><strong>Total Unitats:</strong> {{this.contador}}<br/>
+            <strong>Disponibles:</strong>  23 <br/>
+            <strong> No disponibles:</strong> 8 <br/>
+            <strong>En Manteniment:</strong> 5
+         </p>
+      </div>
     </article>
   </div>
   <div class="tile is-parent">
     <article class="tile is-child box">
-      <p class="title">Four</p>
-      <p class="subtitle">Subtitle</p>
+      <p class="title"><img :src="inventario[60].image" width="100"></p>
+      <p class="subtitle"><strong class="subtitle2">{{inventario[60].title}}</strong></p>
+      <div class="content">
+        <p><strong>Total Unitats:</strong> {{this.contador}}<br/>
+            <strong>Disponibles:</strong>  23 <br/>
+            <strong> No disponibles:</strong> 8 <br/>
+            <strong>En Manteniment:</strong> 5
+         </p>
+      </div>
+    </article>
+  </div>
+  <div class="tile is-parent">
+    <article class="tile is-child box">
+      <p class="title"><img :src="inventario[65].image" width="100"></p>
+      <p class="subtitle"><strong class="subtitle2">{{inventario[65].title}}</strong></p>
+      <div class="content">
+        <p><strong>Total Unitats:</strong> {{this.contador}}<br/>
+            <strong>Disponibles:</strong>  23 <br/>
+            <strong> No disponibles:</strong> 8 <br/>
+            <strong>En Manteniment:</strong> 5
+         </p>
+      </div>
     </article>
   </div>
 </div>
-
 <div class="tile is-ancestor">
+  <div class="tile is-parent" >
+    <article class="tile is-child box">
+      <p class="title"> <img :src="inventario[66].image" width="100"></p>
+      <p class="subtitle"><strong class="subtitle2">{{inventario[66].title}}</strong></p>
+      <div class="content">
+        <p><strong>Total Unitats:</strong> {{this.contador}}<br/>
+            <strong>Disponibles:</strong>  23 <br/>
+            <strong> No disponibles:</strong> 8 <br/>
+            <strong>En Manteniment:</strong> 5
+         </p>
+      </div>
+    </article>
+  </div>
+  <div class="tile is-parent">
+    <article class="tile is-child box">
+      <p class="title"><img :src="inventario[68].image" width="100"></p>
+      <p class="subtitle"><strong class="subtitle2">{{inventario[68].title}}</strong></p>
+      <div class="content">
+        <p><strong>Total Unitats:</strong> {{this.contador}}<br/>
+            <strong>Disponibles:</strong>  23 <br/>
+            <strong> No disponibles:</strong> 8 <br/>
+            <strong>En Manteniment:</strong> 5
+         </p>
+      </div>
+    </article>
+  </div>
+  <div class="tile is-parent">
+    <article class="tile is-child box">
+      <p class="title"><img :src="inventario[71].image" width="100"></p>
+      <p class="subtitle"><strong class="subtitle2">{{inventario[71].title}}</strong></p>
+      <div class="content">
+        <p><strong>Total Unitats:</strong> {{this.contador}}<br/>
+            <strong>Disponibles:</strong>  23 <br/>
+            <strong> No disponibles:</strong> 8 <br/>
+            <strong>En Manteniment:</strong> 5
+         </p>
+      </div>
+    </article>
+  </div>
+  <div class="tile is-parent">
+    <article class="tile is-child box">
+      <p class="title"><img :src="inventario[77].image" width="100"></p>
+      <p class="subtitle"><strong class="subtitle2">{{inventario[77].title}}</strong></p>
+      <div class="content">
+        <p><strong>Total Unitats:</strong> {{this.contador}}<br/>
+            <strong>Disponibles:</strong>  23 <br/>
+            <strong> No disponibles:</strong> 8 <br/>
+            <strong>En Manteniment:</strong> 5
+         </p>
+      </div>
+    </article>
+  </div>
+  <!-- <div class="tile is-parent">
+    <article class="tile is-child box">
+      <p class="title"><img :src="inventario[60].image" width="100"></p>
+      <p class="subtitle">10</p>
+    </article>
+  </div> -->
+</div>
+<div class="tile is-ancestor">
+  <!-- <div class="tile is-parent" >
+    <article class="tile is-child box">
+      <p class="title"> <img :src="inventario[0].image" width="100"></p>
+      <p class="subtitle">Subtitle</p>
+    </article>
+  </div>
+  <div class="tile is-parent">
+    <article class="tile is-child box">
+      <p class="title"><img :src="inventario[7].image" width="100"></p>
+      <p class="subtitle">Subtitle</p>
+    </article>
+  </div>
+  <div class="tile is-parent">
+    <article class="tile is-child box">
+      <p class="title"><img :src="inventario[16].image" width="100"></p>
+      <p class="subtitle">Subtitle</p>
+    </article>
+  </div>
+  <div class="tile is-parent">
+    <article class="tile is-child box">
+      <p class="title"><img :src="inventario[60].image" width="100"></p>
+      <p class="subtitle">Subtitle</p>
+    </article>
+  </div>
+  <div class="tile is-parent">
+    <article class="tile is-child box">
+      <p class="title"><img :src="inventario[60].image" width="100"></p>
+      <p class="subtitle">Subtitle</p>
+    </article>
+  </div> -->
+</div> 
+
+<!-- <div class="tile is-ancestor">
   <div class="tile is-vertical is-9">
     <div class="tile">
       <div class="tile is-parent">
@@ -94,10 +229,10 @@
         </div>
       </div>
     </article>
-  </div>
-</div>
+  </div> 
+</div>-->
 
-<div class="tile is-ancestor">
+<!-- <div class="tile is-ancestor">
   <div class="tile is-parent">
     <article class="tile is-child box">
       <p class="title">Twelve</p>
@@ -125,15 +260,46 @@
       </div>
     </article>
   </div>
-</div>
+</div> -->
+<br/>
+<br/>
 </template>
 
 <script>
+import Inventario from "../json/inventario.json"
 export default {
-    name: 'Global-View'
+    name: 'Global-View',
+    data(){
+      return{
+        inventario: Inventario.data,
+        materiales: [],
+        searchTerm: "",
+        showModal: false,
+        contador: 0,
+      }
+    },
+    mounted(){
+      this.fetchItems();
+      localStorage.setItem("materiales", JSON.stringify(this.inventario));     
+    },
+    computed:{
+        
+    },
+    methods:{
+    setSearchTerm(searchTerm) {
+      console.log(searchTerm);
+      this.searchTerm = searchTerm;
+    },
+    fetchItems() {
+     this.materiales = Inventario.data;
+    },
+    }
 }
 </script>
 
 <style>
-
+.subtitle2 {
+    font-size: 16px;
+    font-weight: bold;
+}
 </style>
