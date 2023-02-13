@@ -3,7 +3,7 @@
       <div class="contact-form">
         <div class="contact-form-header">
           <h2>Préstec de Material</h2>
-          <button @click="closeForm">
+          <button @click="closeForm" class="blanco">
            Tancar<!-- <img src="../assets/close-button.svg" alt="Close modal" />-->
           </button>
         </div>
@@ -41,7 +41,7 @@
             <input type="checkbox" id="private" v-model="contact.private" />
           </div> -->
           <div class="contact-form-item">
-            <button type="submit">Préstec</button>
+            <button type="submit" @submit.prevent="addPrestec">Préstec</button>
           </div>
         </form>
       </div>
@@ -70,8 +70,9 @@
       error.value = true;
       return;
     }
-    console.log(material)
+    //console.log(material)
     emit("add-prestec", material);
+    emit("closeModal", false);
     resetPrestec();
   };
   
@@ -95,7 +96,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(116, 161, 243, 0.5);
     z-index: 10;
   }
   .contact-form {
@@ -105,7 +106,7 @@
     transform: translate(-50%, -50%);
     width: 80%;
     max-width: 500px;
-    background:#ccc;
+    background:#1713e7;
     padding: 20px;
     border-radius: 5px;
     max-height: calc(100vh - 80px);
@@ -126,9 +127,17 @@
   .contact-form-item {
     margin-bottom: 20px;
   }
+  .blanco{
+    color: #fff;
+  }
+  h2{
+    color: #fff;
+    margin-bottom: 10px;
+  }
   .contact-form-item label {
     display: block;
     font-weight: bold;
+    color: #fff;
     margin-bottom: 5px;
   }
   .contact-form-item input,

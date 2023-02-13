@@ -42,7 +42,7 @@
     </div> -->
   </div>
   <footer class="card-footer">
-   <span v-if="!material.prestado" class="card-footer-item"><a @click="prestec(material.numinventari)">Préstec</a></span> 
+   <span v-if="!material.prestado" class="card-footer-item"><a @click="prestec(material.numinventari)">Préstec</a></span>
    <span v-else  class="card-footer-item"> <a @click="tornada" >Tornada</a></span>
     <router-link :to="{name: 'VistaInfo', params: {numinventari:material.numinventari}}"  class="card-footer-item">+ Info</router-link>
   </footer>
@@ -58,24 +58,23 @@ export default {
         },
         data(){
           return{
-            openForm: true,
+ 
           }
         },
   methods:{
-    prestec(numItem, openForm){
+    prestec(numItem){
       console.log("Préstec");
-      console.log("Desde Card: "+numItem);
-      this.$emit("prestec-num", numItem, "open-form",openForm);
+      console.log("Desde Card préstec: "+numItem);
+      this.$emit("prestec-num", numItem);
     },
     formOpen(){
-      this.openForm = true
-      this.$emit("open-form",true);
+      console.log("Desde Card: "+true);
+      this.emit("open-form",true);
     },
     tornada(){
       console.log("Tornada")
-      //console.log("Desde Card: "+numItem);
+      console.log("Desde Card tornada: "+this.material.numinventari);
       this.$emit("tornada-num", this.material.numinventari);
-      
     }
   }
 }

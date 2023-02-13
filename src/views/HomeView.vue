@@ -4,13 +4,12 @@
     <nav-bar></nav-bar>
     <SearchBar v-on:showForm="toggleForm" v-on:search="setSearchTerm"/>
     <div id="contenido">
-   <CardList :inventario="itemListFiltered" v-on:tornada-num="tornada" v-on:open-form="toggleForm" v-on:prestec-num="prestec"/>
+   <CardList :inventario="itemListFiltered" v-on:tornada-num="tornada" v-on:prestec-num="prestec"/>
   </div>
   <FormPrestec
-      v-on:addContact="addContact"
-      v-on:closeModal="toggleForm"
-      v-on:add-prestec="prestec"
       v-if="showModal"
+      v-on:closeModal="toggleForm"
+      v-on:add-prestec="give" 
     />
 </div>
 </template>
@@ -32,6 +31,8 @@ export default {
         materiales: [],
         searchTerm: "",
         showModal: false,
+        numinventari: ""
+
       }
 
     },
@@ -52,6 +53,7 @@ export default {
           );
           });
         }
+       
         return this.materiales;
       },
     },
@@ -67,55 +69,84 @@ export default {
       this.showModal = !this.showModal;
     },
     tornada(item) {
-      // crea un nuevo objeto `Date`
+      //crea un nuevo objeto `Date`
       var today = new Date();
-      // `getDate()` devuelve el día del mes (del 1 al 31)
+      //`getDate()` devuelve el día del mes (del 1 al 31)
       var day = today.getDate();
-      // `getMonth()` devuelve el mes (de 0 a 11)
+      //`getMonth()` devuelve el mes (de 0 a 11)
       var month = today.getMonth() + 1;
-      // `getFullYear()` devuelve el año completo
-       var year = today.getFullYear();
-      // muestra la fecha de hoy en formato `MM/DD/YYYY`
+      //`getFullYear()` devuelve el año completo
+      var year = today.getFullYear();
+      //muestra la fecha de hoy en formato `MM/DD/YYYY`
       //console.log(`${month}/${day}/${year}`);
-      console.log("Desde Home: " +item)
-      console.log(this.materiales);
-      for(let i= 0; this.materiales.length; i++){
-        if(this.inventario[i].numinventari === item){ //0
-          this.materiales[i].ubicacio = "Unitat de Cremats"; //1
-          this.materiales[i].extensio = "3856" //2
-          this.materiales[i].estado = "Disponible";//7
-          this.materiales[i].prestado = false;//8
-          this.materiales[i].dateout = "";//9
-          this.materiales[i].datein = (`${month}/${day}/${year}`);//10
+      console.log("Desde Home tornada: " +item)
+      this.numinventari = item;
+      this.materiales.map(function(element) {
+        if(element.numinventari== item){
+          return element.ubicacio = "Unitat de Cremats",
+              element.extensio = "3856" ,
+              element.estado = "Disponible",
+              element.prestado = false,
+              element.dateout="",
+              element.datein = (`${day}/${month}/${year}`);
         }
-        if(this.materiales[i].estado == false){
-            this.materiales[i].dateout = "";
-          }
-
-        }
-      /*this.materiales = this.materiales.filter(
-        (item) => item.numinventari !== numItem
-      );*/
+      });      
     },
     prestec(item) {
-      console.log("Desde Home: "+item)
-      for(let i= 0; this.materiales.length; i++){
-        if(this.materiales[i].numinventari == item.numinventari){ //0
-          this.materiales[i].ubicacio = item.ubicacio; //1
-          this.materiales[i].extensio = item.extensio //2
-          this.materiales[i].prestado = true;//8
-          this.materiales[i].dateout = item.dateout;//9
+      this.showModal = true;
+      localStorage.setItem("num", item);
+      console.log("LocalStorage: "+localStorage.getItem("num"));
+
+
+      //crea un nuevo objeto `Date`
+     // var today = new Date();
+      //`getDate()` devuelve el día del mes (del 1 al 31)
+      //var day = today.getDate();
+      //`getMonth()` devuelve el mes (de 0 a 11)
+      //var month = today.getMonth() + 1;
+      //`getFullYear()` devuelve el año completo
+      //var year = today.getFullYear();
+      //muestra la fecha de hoy en formato `MM/DD/YYYY`
+      //console.log(`${month}/${day}/${year}`);
+      //console.log(item)
+      console.log("prestec: "+item)
+      return item;
+      /*this.materiales.map(function(element) {
+        if(element.numinventari == item){
+          return element.ubicacio = "PRUEBA",
+              element.extensio = "3856",
+              element.estado = "No Disponible",
+              element.prestado = true,
+              element.dateout="",
+              element.datein = (`${day}/${month}/${year}`);
         }
-        if(this.materiales[i].ubicacio == item.ubicacio) {
-            this.materiales[i].estado = "En Manteniment";//7
-          } else if (this.materiales[i].prestado == false){
-            this.materiales[i].estado = "Disponible";//7
+      });      */
+    },
+    give(items){
+      console.log(items);
+      console.log(localStorage.getItem("num"));
+      console.log("NUM: "+localStorage.getItem("num"));
+      let estado = null;
+      this.materiales.map(function(element) {
+        if(element.numinventari == localStorage.getItem("num")){
+          if(items.ubicacio == "Tallers"){
+           estado = "En Manteniment"
           }
-        if(this.materiales[i].estado == false){
-            this.materiales[i].datein = "";
+          if(items.ubicacio != "Tallers"){
+           estado = "No Disponible"
           }
+          if(items.ubicacio)
+          return element.ubicacio =  items.ubicacio,
+              element.extensio = items.extensio,
+              element.estado = estado,
+              element.prestado = true,
+              element.dateout=items.dataout,
+              element.datein = "";
         }
+      });      
+      return items;
     }
+
     
     },
     

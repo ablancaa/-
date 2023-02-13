@@ -1,14 +1,16 @@
 <template>
   <div class="lista-material">
     <div v-for="material in inventario" :key="material.numinventari">
-        <MaterialCard :material="material" v-on:tornada-num="tornada" v-on:prestec-num="prestec" v-on:open-form="openForm"/>
+        <MaterialCard :material="material" v-on:tornada-num="tornada" v-on:open-form="openForm" v-on:prestec-num="prestec" />
     </div>
 </div>
 </template>
 
 <script>
 import MaterialCard from '@/components/Card.vue'
+
 export default {
+    
     name: 'Card-List',
     components:{ MaterialCard },
     props: {
@@ -16,18 +18,18 @@ export default {
         },
     methods:{
         tornada(numItem) {
-        console.log("Desde CardList: "+numItem);
-        this.$emit("tornada-num",numItem);
+            console.log("Desde CardList: "+numItem);
+            this.$emit("tornada-num",numItem);
+        },
+        openForm(openForm){
+            console.log("Desde CardList: "+openForm);
+            this.$emit("open-form",true);
+        },
+        prestec(numItem) {
+            console.log("Desde CardList: "+numItem);
+            this.$emit("prestec-num", numItem);
         
-    },
-    openForm(){
-        this.$emit("open-form",true);
-    },
-    prestec(numItem, openForm) {
-        console.log("Desde CardList: "+numItem);
-        this.$emit("prestec-num", numItem, "open-form",openForm);
-        
-    },
+        },
     }
 
 }
