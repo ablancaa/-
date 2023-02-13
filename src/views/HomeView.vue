@@ -44,7 +44,8 @@ export default {
               item.title.toLowerCase().includes(this.searchTerm.toLowerCase()) ||
               item.estado.toLowerCase().includes(this.searchTerm.toLowerCase()) ||
               item.ubicacio.toLowerCase().includes(this.searchTerm.toLowerCase()) ||
-              item.numinventari.includes(this.searchTerm) 
+              item.numinventari.includes(this.searchTerm) ||
+              item.extensio.includes(this.searchTerm)
           );
           });
         }

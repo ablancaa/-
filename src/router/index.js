@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import VistaCards from '../views/VistaCards.vue'
 import VistaInfo from '../views/VistaInfo.vue'
+import GlobalView from '../views/GlobalView.vue'
 
 const routes = [
   {
@@ -18,6 +19,11 @@ const routes = [
     path: '/VistaInfo/:numinventari',
     name: 'VistaInfo',
     component: VistaInfo
+  },
+  {
+    path: '/GlobalView',
+    name: 'GlobalView',
+    component: GlobalView
   },
   {
     path: '/about',

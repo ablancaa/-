@@ -1,7 +1,8 @@
 <template>
     <div class="search">
-      <div class="search-wrapper">
-        <input type="text" v-model="search" placeholder="Cerca el material" />
+      <div class="search-wrapper input-group">
+        <input type="text" v-model="search" placeholder="Cerca el material"/>
+        <!-- <label for="">Cerca el  material</label> -->
         <button class="clear" v-if="search.length" @click="clearSearch">
           Esborrar
         </button>
@@ -26,6 +27,9 @@
   });
   </script>
   <style scoped>
+  .input-group {
+  position: relative;
+}
   .search {
     width: 100%;
     padding: 15px;
@@ -41,11 +45,13 @@
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    background: white;
     font-size: 16px;
     margin: 0 auto;
     max-width: 500px;
     width: 500px;
     border-radius: 10px;
+    transition:  150ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .search button {
     margin-left: 10px;
@@ -57,5 +63,23 @@
     background: blue;
     color: #fff;
   }
+
+  label{
+    position: absolute;
+    left:30px;
+    margin-top:-5px;
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: 150ms cubic-bezier(0.4, 0, 0,2, 1);
+  }
+  input:focus{
+    outline: none;
+    border: 1.5px solid blue;
+  }
+  /*input:focus ~ label{
+    transform:  translateY(-50%) scale(0.8);
+    padding: 0 0.2rem;
+    color: blue;
+  }*/
   </style>
   

@@ -31,8 +31,8 @@
           <p><strong>Núm.Inventari: </strong><span class="letraGrande">{{ material.numinventari }}</span></p>
           <p><strong>Ubicació: </strong>{{ material.ubicacio }}</p>
           <p><strong>Extensió: </strong><span class="letraExtension">{{ material.extensio }}</span></p>
-          <p><strong>Data Out: </strong><span class="letraData">{{ material.dateout }}</span><br/>
-            <strong>Data In: </strong><span class="letraData">{{ material.datein }}</span></p>
+          <strong>Sortida: </strong><span class="letraData">{{ material.dateout }}</span><br/>
+          <strong>Entrada: </strong><span class="letraData">{{ material.datein }}</span>
         
         </div>
          
@@ -98,6 +98,21 @@ export default {
 </script>
 
 <style>
+
+.salida{
+  margin-right: 4px;
+  float: left;
+  margin-top: 5px;
+}
+.salida2{
+  margin-right: 4px; 
+  position: fixed;
+  margin-top: -95px;
+}
+.entrada2{
+  margin-right: 4px; 
+}
+
 .card-footer-item {
   background: rgb(236, 236, 245);
   
@@ -148,7 +163,7 @@ export default {
 }
 
 header{
-  border-radius: 80px;
+  border-radius: 0px 0px 80px 0px;
 }
 
 .bordeRojo{

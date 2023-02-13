@@ -5,7 +5,6 @@
   <div>
     <table>
       <tr>
-      <td></td>
       <td> <strong>IMAGE</strong> </td>
       <td> <strong>TITLE</strong> </td>
       <td> <strong>- ESTAT - INVENTARI</strong> </td>
@@ -14,6 +13,7 @@
       <td> <strong>DIES FORA</strong> </td>
       <td> <strong>UBICACIÓ</strong> </td>
       <td> <strong>EXTENSIÓ</strong> </td>
+      <td></td>
   </tr>
   </table>
 <table v-for="(item, index) in itemListFiltered" :key="index" v-on:tornadaNum="tornada">
@@ -151,7 +151,8 @@ export default {
               item.title.toLowerCase().includes(this.searchTerm.toLowerCase()) ||
               item.estado.toLowerCase().includes(this.searchTerm.toLowerCase()) ||
               item.numinventari.includes(this.searchTerm) ||
-              item.ubicacio.includes(this.searchTerm)
+              item.ubicacio.includes(this.searchTerm) ||
+              item.extensio.includes(this.searchTerm)
           );
           });
         }
@@ -178,16 +179,12 @@ table{
 
 .btn {
 /* Color del texo */
-
 color: #0099CC;
 /* Eliminar color de fondo */
-
 background: transparent;
 /* Grosor del borde, estilo de línea y color */
-
 border: 2px solid blue;
 /* Añadir esquinas curvadas */
-
 border-radius: 6px;
 /* Poner texto en mayúsculas */
 

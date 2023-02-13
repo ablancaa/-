@@ -21,7 +21,9 @@
       <span class="navbar-item">
         <router-link to="/VistaCards"><span class="color">Llistat</span></router-link>
       </span>
-
+      <span class="navbar-item">
+        <router-link to="/GlobalView"><span class="color">Global</span></router-link>
+      </span>
       <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">
           <span class="color">Més</span>
