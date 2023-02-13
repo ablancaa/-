@@ -144,14 +144,14 @@
     max-width: 500px;
     background:#1713e7;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     max-height: calc(100vh - 80px);
     overflow-y: auto;
   }
   .contact-form-header button {
     position: absolute;
     top: 10px;
-    right: 10px;
+    right: 20px;
     background: transparent;
     border: 0;
     padding: 0;
@@ -186,12 +186,14 @@
     max-width: 300px;
   }
   .contact-form-item button {
-    background: #4caf50;
+    background: rgb(85, 192, 219);
     color: #fff;
     padding: 10px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    color: white;
+
   }
   .error {
     color: red;

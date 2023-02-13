@@ -59,8 +59,8 @@
     </div> -->
   </div>
   <footer class="card-footer">
-   <span v-if="!material.prestado" class="card-footer-item"><a @click="prestec(material.numinventari)">Préstec</a></span>
-   <span v-else  class="card-footer-item"> <a @click="tornada" >Tornada</a></span>
+   <span v-if="!material.prestado" class="card-footer-item textoBlanco"><a @click="prestec(material.numinventari)">Préstec</a></span>
+   <span v-else  class="card-footer-item"> <a @click="tornada">Tornada</a></span>
     <router-link :to="{name: 'VistaInfo', params: {numinventari:material.numinventari}}"  class="card-footer-item">+ Info</router-link>
   </footer>
 </div>
@@ -98,7 +98,20 @@ export default {
 </script>
 
 <style>
-
+.card-footer-item {
+  background: rgb(236, 236, 245);
+  
+}
+.textoBlanco {
+  color: white;
+}
+.card-footer-item:hover a:hover {
+  color: white;
+}
+.card-footer-item:hover {
+  background:blue;
+  color: hsl(0, 0%, 100%);
+}
 .colorEstadoRojo{
   background: red;
   margin-right: 5px;
