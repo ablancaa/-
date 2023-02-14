@@ -322,8 +322,8 @@
             "video": "https://www.youtube.com/embed/LQJIr6ubMtA",
             "estado": "En Manteniment",
             "prestado": true,
-            "dateout": "11/01/2022",
-            "datein": "11/01/2022"
+            "dateout": "09/01/2022",
+            "datein": ""
         },
         {
             "numinventari": "1116880",
@@ -518,7 +518,7 @@
             "estado": "En Manteniment",
             "prestado": true,
             "dateout": "11/01/2022",
-            "datein": "11/01/2022"
+            "datein": ""
         },
         {
             "numinventari": "1116351",
@@ -530,8 +530,8 @@
             "video": "https://www.youtube.com/embed/LQJIr6ubMtA",
             "estado": "En Manteniment",
             "prestado": true,
-            "dateout": "11/01/2022",
-            "datein": "11/01/2022"
+            "dateout": "25/05/2022",
+            "datein": ""
         },
         {
             "numinventari": "1118918",
@@ -543,8 +543,8 @@
             "video": "https://www.youtube.com/embed/LQJIr6ubMtA",
             "estado": "En Manteniment",
             "prestado": true,
-            "dateout": "11/01/2022",
-            "datein": "11/01/2022"
+            "dateout": "21/10/2022",
+            "datein": ""
         },
         {
             "numinventari": "1116165",
@@ -554,10 +554,10 @@
             "image": "http://clarys.ddns.net/ImgVueInventario/Bomba_volumetrica_Alaris.png",
             "info": "Sistemas de Bomba de infusión volumétrica, fiables, sencillos, versátiles y flexibles para infusión de soluciones IV de grandes volúmenes.",
             "video": "https://www.youtube.com/embed/LQJIr6ubMtA",
-            "estado": "Disponible",
-            "prestado": false,
+            "estado": "En Manteniment",
+            "prestado": true,
             "dateout": "11/01/2022",
-            "datein": "11/01/2022"
+            "datein": ""
         },
         {
             "numinventari": "1116852",
@@ -567,10 +567,10 @@
             "image": "http://clarys.ddns.net/ImgVueInventario/Bomba_volumetrica_Alaris.png",
             "info": "Sistemas de Bomba de infusión volumétrica, fiables, sencillos, versátiles y flexibles para infusión de soluciones IV de grandes volúmenes.",
             "video": "https://www.youtube.com/embed/LQJIr6ubMtA",
-            "estado": "Disponible",
-            "prestado": false,
-            "dateout": "11/01/2022",
-            "datein": "11/01/2022"
+            "estado": "En Manteniment",
+            "prestado": true,
+            "dateout": "15/06/2022",
+            "datein": ""
         },
         {
             "numinventari": "1116879",
@@ -580,10 +580,10 @@
             "image": "http://clarys.ddns.net/ImgVueInventario/Bomba_volumetrica_Alaris.png",
             "info": "Sistemas de Bomba de infusión volumétrica, fiables, sencillos, versátiles y flexibles para infusión de soluciones IV de grandes volúmenes.",
             "video": "https://www.youtube.com/embed/LQJIr6ubMtA",
-            "estado": "Disponible",
-            "prestado": false,
-            "dateout": "11/01/2022",
-            "datein": "11/01/2022"
+            "estado": "En Manteniment",
+            "prestado": true,
+            "dateout": "24/03/2022",
+            "datein": ""
         },
         {
             "numinventari": "1116888",
@@ -595,8 +595,8 @@
             "video": "https://www.youtube.com/embed/LQJIr6ubMtA",
             "estado": "En Manteniment",
             "prestado": true,
-            "dateout": "11/01/2022",
-            "datein": "11/01/2022"
+            "dateout": "12/12/2022",
+            "datein": ""
         },
         {
             "numinventari": "1116360",
@@ -652,16 +652,16 @@
         },
         {
             "numinventari": "1120020",
-            "ubicacio": "Unitat de Cremats",
-            "extensio": "3856",
+            "ubicacio": "Planta 3 Parells",
+            "extensio": "3332",
             "title": "Bomba Volumétrica de jeringa Alaris",
             "image": "http://clarys.ddns.net/ImgVueInventario/Bomba_volumetrica_jeringa_Alaris.png",
             "info": "Sistemas de Bomba de jeringa de alta precisión, fiables para la administración de todo tipo de fármacos por vía IV, así como para transfusión de sangre.",
             "video": "https://www.youtube.com/embed/LQJIr6ubMtA",
-            "estado": "Disponible",
-            "prestado": false,
-            "dateout": "11/01/2022",
-            "datein": "11/01/2022"
+            "estado": "No Disponible",
+            "prestado": true,
+            "dateout": "06/06/2022",
+            "datein": ""
         },
         {
             "numinventari": "1120011",

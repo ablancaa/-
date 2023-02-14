@@ -7,10 +7,10 @@
       <p class="subtitle"><strong class="subtitle2">{{inventario[0].title}}</strong></p>
       <div class="content">
         <br/>
-        <p><strong>Total Unitats:</strong> {{this.contador}}<br/>
-            <strong>Disponibles:</strong>  23 <br/>
-            <strong> No disponibles:</strong> 8 <br/>
-            <strong>En Manteniment:</strong> 5
+        <p><strong>Total Unitats:</strong> {{contadoresTotales}}<br/>
+            <img src="../assets/ico/Disponible.png" width="20"/> <strong>Disponibles:</strong>  23 <br/>
+            <img src="../assets/ico/NoDisponible.png" width="20"/> <strong> No disponibles:</strong> 8 <br/>
+            <img src="../assets/ico/Mantenimiento.png" width="20"/> <strong>En Manteniment:</strong> 5
          </p>
       </div>
       
@@ -22,9 +22,9 @@
       <p class="subtitle"><strong class="subtitle2">{{inventario[7].title}}</strong></p>
       <div class="content">
         <p><strong>Total Unitats:</strong> {{this.contador}}<br/>
-            <strong>Disponibles:</strong>  23 <br/>
-            <strong> No disponibles:</strong> 8 <br/>
-            <strong>En Manteniment:</strong> 5
+            <img src="../assets/ico/Disponible.png" width="20"/> <strong>Disponibles:</strong>  23 <br/>
+            <img src="../assets/ico/NoDisponible.png" width="20"/> <strong> No disponibles:</strong> 8 <br/>
+            <img src="../assets/ico/Mantenimiento.png" width="20"/> <strong>En Manteniment:</strong> 5
          </p>
       </div>
     </article>
@@ -35,9 +35,9 @@
       <p class="subtitle"><strong class="subtitle2">{{inventario[16].title}}</strong></p>
       <div class="content">
         <p><strong>Total Unitats:</strong> {{this.contador}}<br/>
-            <strong>Disponibles:</strong>  23 <br/>
-            <strong> No disponibles:</strong> 8 <br/>
-            <strong>En Manteniment:</strong> 5
+            <img src="../assets/ico/Disponible.png" width="20"/> <strong>Disponibles:</strong>  23 <br/>
+            <img src="../assets/ico/NoDisponible.png" width="20"/> <strong> No disponibles:</strong> 8 <br/>
+            <img src="../assets/ico/Mantenimiento.png" width="20"/> <strong>En Manteniment:</strong> 5
          </p>
       </div>
     </article>
@@ -48,9 +48,9 @@
       <p class="subtitle"><strong class="subtitle2">{{inventario[60].title}}</strong></p>
       <div class="content">
         <p><strong>Total Unitats:</strong> {{this.contador}}<br/>
-            <strong>Disponibles:</strong>  23 <br/>
-            <strong> No disponibles:</strong> 8 <br/>
-            <strong>En Manteniment:</strong> 5
+            <img src="../assets/ico/Disponible.png" width="20"/> <strong>Disponibles:</strong>  23 <br/>
+            <img src="../assets/ico/NoDisponible.png" width="20"/> <strong> No disponibles:</strong> 8 <br/>
+            <img src="../assets/ico/Mantenimiento.png" width="20"/> <strong>En Manteniment:</strong> 5
          </p>
       </div>
     </article>
@@ -61,9 +61,9 @@
       <p class="subtitle"><strong class="subtitle2">{{inventario[65].title}}</strong></p>
       <div class="content">
         <p><strong>Total Unitats:</strong> {{this.contador}}<br/>
-            <strong>Disponibles:</strong>  23 <br/>
-            <strong> No disponibles:</strong> 8 <br/>
-            <strong>En Manteniment:</strong> 5
+            <img src="../assets/ico/Disponible.png" width="20"/> <strong>Disponibles:</strong>  23 <br/>
+            <img src="../assets/ico/NoDisponible.png" width="20"/> <strong> No disponibles:</strong> 8 <br/>
+            <img src="../assets/ico/Mantenimiento.png" width="20"/> <strong>En Manteniment:</strong> 5
          </p>
       </div>
     </article>
@@ -76,9 +76,9 @@
       <p class="subtitle"><strong class="subtitle2">{{inventario[66].title}}</strong></p>
       <div class="content">
         <p><strong>Total Unitats:</strong> {{this.contador}}<br/>
-            <strong>Disponibles:</strong>  23 <br/>
-            <strong> No disponibles:</strong> 8 <br/>
-            <strong>En Manteniment:</strong> 5
+            <img src="../assets/ico/Disponible.png" width="20"/> <strong>Disponibles:</strong>  23 <br/>
+            <img src="../assets/ico/NoDisponible.png" width="20"/> <strong> No disponibles:</strong> 8 <br/>
+            <img src="../assets/ico/Mantenimiento.png" width="20"/> <strong>En Manteniment:</strong> 5
          </p>
       </div>
     </article>
@@ -89,9 +89,9 @@
       <p class="subtitle"><strong class="subtitle2">{{inventario[68].title}}</strong></p>
       <div class="content">
         <p><strong>Total Unitats:</strong> {{this.contador}}<br/>
-            <strong>Disponibles:</strong>  23 <br/>
-            <strong> No disponibles:</strong> 8 <br/>
-            <strong>En Manteniment:</strong> 5
+            <img src="../assets/ico/Disponible.png" width="20"/> <strong>Disponibles:</strong>  23 <br/>
+            <img src="../assets/ico/NoDisponible.png" width="20"/> <strong> No disponibles:</strong> 8 <br/>
+            <img src="../assets/ico/Mantenimiento.png" width="20"/> <strong>En Manteniment:</strong> 5
          </p>
       </div>
     </article>
@@ -102,9 +102,9 @@
       <p class="subtitle"><strong class="subtitle2">{{inventario[71].title}}</strong></p>
       <div class="content">
         <p><strong>Total Unitats:</strong> {{this.contador}}<br/>
-            <strong>Disponibles:</strong>  23 <br/>
-            <strong> No disponibles:</strong> 8 <br/>
-            <strong>En Manteniment:</strong> 5
+            <img src="../assets/ico/Disponible.png" width="20"/> <strong>Disponibles:</strong>  23 <br/> 
+            <img src="../assets/ico/NoDisponible.png" width="20"/> <strong> No disponibles:</strong> 8 <br/>
+            <img src="../assets/ico/Mantenimiento.png" width="20"/> <strong>En Manteniment:</strong> 5
          </p>
       </div>
     </article>
@@ -115,9 +115,9 @@
       <p class="subtitle"><strong class="subtitle2">{{inventario[77].title}}</strong></p>
       <div class="content">
         <p><strong>Total Unitats:</strong> {{this.contador}}<br/>
-            <strong>Disponibles:</strong>  23 <br/>
-            <strong> No disponibles:</strong> 8 <br/>
-            <strong>En Manteniment:</strong> 5
+            <img src="../assets/ico/Disponible.png" width="20"/> <strong>Disponibles:</strong>  23 <br/>
+            <img src="../assets/ico/NoDisponible.png" width="20"/> <strong> No disponibles:</strong> 8 <br/>
+            <img src="../assets/ico/Mantenimiento.png" width="20"/> <strong>En Manteniment:</strong> 5
          </p>
       </div>
     </article>
@@ -263,6 +263,7 @@
 </div> -->
 <br/>
 <br/>
+{{ contadoresTotales }}
 </template>
 
 <script>
@@ -283,7 +284,10 @@ export default {
       localStorage.setItem("materiales", JSON.stringify(this.inventario));     
     },
     computed:{
-        
+        contadoresTotales(){
+            let contador = this.contadoresIndividuales();
+            return contador
+        },
     },
     methods:{
     setSearchTerm(searchTerm) {
@@ -292,6 +296,66 @@ export default {
     },
     fetchItems() {
      this.materiales = Inventario.data;
+    },
+    contadoresIndividuales(){
+        if (this.materiales > 0) {
+          return this.materiales.filter((item) => {
+            if(item.title=="Bomba FreeGo Abbott"){
+               this.contador++ 
+               return this.materiales.map("Bomba FreeGo Abbott").length 
+            }
+            return (
+                this.materiales.map("Bomba FreeGo Abbott").length 
+            );
+          });
+        }
+
+        return this.materiales.length;
+        /*
+        let array = [];
+        //array = this.materiales.map(element => element == 'Bomba FreeGo Abbott')
+        for (let i = 0; i< this.materiales.length; i++){
+            if(this.materiales[i+1].title == "Bomba FreeGo Abbott"){
+                array[i] = this.materiales[i];
+                console.log("Se repite "+this.materiales[i].prestado);
+                this.contador++;
+            }
+        }
+        console.log(array.length)
+        return array.length
+        */
+        //let prefijos = ["super", "spider", "ant", "iron"]
+        //let sufijo = "man";
+        //let arrayBusqueda = this.materiales.map(item => item == "Bomba FreeGo Abbott");
+        //console.log(arrayBusqueda[0]);
+        //let nombresCompletos = prefijos.map(prefijo => prefijo + sufijo);
+       // let nombresReales = this.materiales.map(item => {
+       // if (item.title == "Bomba FreeGo Abbott"){
+           //console.log("Dentro if"); 
+         //  return console.log(item.title)
+       // }
+       // }
+        //);
+        //return nombresReales.map(item => item == "Bomba FreeGo Abbott");
+        //console.log(nombresReales.length)
+        
+        // ["superman", "spiderman", "antman", "ironman"]
+       /* this.materiales.map(function(element) {
+            if(element.title == "Bomba FreeGo Abbott") {
+                console.log(element.title)  
+            }
+            return this.contador;
+        });   */   
+       
+        /*for (let i = 0; i< this.materiales.length; i++){
+            if(this.materiales[i+1].title == "Bomba FreeGo Abbott"){
+                console.log("Se repite "+this.materiales[i].prestado)
+                this.contador++;
+              
+            } 
+            console.log("Contador: "+this.contador)
+            
+        }*/       
     },
     }
 }

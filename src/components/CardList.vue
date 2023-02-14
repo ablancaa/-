@@ -1,8 +1,10 @@
 <template>
+<div class="container">
   <div class="lista-material">
-    <div v-for="material in inventario" :key="material.numinventari">
+    <div v-for="material in inventario" :key="material.numinventari" class="container">
         <MaterialCard :material="material" v-on:tornada-num="tornada" v-on:open-form="openForm" v-on:prestec-num="prestec" />
     </div>
+  </div>
 </div>
 </template>
 
@@ -40,5 +42,6 @@ export default {
     display: grid;
     width: 100%;
     grid-template-columns: 1fr 1fr 1fr;
+    
 }
 </style>

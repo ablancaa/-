@@ -1,4 +1,5 @@
 <template>
+  <div class="container">
   <div class="card">
   <header class="card-header">
     <img :src="material.image" width="100">
@@ -69,6 +70,7 @@
   </footer>
 </div>
 <br/>
+</div>
 </template>
 
 <script>

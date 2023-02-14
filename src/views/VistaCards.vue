@@ -151,7 +151,7 @@ export default {
               item.title.toLowerCase().includes(this.searchTerm.toLowerCase()) ||
               item.estado.toLowerCase().includes(this.searchTerm.toLowerCase()) ||
               item.numinventari.includes(this.searchTerm) ||
-              item.ubicacio.includes(this.searchTerm) ||
+              item.ubicacio.toLowerCase().includes(this.searchTerm.toLowerCase()) ||
               item.extensio.includes(this.searchTerm)
           );
           });

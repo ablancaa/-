@@ -1,12 +1,11 @@
 <template>
- <cabecera/>
-
-
-<div id="contenido">
+<div class="container">
+  <cabecera/>
   <NavBar/>
-  <router-view/>
+    <router-view/>
+  <Pie/>
 </div>
-<Pie/>
+
 </template>
 <script>
 import Cabecera from '@/components/Cabecera.vue'
@@ -47,5 +46,5 @@ nav a.router-link-exact-active {
   color: #42b983;
 }
 
-#contenido { width: 1150px; margin: 0 auto; }
+
 </style>

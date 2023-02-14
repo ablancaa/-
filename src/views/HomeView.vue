@@ -1,7 +1,6 @@
 <template>
-  <div class="home">
+  <div class="container">
     <SearchBar v-on:showForm="toggleForm" v-on:search="setSearchTerm"/>
-    <div id="contenido">
    <CardList :inventario="itemListFiltered" v-on:tornada-num="tornada" v-on:prestec-num="prestec"/>
   </div>
   <FormPrestec
@@ -9,7 +8,6 @@
       v-on:closeModal="toggleForm"
       v-on:add-prestec="give" 
     />
-</div>
 </template>
 
 <script>
@@ -91,31 +89,8 @@ export default {
       this.showModal = true;
       localStorage.setItem("num", item);
       console.log("LocalStorage: "+localStorage.getItem("num"));
-
-
-      //crea un nuevo objeto `Date`
-     // var today = new Date();
-      //`getDate()` devuelve el día del mes (del 1 al 31)
-      //var day = today.getDate();
-      //`getMonth()` devuelve el mes (de 0 a 11)
-      //var month = today.getMonth() + 1;
-      //`getFullYear()` devuelve el año completo
-      //var year = today.getFullYear();
-      //muestra la fecha de hoy en formato `MM/DD/YYYY`
-      //console.log(`${month}/${day}/${year}`);
-      //console.log(item)
       console.log("prestec: "+item)
       return item;
-      /*this.materiales.map(function(element) {
-        if(element.numinventari == item){
-          return element.ubicacio = "PRUEBA",
-              element.extensio = "3856",
-              element.estado = "No Disponible",
-              element.prestado = true,
-              element.dateout="",
-              element.datein = (`${day}/${month}/${year}`);
-        }
-      });      */
     },
     give(items){
       //crea un nuevo objeto `Date`
