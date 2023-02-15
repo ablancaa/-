@@ -4,6 +4,7 @@ import VistaCards from '../views/VistaCards.vue'
 import VistaListaEspecifica from '../views/VistaListaEspecifica.vue'
 import VistaInfo from '../views/VistaInfo.vue'
 import GlobalView from '../views/GlobalView.vue'
+import Instrucciones from '../views/Instrucciones.vue'
 
 const routes = [
   {
@@ -30,6 +31,11 @@ const routes = [
     path: '/GlobalView',
     name: 'GlobalView',
     component: HomeView
+  },
+  {
+    path: '/Instrucciones',
+    name: 'Instrucciones',
+    component: Instrucciones
   },
   {
     path: '/about',
