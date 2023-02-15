@@ -270,7 +270,7 @@ export default {
     contadoresIndividuales(){
       for(let i = 0; i < this.materiales.length; i++){
         
-      
+       
           switch(this.materiales[i].title){
             case 'Bomba FreeGo Abbott':
             this.contadorTotales++;
@@ -292,24 +292,31 @@ export default {
             break;
 
             case 'Bis Aspect Medical Systems':
-            this.contadorTotales=0;
+              //contador de totales
+            if(this.contadorTotales < 0){
+                this.contadorTotales=0;
+            } else {
+             // this.contadores[1].TotalUnitats = this.contadorTotales;
+            }
+                this.contadorTotales = 0;
+                this.contadorTotales++;
             switch(this.materiales[i].estado){
                 case 'Disponible':
-                this.contadorDisponible=0;
+                this.contadorDisponible = 0;
                 this.contadorDisponible++;
-                this.contadores[1].TotalUnitats = this.contadorDisponible + this.contadorNoDisponible + this.contadorEnManteniment;
+                this.contadores[1].TotalUnitats = this.contadorTotales;
                 this.contadores[1].Disponible = this.contadorDisponible;
                 break;
                 case 'No Disponible':
                 this.contadorNoDisponible = 0;
                 this.contadorNoDisponible++;
-                this.contadores[1].TotalUnitats = this.contadorNoDisponible;
+                this.contadores[1].TotalUnitats = this.contadores[1].TotalUnitats + this.contadorNoDisponible;
                 this.contadores[1].NoDisponible = this.contadorNoDisponible;
                 break;
                 case 'En Manteniment':
                 this.contadorEnManteniment = 0;
                 this.contadorEnManteniment++;
-                this.contadores[1].TotalUnitats = this.contadorEnManteniment;
+                this.contadores[1].TotalUnitats = this.contadores[1].TotalUnitats + this.contadorEnManteniment;
                 this.contadores[1].EnManteniment = this.contadorEnManteniment;
                 break;
                 default: this.contadorTotales = 0;
