@@ -24,17 +24,42 @@
       <span class="navbar-item">
         <router-link to="/VistaCards"><span class="color">Llistat</span></router-link>
       </span>
+     
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          <span class="color">Administració</span>
+        </a>
+
+        <div class="navbar-dropdown">
+          <span class="navbar-item">
+            <router-link to="/Instrucciones"><span class="color">Afegir material</span></router-link> 
+          </span>
+          <a class="navbar-item">
+            <span class="color"> </span>
+          </a>
+          <hr class="navbar-divider">
+          <a class="navbar-item">
+            <span class="color"> Eliminar material</span>
+          </a>
+          <hr class="navbar-divider">
+          <a class="navbar-item">
+            <span class="color">Afegir usuari</span>
+          </a>
+          
+        </div>
+       
+      </div>
       <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">
           <span class="color">Més</span>
         </a>
 
         <div class="navbar-dropdown">
+          <span class="navbar-item">
+            <router-link to="/Instrucciones"><span class="color">Instruccions</span></router-link> 
+          </span>
           <a class="navbar-item">
-            <span class="color">Instruccions</span> 
-          </a>
-          <a class="navbar-item">
-            <span class="color"> Operatives </span>
+            <span class="color"> Llistat telefonic </span>
           </a>
           <a class="navbar-item">
             <span class="color"> Contacte</span>
@@ -42,9 +67,10 @@
           <hr class="navbar-divider">
           <a class="navbar-item">
             <span class="color">Reporta un problema</span>
-            
           </a>
+          
         </div>
+       
       </div>
     </div>
 
