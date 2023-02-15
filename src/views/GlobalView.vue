@@ -8,10 +8,10 @@
       <p class="subtitle"><strong class="subtitle2">{{inventario[0].title}}</strong></p>
       <div class="content">
         <br/>
-        <p><strong>Total Unitats:</strong> {{contadoresTotales}}<br/>
-            <img src="../assets/ico/Disponible.png" width="20"/> <strong>Disponibles:</strong>  23 <br/>
-            <img src="../assets/ico/NoDisponible.png" width="20"/> <strong> No disponibles:</strong> 8 <br/>
-            <img src="../assets/ico/Mantenimiento.png" width="20"/> <strong>En Manteniment:</strong> 5
+        <p><strong>Total Unitats: </strong><span>{{ this.contadores[0].TotalUnitats }}</span><br/>
+            <img src="../assets/ico/Disponible.png" width="20"/> <strong>Disponibles: </strong><span>{{ this.contadores[0].Disponible }}</span> <br/>
+            <img src="../assets/ico/NoDisponible.png" width="20"/> <strong> No disponibles: </strong><span> {{ this.contadores[0].NoDisponible }}</span><br/>
+            <img src="../assets/ico/Mantenimiento.png" width="20"/> <strong>En Manteniment: </strong><span>{{ this.contadores[0].EnManteniment }}</span> 
          </p>
       </div>
     </article>
@@ -24,10 +24,10 @@
       <p class="title"><img :src="inventario[7].image" width="100"></p>
       <p class="subtitle"><strong class="subtitle2">{{inventario[7].title}}</strong></p>
       <div class="content">
-        <p><strong>Total Unitats:</strong> {{this.contador}}<br/>
-            <img src="../assets/ico/Disponible.png" width="20"/> <strong>Disponibles:</strong>  23 <br/>
-            <img src="../assets/ico/NoDisponible.png" width="20"/> <strong> No disponibles:</strong> 8 <br/>
-            <img src="../assets/ico/Mantenimiento.png" width="20"/> <strong>En Manteniment:</strong> 5
+        <p><strong>Total Unitats: </strong><span>{{ this.contadores[1].TotalUnitats }}</span><br/>
+            <img src="../assets/ico/Disponible.png" width="20"/> <strong>Disponibles: </strong><span>{{ this.contadores[1].Disponible }}</span><br/>
+            <img src="../assets/ico/NoDisponible.png" width="20"/> <strong> No disponibles: </strong><span>{{ this.contadores[1].NoDisponible }} </span> <br/>
+            <img src="../assets/ico/Mantenimiento.png" width="20"/> <strong>En Manteniment: </strong><span>{{ this.contadores[1].EnManteniment }}</span> 
          </p>
       </div>
     </article>
@@ -214,7 +214,7 @@
 
 <br/>
 <br/>
-{{ contadoresTotales }}
+
 </template>
 
 <script>
@@ -228,17 +228,36 @@ export default {
         searchTerm: "",
         showModal: false,
         contador: 0,
+        contadorTotales: 0,
+        contadorDisponible: 0,
+        contadorNoDisponible: 0,
+        contadorEnManteniment: 0,
+        contadores: [
+        {
+          title: "Bomba FreeGo Abbott",
+          TotalUnitats: 0,
+          Disponible: 0,
+          NoDispobible: 0,
+          EnManteniment: 0,
+        },
+        {
+          title: "Bis Aspect Medical Systems",
+          Disponible: 0,
+          NoDisponible: 0,
+          EnManteniment: 0,
+        }]
       }
     },
     mounted(){
       this.fetchItems();
-      localStorage.setItem("materiales", JSON.stringify(this.inventario));     
+      localStorage.setItem("materiales", JSON.stringify(this.inventario));   
+      this.contadoresIndividuales();
     },
     computed:{
-        contadoresTotales(){
+       /* contadoresTotales(){
             let contador = this.contadoresIndividuales();
             return contador
-        },
+        },*/
     },
     methods:{
     setSearchTerm(searchTerm) {
@@ -249,64 +268,62 @@ export default {
      this.materiales = Inventario.data;
     },
     contadoresIndividuales(){
-        if (this.materiales > 0) {
-          return this.materiales.filter((item) => {
-            if(item.title=="Bomba FreeGo Abbott"){
-               this.contador++ 
-               return this.materiales.map("Bomba FreeGo Abbott").length 
-            }
-            return (
-                this.materiales.map("Bomba FreeGo Abbott").length 
-            );
-          });
-        }
-
-        return this.materiales.length;
-        /*
-        let array = [];
-        //array = this.materiales.map(element => element == 'Bomba FreeGo Abbott')
-        for (let i = 0; i< this.materiales.length; i++){
-            if(this.materiales[i+1].title == "Bomba FreeGo Abbott"){
-                array[i] = this.materiales[i];
-                console.log("Se repite "+this.materiales[i].prestado);
-                this.contador++;
-            }
-        }
-        console.log(array.length)
-        return array.length
-        */
-        //let prefijos = ["super", "spider", "ant", "iron"]
-        //let sufijo = "man";
-        //let arrayBusqueda = this.materiales.map(item => item == "Bomba FreeGo Abbott");
-        //console.log(arrayBusqueda[0]);
-        //let nombresCompletos = prefijos.map(prefijo => prefijo + sufijo);
-       // let nombresReales = this.materiales.map(item => {
-       // if (item.title == "Bomba FreeGo Abbott"){
-           //console.log("Dentro if"); 
-         //  return console.log(item.title)
-       // }
-       // }
-        //);
-        //return nombresReales.map(item => item == "Bomba FreeGo Abbott");
-        //console.log(nombresReales.length)
+      for(let i = 0; i < this.materiales.length; i++){
         
-        // ["superman", "spiderman", "antman", "ironman"]
-       /* this.materiales.map(function(element) {
-            if(element.title == "Bomba FreeGo Abbott") {
-                console.log(element.title)  
-            }
-            return this.contador;
-        });   */   
-       
-        /*for (let i = 0; i< this.materiales.length; i++){
-            if(this.materiales[i+1].title == "Bomba FreeGo Abbott"){
-                console.log("Se repite "+this.materiales[i].prestado)
-                this.contador++;
-              
-            } 
-            console.log("Contador: "+this.contador)
-            
-        }*/       
+      
+          switch(this.materiales[i].title){
+            case 'Bomba FreeGo Abbott':
+            this.contadorTotales++;
+            this.contadores[0].TotalUnitats = this.contadorTotales;
+              switch(this.materiales[i].estado){
+                case 'Disponible':
+                this.contadorDisponible++;
+                this.contadores[0].Disponible = this.contadorDisponible;
+                break;
+                case 'No Disponible':
+                this.contadorNoDisponible++;
+                this.contadores[0].NoDisponible = this.contadorNoDisponible;
+                break;
+                case 'En Manteniment':
+                this.contadorEnManteniment++;
+                this.contadores[0].EnManteniment = this.contadorEnManteniment;
+                break;
+              }   
+            break;
+
+            case 'Bis Aspect Medical Systems':
+            this.contadorTotales=0;
+            switch(this.materiales[i].estado){
+                case 'Disponible':
+                this.contadorDisponible=0;
+                this.contadorDisponible++;
+                this.contadores[1].TotalUnitats = this.contadorDisponible + this.contadorNoDisponible + this.contadorEnManteniment;
+                this.contadores[1].Disponible = this.contadorDisponible;
+                break;
+                case 'No Disponible':
+                this.contadorNoDisponible = 0;
+                this.contadorNoDisponible++;
+                this.contadores[1].TotalUnitats = this.contadorNoDisponible;
+                this.contadores[1].NoDisponible = this.contadorNoDisponible;
+                break;
+                case 'En Manteniment':
+                this.contadorEnManteniment = 0;
+                this.contadorEnManteniment++;
+                this.contadores[1].TotalUnitats = this.contadorEnManteniment;
+                this.contadores[1].EnManteniment = this.contadorEnManteniment;
+                break;
+                default: this.contadorTotales = 0;
+              }
+             // this.contadores[1].TotalUnitats =  this.contadores[1].Disponible+this.contadores[1].NoDispobible;
+            break;
+        }
+        
+      // console.log(this.contadores[0].Disponible)
+       console.log(this.contadores[1].TotalUnitats)
+       console.log(this.contadores[1].Disponible)
+       console.log(this.contadores[1].NoDisponible)
+       console.log(this.contadores[1].EnManteniment)
+      }     
     },
     }
 }
