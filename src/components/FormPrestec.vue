@@ -4,7 +4,7 @@
         <div class="contact-form-header">
           <h2>Préstec de Material</h2>
           <button @click="closeForm" class="blanco">
-           Tancar<!-- <img src="../assets/close-button.svg" alt="Close modal" />-->
+           <!-- Tancar--><img src="../assets/ico/cerrarVentana.png" alt="Close modal" /> 
           </button>
         </div>
         <div class="error" v-if="error">
@@ -24,6 +24,7 @@
                 <option value="Planta 4 Parells">Planta 4 Parells</option>
                 <option value="Planta 4 Senars">Planta 4 Senars</option>
                 <option value="Reanimacio">Reanimació</option>
+                <option value="Quiròfan 41">Quiròfan 41</option>
                 <option value="Tallers">Tallers</option>
             </select>
           </div>
@@ -44,8 +45,10 @@
             <button type="submit" @submit.prevent="addPrestec">Préstec</button>
           </div>
         </form>
+        <div class="foot"><img id="logo" alt="logo" src="@/assets/logos/Salut-Campus-tots-RGB.png"/></div>
       </div>
     </div>
+    
   </template>
   
   <script setup>
@@ -126,6 +129,9 @@
   </script>
   
   <style scoped>
+  .foot{
+    margin-bottom: -20px;;
+  }
   .modal-container {
     position: fixed;
     top: 0;
@@ -169,6 +175,7 @@
   h2{
     color: #fff;
     margin-bottom: 10px;
+    font-size: 25px;
   }
   .contact-form-item label {
     display: block;

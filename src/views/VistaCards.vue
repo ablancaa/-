@@ -57,12 +57,12 @@ export default {
       return{
         inventario: Inventario.data,
         materiales: [],
+        material: null,
         searchTerm: "",
         showModal: false,
       }
-
     },
-  mounted(){
+    mounted(){
       this.fetchItems();
     },
   

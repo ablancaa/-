@@ -200,6 +200,7 @@ height: 60px;
   align-items: left;  
   line-height: 1.2;
   letter-spacing: -0.1px;
+  margin-left: 10px;
 }
 .hijo2{
   align-items: center;

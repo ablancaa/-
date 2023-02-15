@@ -13,13 +13,14 @@
   </div>
 
   <div id="navbarBasicExample" class="navbar-menu">
+    <span class="navbar-item">
+        <router-link to="/"><span class="color">Home </span></router-link>
+      </span>
     <div class="navbar-start">
         <span class="navbar-item">
-        <router-link to="/GlobalView"><span class="color">Home</span></router-link> 
+        <router-link to="/GlobalView"><span class="color">Fitxes</span></router-link> 
     </span>
-      <span class="navbar-item">
-        <router-link to="/"><span class="color">Fitxes </span></router-link>
-      </span>
+      
       <span class="navbar-item">
         <router-link to="/VistaCards"><span class="color">Llistat</span></router-link>
       </span>

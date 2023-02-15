@@ -1,28 +1,6 @@
 <template>
   <h1 class="letraTitulo"><strong>{{ material.title }}</strong></h1>
- <!--  <div id="contenido">
-    
-    <br/>
-    <div class="columns">
-  <div class="column">
-    <p class="left">{{ material.info }}</p>
-   <p class="left">{{ material.video }}</p> 
-   <br/>
-    <iframe :src="material.video" width="560" height="315"></iframe>
-    <br/><br/>
-    <p><a href="">QR NURSE - Desmuntatge del circuit respiratori de m&agrave;quina d&rsquo;anest&egrave;sia GE Advance i Datex Ohmeda Aysis</a> from <a href="https://vimeo.com/vallhebron">Vall d&#039;Hebron Hospital Campus</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-  </div>
-  <div class="column">
-    <p>Imatge del material</p>
-    <img :src="material.image"/>
-    <br/>
-    <img src="@/assets/img/qr-code.png" width="250" title="QR"/>
-    <p>Códi QR-NURSE</p>
-  </div>
-    </div>
-  </div> -->
-
-  <div class="tile is-ancestor">
+   <div class="tile is-ancestor">
   <div class="tile is-4 is-vertical is-parent">
     <div class="tile is-child box">
       <p class="title"></p>
@@ -32,7 +10,6 @@
     <div class="tile is-child box">
       <p class="title"></p>
       <img src="@/assets/img/qr-code.png" width="250" title="QR"/>
-      <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p> -->
       <p><a href="">QR NURSE - Muntatge del circuit per Bomba FreeGo Abbott</a> from <a href="https://vimeo.com/vallhebron">Vall d&#039;Hebron Hospital Campus</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
     </div>
   </div>
@@ -71,7 +48,7 @@ export default {
   text-align: left;
 }
 .letraTitulo{
-  font-size: 50px;
+  font-size: 35px;
   margin-top: -35px;
   margin-bottom: 8px;
 }
