@@ -1,5 +1,5 @@
 <template>
-
+<h2 class="letraTitulo">Visió global del material</h2>
   <div class="tile is-ancestor"> 
    <div class="tile is-parent" >
     <router-link :to="{name: 'VistaListaEspecifica', params: {title:inventario[0].title}}">
@@ -40,10 +40,10 @@
       <p class="title"><img :src="inventario[16].image" width="100"></p>
       <p class="subtitle"><strong class="subtitle2">{{inventario[16].title}}</strong></p>
       <div class="content">
-        <p><strong>Total Unitats:</strong> {{this.contador}}<br/>
-            <img src="../assets/ico/Disponible.png" width="20"/> <strong>Disponibles:</strong>  23 <br/>
-            <img src="../assets/ico/NoDisponible.png" width="20"/> <strong> No disponibles:</strong> 8 <br/>
-            <img src="../assets/ico/Mantenimiento.png" width="20"/> <strong>En Manteniment:</strong> 5
+        <p><strong>Total Unitats: </strong><span>{{ this.contadores[2].TotalUnitats }}</span><br/>
+            <img src="../assets/ico/Disponible.png" width="20"/> <strong>Disponibles: </strong><span>{{ this.contadores[2].Disponible }}</span><br/>
+            <img src="../assets/ico/NoDisponible.png" width="20"/> <strong> No disponibles: </strong> 8 <br/>
+            <img src="../assets/ico/Mantenimiento.png" width="20"/> <strong>En Manteniment: </strong> 5
          </p>
       </div>
     </article>
@@ -242,6 +242,14 @@ export default {
         },
         {
           title: "Bis Aspect Medical Systems",
+          TotalUnitats: 0,
+          Disponible: 0,
+          NoDisponible: 0,
+          EnManteniment: 0,
+        },
+        {
+          title: "Bomba Volumétrica Alaris",
+          TotalUnitats: 0,
           Disponible: 0,
           NoDisponible: 0,
           EnManteniment: 0,
@@ -252,6 +260,7 @@ export default {
       this.fetchItems();
       localStorage.setItem("materiales", JSON.stringify(this.inventario));   
       this.contadoresIndividuales();
+      //this.contadorTotales = 0;
     },
     computed:{
        /* contadoresTotales(){
@@ -294,11 +303,16 @@ export default {
             case 'Bis Aspect Medical Systems':
               //contador de totales
             if(this.contadorTotales < 0){
-                this.contadorTotales=0;
+              for(let i = 0; this.materiales.length; i++){
+                if(this.materiales[i].title== 'Bis Aspect Medical Systems'){
+                  this.contadorTotales = 0;
+                }
+              }
+               
             } else {
-             // this.contadores[1].TotalUnitats = this.contadorTotales;
-            }
-                this.contadorTotales = 0;
+              this.contadores[1].TotalUnitats = this.contadorTotales;
+            } 
+                this.contadorTotales =0;
                 this.contadorTotales++;
             switch(this.materiales[i].estado){
                 case 'Disponible':
@@ -318,6 +332,38 @@ export default {
                 this.contadorEnManteniment++;
                 this.contadores[1].TotalUnitats = this.contadores[1].TotalUnitats + this.contadorEnManteniment;
                 this.contadores[1].EnManteniment = this.contadorEnManteniment;
+                break;
+                default: this.contadorTotales = 0;
+              }
+             // this.contadores[1].TotalUnitats =  this.contadores[1].Disponible+this.contadores[1].NoDispobible;
+            break;
+            case 'Bomba Volumétrica Alaris':
+              //contador de totales
+            if(this.contadorTotales < 0){
+                this.contadorTotales=0;
+            } else {
+             this.contadores[2].TotalUnitats = this.contadorTotales++;
+            }
+                this.contadorTotales = 0;
+                this.contadorTotales++;
+            switch(this.materiales[2].estado){
+                case 'Disponible':
+                this.contadorDisponible = 0;
+                this.contadorDisponible++;
+                this.contadores[2].TotalUnitats = this.contadorTotales;
+                this.contadores[2].Disponible = this.contadorDisponible;
+                break;
+                case 'No Disponible':
+                this.contadorNoDisponible = 0;
+                this.contadorNoDisponible++;
+                this.contadores[2].TotalUnitats = this.contadores[2].TotalUnitats + this.contadorNoDisponible;
+                this.contadores[2].NoDisponible = this.contadorNoDisponible;
+                break;
+                case 'En Manteniment':
+                this.contadorEnManteniment = 0;
+                this.contadorEnManteniment++;
+                this.contadores[2].TotalUnitats = this.contadores[2].TotalUnitats + this.contadorEnManteniment;
+                this.contadores[2].EnManteniment = this.contadorEnManteniment;
                 break;
                 default: this.contadorTotales = 0;
               }
@@ -343,5 +389,9 @@ export default {
 }
 .router-link:hover{
   background-color: #3e8e41;
+}
+.letraTitulo{
+  margin-top: 1px;
+  margin-bottom: 15px;
 }
 </style>
