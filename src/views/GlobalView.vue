@@ -141,6 +141,21 @@
     </article>
   </router-link>
   </div>
+  <div class="tile is-parent">
+    <router-link :to="{name: 'VistaListaEspecifica', params: {title:inventario[80].title}}">
+    <article class="tile is-child box">
+      <p class="title"><img :src="inventario[80].image" width="100"></p>
+      <p class="subtitle"><strong class="subtitle2">{{inventario[80].title}}</strong></p>
+      <div class="content">
+        <p><strong>Total Unitats:</strong> {{this.contador}}<br/>
+            <img src="../assets/ico/Disponible.png" width="20"/> <strong>Disponibles:</strong>  23 <br/>
+            <img src="../assets/ico/NoDisponible.png" width="20"/> <strong> No disponibles:</strong> 8 <br/>
+            <img src="../assets/ico/Mantenimiento.png" width="20"/> <strong>En Manteniment:</strong> 5
+         </p>
+      </div>
+    </article>
+  </router-link>
+  </div>
   <!-- <div class="tile is-parent">
     <router-link :to="{name: 'VistaListaEspecifica', params: {title:inventario[77].title}}">
     <article class="tile is-child box">

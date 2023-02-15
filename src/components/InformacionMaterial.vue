@@ -1,5 +1,5 @@
 <template>
-  <h1 class="letraTitulo"><strong>{{ material.title }}</strong></h1>
+  <h1 class="letraTitulo">- <strong>{{ material.title }}</strong> -</h1>
    <div class="tile is-ancestor">
   <div class="tile is-4 is-vertical is-parent">
     <div class="tile is-child box">
@@ -23,6 +23,7 @@
       <p class="left">Integer sollicitudin, tortor a mattis commodo, velit urna rhoncus erat, vitae congue lectus dolor consequat libero. Donec leo ligula, maximus et pellentesque sed, gravida a metus. Cras ullamcorper a nunc ac porta. Aliquam ut aliquet lacus, quis faucibus libero. Quisque non semper leo.</p>
     </div>
   </div>
+  
 </div>
 <br/><br/>
 </template>

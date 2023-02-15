@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import VistaCards from '../views/VistaCards.vue'
+import VistaListaEspecifica from '../views/VistaListaEspecifica.vue'
 import VistaInfo from '../views/VistaInfo.vue'
 import GlobalView from '../views/GlobalView.vue'
 
@@ -8,12 +9,17 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
+    component: GlobalView
   },
   {
     path: '/VistaCards',
     name: 'VistaCards',
     component: VistaCards
+  },
+  {
+    path: '/VistaListaEspecifica/:title',
+    name: 'VistaListaEspecifica',
+    component: VistaListaEspecifica
   },
   {
     path: '/VistaInfo/:numinventari',
@@ -23,7 +29,7 @@ const routes = [
   {
     path: '/GlobalView',
     name: 'GlobalView',
-    component: GlobalView
+    component: HomeView
   },
   {
     path: '/about',
