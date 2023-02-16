@@ -390,8 +390,5 @@ export default {
 .router-link:hover{
   background-color: #3e8e41;
 }
-.letraTitulo{
-  margin-top: 1px;
-  margin-bottom: 15px;
-}
+
 </style>
