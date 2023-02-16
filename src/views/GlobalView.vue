@@ -112,7 +112,7 @@
   </router-link>
   </div>
   <div class="tile is-parent">
-    <router-link :to="{name: 'VistaListaEspecifica', params: {title:inventario[71].title}}">
+    <router-link :to="{name: 'VistaListaEspecifica', params: {title:inventario[71].title}}" title="Selecció de material">
     <article class="tile is-child box">
       <p class="title"><img :src="inventario[71].image" width="100"></p>
       <p class="subtitle"><strong class="subtitle2">{{inventario[71].title}}</strong></p>
@@ -127,7 +127,7 @@
   </router-link>
   </div>
   <div class="tile is-parent">
-    <router-link :to="{name: 'VistaListaEspecifica', params: {title:inventario[77].title}}">
+    <router-link :to="{name: 'VistaListaEspecifica', params: {title:inventario[77].title}}" title="Selecció de material">
     <article class="tile is-child box">
       <p class="title"><img :src="inventario[77].image" width="100"></p>
       <p class="subtitle"><strong class="subtitle2">{{inventario[77].title}}</strong></p>
