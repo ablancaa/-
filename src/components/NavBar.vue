@@ -39,11 +39,11 @@
           </a>
           <hr class="navbar-divider">
           <a class="navbar-item">
-            <span class="color"> Eliminar material</span>
+            <router-link to="/"> <span class="color"> Eliminar material</span></router-link>
           </a>
           <hr class="navbar-divider">
           <a class="navbar-item">
-            <span class="color">Afegir usuari</span>
+            <router-link to="/"> <span class="color">Afegir usuari</span></router-link>
           </a>
           
         </div>
