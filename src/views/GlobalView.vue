@@ -42,8 +42,8 @@
       <div class="content">
         <p><strong>Total Unitats: </strong><span>{{ this.contadores[2].TotalUnitats }}</span><br/>
             <img src="../assets/ico/Disponible.png" width="20"/> <strong>Disponibles: </strong><span>{{ this.contadores[2].Disponible }}</span><br/>
-            <img src="../assets/ico/NoDisponible.png" width="20"/> <strong> No disponibles: </strong> 8 <br/>
-            <img src="../assets/ico/Mantenimiento.png" width="20"/> <strong>En Manteniment: </strong> 5
+            <img src="../assets/ico/NoDisponible.png" width="20"/> <strong> No disponibles: </strong> <span>{{ this.contadores[2].NoDisponible }} </span> <br/>
+            <img src="../assets/ico/Mantenimiento.png" width="20"/> <strong>En Manteniment: </strong> <span>{{ this.contadores[2].EnManteniment }}</span>
          </p>
       </div>
     </article>
@@ -55,10 +55,10 @@
       <p class="title"><img :src="inventario[60].image" width="100"></p>
       <p class="subtitle"><strong class="subtitle2">{{inventario[60].title}}</strong></p>
       <div class="content">
-        <p><strong>Total Unitats:</strong> {{this.contador}}<br/>
-            <img src="../assets/ico/Disponible.png" width="20"/> <strong>Disponibles:</strong>  23 <br/>
-            <img src="../assets/ico/NoDisponible.png" width="20"/> <strong> No disponibles:</strong> 8 <br/>
-            <img src="../assets/ico/Mantenimiento.png" width="20"/> <strong>En Manteniment:</strong> 5
+        <p><strong>Total Unitats:</strong> {{this.contadores[3].TotalUnitats}}<br/>
+            <img src="../assets/ico/Disponible.png" width="20"/> <strong>Disponibles:</strong><span>{{ this.contadores[3].Disponible }}</span><br/>
+            <img src="../assets/ico/NoDisponible.png" width="20"/> <strong> No disponibles:</strong> <span>{{ this.contadores[3].NoDisponible }} </span> <br/>
+            <img src="../assets/ico/Mantenimiento.png" width="20"/> <strong>En Manteniment:</strong> <span>{{ this.contadores[3].EnManteniment }}</span>
          </p>
       </div>
     </article>
@@ -70,10 +70,10 @@
       <p class="title"><img :src="inventario[65].image" width="100"></p>
       <p class="subtitle"><strong class="subtitle2">{{inventario[65].title}}</strong></p>
       <div class="content">
-        <p><strong>Total Unitats:</strong> {{this.contador}}<br/>
-            <img src="../assets/ico/Disponible.png" width="20"/> <strong>Disponibles:</strong>  23 <br/>
-            <img src="../assets/ico/NoDisponible.png" width="20"/> <strong> No disponibles:</strong> 8 <br/>
-            <img src="../assets/ico/Mantenimiento.png" width="20"/> <strong>En Manteniment:</strong> 5
+        <p><strong>Total Unitats:</strong> {{this.contadores[4].TotalUnitats}}<br/>
+            <img src="../assets/ico/Disponible.png" width="20"/> <strong>Disponibles:</strong>  <span>{{ this.contadores[4].Disponible }}</span> <br/>
+            <img src="../assets/ico/NoDisponible.png" width="20"/> <strong> No disponibles:</strong> <span>{{ this.contadores[4].NoDisponible }} </span>  <br/>
+            <img src="../assets/ico/Mantenimiento.png" width="20"/> <strong>En Manteniment:</strong> <span>{{ this.contadores[4].EnManteniment }}</span>
          </p>
       </div>
     </article>
@@ -228,7 +228,15 @@ export default {
         searchTerm: "",
         showModal: false,
         contador: 0,
-        contadorTotales: 0,
+        contadorTotales0: 0,
+        contadorTotales1: 0,
+        contadorTotales2: 0,
+        contadorTotales3: 0,
+        contadorTotales4: 0,
+        contadorTotales5: 0,
+        contadorTotales6: 0,
+        contadorTotales7: 0,
+        contadorTotales8: 0,
         contadorDisponible: 0,
         contadorNoDisponible: 0,
         contadorEnManteniment: 0,
@@ -249,6 +257,20 @@ export default {
         },
         {
           title: "Bomba Volumétrica Alaris",
+          TotalUnitats: 0,
+          Disponible: 0,
+          NoDisponible: 0,
+          EnManteniment: 0,
+        },
+        {
+          title: "Bomba Volumétrica de jeringa Alaris",
+          TotalUnitats: 0,
+          Disponible: 0,
+          NoDisponible: 0,
+          EnManteniment: 0,
+        },
+        {
+          title: "Calentador de infusión HOTLINE®",
           TotalUnitats: 0,
           Disponible: 0,
           NoDisponible: 0,
@@ -277,13 +299,13 @@ export default {
      this.materiales = Inventario.data;
     },
     contadoresIndividuales(){
+      this.contadorTotales=0;
       for(let i = 0; i < this.materiales.length; i++){
-        
-       
+               
           switch(this.materiales[i].title){
             case 'Bomba FreeGo Abbott':
-            this.contadorTotales++;
-            this.contadores[0].TotalUnitats = this.contadorTotales;
+            this.contadorTotales0++;
+            this.contadores[0].TotalUnitats = this.contadorTotales0;
               switch(this.materiales[i].estado){
                 case 'Disponible':
                 this.contadorDisponible++;
@@ -301,82 +323,123 @@ export default {
             break;
 
             case 'Bis Aspect Medical Systems':
-              //contador de totales
-            if(this.contadorTotales < 0){
-              for(let i = 0; this.materiales.length; i++){
-                if(this.materiales[i].title== 'Bis Aspect Medical Systems'){
-                  this.contadorTotales = 0;
+              this.contadorTotales1++;
+              this.contadores[1].TotalUnitats = this.contadorTotales1;
+              //this.contadorDisponible = 0;
+              //this.contadorNoDisponible = 0;
+              //this.contadorEnManteniment = 0;
+              switch(this.materiales[i].estado){
+                  case 'Disponible':
+                  this.contadorDisponible = 0;
+                  this.contadorDisponible++;
+                  this.contadores[1].Disponible = this.contadorDisponible;
+                  break;
+                  case 'No Disponible':
+                  this.contadorNoDisponible = 0;
+                  this.contadorNoDisponible++;
+                  //this.contadores[1].TotalUnitats = this.contadores[1].TotalUnitats + this.contadorNoDisponible;
+                  this.contadores[1].NoDisponible = this.contadorNoDisponible;
+                  break;
+                  case 'En Manteniment':
+                  this.contadorEnManteniment = 0;
+                  this.contadorEnManteniment++;
+                  //this.contadores[1].TotalUnitats = this.contadores[1].TotalUnitats + this.contadorEnManteniment;
+                  this.contadores[1].EnManteniment = this.contadorEnManteniment;
+                  break;
                 }
-              }
-               
-            } else {
-              this.contadores[1].TotalUnitats = this.contadorTotales;
-            } 
-                this.contadorTotales =0;
-                this.contadorTotales++;
-            switch(this.materiales[i].estado){
-                case 'Disponible':
-                this.contadorDisponible = 0;
-                this.contadorDisponible++;
-                this.contadores[1].TotalUnitats = this.contadorTotales;
-                this.contadores[1].Disponible = this.contadorDisponible;
-                break;
-                case 'No Disponible':
-                this.contadorNoDisponible = 0;
-                this.contadorNoDisponible++;
-                this.contadores[1].TotalUnitats = this.contadores[1].TotalUnitats + this.contadorNoDisponible;
-                this.contadores[1].NoDisponible = this.contadorNoDisponible;
-                break;
-                case 'En Manteniment':
-                this.contadorEnManteniment = 0;
-                this.contadorEnManteniment++;
-                this.contadores[1].TotalUnitats = this.contadores[1].TotalUnitats + this.contadorEnManteniment;
-                this.contadores[1].EnManteniment = this.contadorEnManteniment;
-                break;
-                default: this.contadorTotales = 0;
-              }
              // this.contadores[1].TotalUnitats =  this.contadores[1].Disponible+this.contadores[1].NoDispobible;
             break;
             case 'Bomba Volumétrica Alaris':
-              //contador de totales
-            if(this.contadorTotales < 0){
-                this.contadorTotales=0;
-            } else {
-             this.contadores[2].TotalUnitats = this.contadorTotales++;
-            }
-                this.contadorTotales = 0;
-                this.contadorTotales++;
+              this.contadorTotales2++;
+              this.contadores[2].TotalUnitats = this.contadorTotales2;
             switch(this.materiales[2].estado){
                 case 'Disponible':
                 this.contadorDisponible = 0;
                 this.contadorDisponible++;
-                this.contadores[2].TotalUnitats = this.contadorTotales;
                 this.contadores[2].Disponible = this.contadorDisponible;
                 break;
                 case 'No Disponible':
                 this.contadorNoDisponible = 0;
                 this.contadorNoDisponible++;
-                this.contadores[2].TotalUnitats = this.contadores[2].TotalUnitats + this.contadorNoDisponible;
+               //this.contadores[2].TotalUnitats = this.contadores[2].TotalUnitats + this.contadorNoDisponible;
                 this.contadores[2].NoDisponible = this.contadorNoDisponible;
                 break;
                 case 'En Manteniment':
                 this.contadorEnManteniment = 0;
                 this.contadorEnManteniment++;
-                this.contadores[2].TotalUnitats = this.contadores[2].TotalUnitats + this.contadorEnManteniment;
+               // this.contadores[2].TotalUnitats = this.contadores[2].TotalUnitats + this.contadorEnManteniment;
                 this.contadores[2].EnManteniment = this.contadorEnManteniment;
                 break;
-                default: this.contadorTotales = 0;
+            
+              }
+             // this.contadores[1].TotalUnitats =  this.contadores[1].Disponible+this.contadores[1].NoDispobible;
+            break;
+            case 'Bomba Volumétrica de jeringa Alaris':
+                
+              this.contadorTotales3++;
+              this.contadores[3].TotalUnitats = this.contadorTotales3;
+            switch(this.materiales[3].estado){
+                case 'Disponible':
+                this.contadorDisponible++;
+                this.contadores[3].Disponible = this.contadorDisponible;
+                this.contadorDisponible = 0;
+                break;
+                case 'No Disponible':
+                this.contadorNoDisponible++;
+                this.contadores[3].NoDisponible = this.contadorNoDisponible;
+                this.contadorNoDisponible = 0;
+                break;
+                case 'En Manteniment':
+                this.contadorEnManteniment++;
+                this.contadores[3].EnManteniment = this.contadorEnManteniment;
+                this.contadorEnManteniment = 0;
+                break;
+                
+              }
+             // this.contadores[1].TotalUnitats =  this.contadores[1].Disponible+this.contadores[1].NoDispobible;
+            break;
+            
+            case 'Calentador de infusión HOTLINE®':
+                
+              this.contadorTotales4++;
+              this.contadores[4].TotalUnitats = this.contadorTotales4;
+              this.contadorNoDisponible = 0;
+            switch(this.materiales[4].estado){
+                case 'Disponible':
+                this.contadorDisponible = 0;
+                this.contadorDisponible++;
+                this.contadores[4].Disponible = this.contadorDisponible;
+                
+                break;
+                case 'No Disponible':
+                
+                this.contadorNoDisponible++;
+                //this.contadores[3].TotalUnitats = this.contadores[3].TotalUnitats + this.contadorNoDisponible;
+                this.contadores[4].NoDisponible = this.contadorNoDisponible;
+                
+                break;
+                case 'En Manteniment':
+                
+                this.contadorEnManteniment++;
+                //this.contadores[3].TotalUnitats = this.contadores[3].TotalUnitats + this.contadorEnManteniment;
+                this.contadores[4].EnManteniment = this.contadorEnManteniment;
+                this.contadorEnManteniment = 0;
+                break;
+                
               }
              // this.contadores[1].TotalUnitats =  this.contadores[1].Disponible+this.contadores[1].NoDispobible;
             break;
         }
-        
+       
       // console.log(this.contadores[0].Disponible)
        console.log(this.contadores[1].TotalUnitats)
        console.log(this.contadores[1].Disponible)
        console.log(this.contadores[1].NoDisponible)
        console.log(this.contadores[1].EnManteniment)
-      }     
+      }  
+      this.contadorDisponible = 0;
+              this.contadorNoDisponible = 0;
+              this.contadorEnManteniment = 0;   
     },
     }
 }

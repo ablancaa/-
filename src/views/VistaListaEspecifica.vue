@@ -20,7 +20,7 @@
 <tbody >
   
   <tr>
-    <td><img :src="item.image" width="80"></td>
+    <td>{{ index+1 }}<img :src="item.image" width="80"></td>
     <td>{{ item.title }}
       <router-link :to="{name: 'VistaInfo', params: {numinventari:item.numinventari}}"  class="card-footer-item">+ Info</router-link></td>
     <td><strong>{{ item.estado }}</strong><br/>

@@ -59,7 +59,8 @@
             <router-link to="/Instrucciones"><span class="color">Instruccions</span></router-link> 
           </span>
           <a class="navbar-item">
-            <span class="color"> Llistat telefonic </span>
+            <router-link to="/ListadoTelefonico"><span class="color"> Llistat telefonic </span></router-link>
+            
           </a>
           <a class="navbar-item">
             <span class="color"> Contacte</span>

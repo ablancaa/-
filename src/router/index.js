@@ -5,6 +5,7 @@ import VistaListaEspecifica from '../views/VistaListaEspecifica.vue'
 import VistaInfo from '../views/VistaInfo.vue'
 import GlobalView from '../views/GlobalView.vue'
 import Instrucciones from '../views/Instrucciones.vue'
+import ListadoTelefonico from '../views/ListadoTelefonico.vue'
 
 const routes = [
   {
@@ -36,6 +37,11 @@ const routes = [
     path: '/Instrucciones',
     name: 'Instrucciones',
     component: Instrucciones
+  },
+  {
+    path: '/ListadoTelefonico',
+    name: 'ListadoTelefonico',
+    component: ListadoTelefonico
   },
   {
     path: '/about',
