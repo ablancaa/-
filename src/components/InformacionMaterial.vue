@@ -16,7 +16,7 @@
   <div class="tile is-parent">
     <div class="tile is-child box">
       <p class="title"></p>
-      <iframe :src="material.video" width="560" height="315"></iframe>
+      <iframe :src="material.video" width="560" height="315" class="puntaRedonda"></iframe>
       <br/>
       <p class="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. Morbi maximus, leo sit amet vehicula eleifend, nunc dui porta orci, quis semper odio felis ut quam.</p>
       <p class="left">Suspendisse varius ligula in molestie lacinia. Maecenas varius eget ligula a sagittis. Pellentesque interdum, nisl nec interdum maximus, augue diam porttitor lorem, et sollicitudin felis neque sit amet erat. Maecenas imperdiet felis nisi, fringilla luctus felis hendrerit sit amet. Aenean vitae gravida diam, finibus dignissim turpis. Sed eget varius ligula, at volutpat tortor.</p>
@@ -45,12 +45,18 @@ export default {
 </script>
 
 <style>
+.puntaRedonda{
+  border-radius: 10px;
+}
 .left{
   text-align: left;
 }
 .letraTitulo{
   font-size: 35px;
-  margin-top: -35px;
+  margin-top: -15px;
   margin-bottom: 8px;
+  background-color: rgb(213, 221, 255);
+  border-radius: 10px;
+  width: 100%;
 }
 </style>
