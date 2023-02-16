@@ -104,6 +104,7 @@ name: 'Nav-Bar'
 .navbar{
   height: 75px;
   border-radius: 10px;
+  margin-bottom: -10px;
 }
 
 </style>
