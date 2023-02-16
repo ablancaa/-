@@ -1,5 +1,4 @@
 <template>
-  <br/>
   <div>
     <InfoMaterial/>
 </div>
