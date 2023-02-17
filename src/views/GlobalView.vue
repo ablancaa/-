@@ -67,7 +67,7 @@
   <div class="tile is-parent">
     <router-link :to="{name: 'VistaListaEspecifica', params: {title:inventario[65].title}}" title="Selecció de material">
     <article class="tile is-child box">
-      <p class="title">4<img :src="inventario[65].image" width="100"></p>
+      <p class="title"><img :src="inventario[65].image" width="100"></p>
       <p class="subtitle"><strong class="subtitle2">{{inventario[65].title}}</strong></p>
       <div class="content">
         <p><strong>Total Unitats:</strong> <span class="letra">{{this.contadores[4].TotalUnitats}}</span><br/>
@@ -84,7 +84,7 @@
   <div class="tile is-parent">
     <router-link :to="{name: 'VistaListaEspecifica', params: {title:inventario[66].title}}" title="Selecció de material">
     <article class="tile is-child box">
-      <p class="title">5<img :src="inventario[66].image" width="100"></p>
+      <p class="title"><img :src="inventario[66].image" width="100"></p>
       <p class="subtitle"><strong class="subtitle2">{{inventario[66].title}}</strong></p>
       <div class="content">
         <p><strong>Total Unitats:</strong><span class="letra">{{ this.contadores[5].TotalUnitats }}</span> <br/>
@@ -99,7 +99,7 @@
   <div class="tile is-parent">
     <router-link :to="{name: 'VistaListaEspecifica', params: {title:inventario[68].title}}" title="Selecció de material">
     <article class="tile is-child box">
-      <p class="title">6<img :src="inventario[68].image" width="100"></p>
+      <p class="title"><img :src="inventario[68].image" width="100"></p>
       <p class="subtitle"><strong class="subtitle2">{{inventario[68].title}}</strong></p>
       <div class="content">
         <p><strong>Total Unitats:</strong><span class="letra">{{this.contadores[6].TotalUnitats}}</span><br/>
@@ -114,7 +114,7 @@
   <div class="tile is-parent">
     <router-link :to="{name: 'VistaListaEspecifica', params: {title:inventario[71].title}}" title="Selecció de material">
     <article class="tile is-child box">
-      <p class="title">7<img :src="inventario[71].image" width="100"></p>
+      <p class="title"><img :src="inventario[71].image" width="100"></p>
       <p class="subtitle"><strong class="subtitle2">{{inventario[71].title}}</strong></p>
       <div class="content">
         <p><strong>Total Unitats:</strong><span class="letra">{{ this.contadores[7].TotalUnitats }}</span> <br/>
@@ -129,7 +129,7 @@
   <div class="tile is-parent">
     <router-link :to="{name: 'VistaListaEspecifica', params: {title:inventario[77].title}}" title="Selecció de material">
     <article class="tile is-child box">
-      <p class="title">8<img :src="inventario[77].image" width="100"></p>
+      <p class="title"><img :src="inventario[77].image" width="100"></p>
       <p class="subtitle"><strong class="subtitle2">{{inventario[77].title}}</strong></p>
       <div class="content">
         <p><strong>Total Unitats:</strong><span class="letra">{{ this.contadores[8].TotalUnitats }}</span> <br/>
@@ -144,7 +144,7 @@
   <div class="tile is-parent">
     <router-link :to="{name: 'VistaListaEspecifica', params: {title:inventario[80].title}}">
     <article class="tile is-child box">
-      <p class="title">9<img :src="inventario[80].image" width="100"></p>
+      <p class="title"><img :src="inventario[80].image" width="100"></p>
       <p class="subtitle"><strong class="subtitle2">{{inventario[80].title}}</strong></p>
       <div class="content">
         <p><strong>Total Unitats:</strong> <span class="letra">{{ this.contadores[9].TotalUnitats }}</span><br/>
