@@ -18,14 +18,14 @@
               ><span class="letra">{{ this.contadores[0].TotalUnitats }}</span
               ><br />
               <img src="../assets/ico/Disponible.png" width="20" class="left" />
-              <strong>Disponibles: </strong
+              <strong> Disponibles: </strong
               ><span class="letra">{{ this.contadores[0].Disponible }}</span> <br />
               <img src="../assets/ico/NoDisponible.png" width="20" class="left" />
               <strong> No disponibles: </strong
               ><span class="letra"> {{ this.contadores[0].NoDisponible }}</span
               ><br />
               <img src="../assets/ico/Mantenimiento.png" width="20" class="left" />
-              <strong>En Manteniment: </strong
+              <strong> En Manteniment: </strong
               ><span class="letra">{{ this.contadores[0].EnManteniment }}</span>
             </p>
           </div>
@@ -49,14 +49,14 @@
               ><span class="letra">{{ this.contadores[1].TotalUnitats }}</span
               ><br />
               <img src="../assets/ico/Disponible.png" width="20" class="left" />
-              <strong>Disponibles: </strong
+              <strong> Disponibles: </strong
               ><span class="letra">{{ this.contadores[1].Disponible }}</span
               ><br />
               <img src="../assets/ico/NoDisponible.png" width="20" class="left" />
               <strong> No disponibles: </strong
               ><span class="letra">{{ this.contadores[1].NoDisponible }} </span> <br />
               <img src="../assets/ico/Mantenimiento.png" width="20" class="left" />
-              <strong>En Manteniment: </strong
+              <strong> En Manteniment: </strong
               ><span class="letra">{{ this.contadores[1].EnManteniment }}</span>
             </p>
           </div>
@@ -80,14 +80,14 @@
               ><span class="letra">{{ this.contadores[2].TotalUnitats }}</span
               ><br />
               <img src="../assets/ico/Disponible.png" width="20" class="left" />
-              <strong>Disponibles: </strong
+              <strong> Disponibles: </strong
               ><span class="letra">{{ this.contadores[2].Disponible }}</span
               ><br />
               <img src="../assets/ico/NoDisponible.png" width="20" class="left" />
               <strong> No disponibles: </strong>
               <span class="letra">{{ this.contadores[2].NoDisponible }} </span> <br />
               <img src="../assets/ico/Mantenimiento.png" width="20" class="left" />
-              <strong>En Manteniment: </strong>
+              <strong> En Manteniment: </strong>
               <span class="letra">{{ this.contadores[2].EnManteniment }}</span>
             </p>
           </div>
@@ -106,18 +106,18 @@
           </p>
           <div class="content">
             <p>
-              <strong>Total Unitats:</strong>
+              <strong>Total Unitats: </strong>
               <span class="letra">{{ this.contadores[3].TotalUnitats }}</span
               ><br />
               <img src="../assets/ico/Disponible.png" width="20" class="left" />
-              <strong>Disponibles:</strong
+              <strong> Disponibles:</strong
               ><span class="letra">{{ this.contadores[3].Disponible }}</span
               ><br />
               <img src="../assets/ico/NoDisponible.png" width="20" class="left" />
               <strong> No disponibles:</strong>
               <span class="letra">{{ this.contadores[3].NoDisponible }} </span> <br />
               <img src="../assets/ico/Mantenimiento.png" width="20" class="left" />
-              <strong>En Manteniment:</strong>
+              <strong> En Manteniment:</strong>
               <span class="letra">{{ this.contadores[3].EnManteniment }}</span>
             </p>
           </div>
@@ -136,17 +136,17 @@
           </p>
           <div class="content">
             <p>
-              <strong>Total Unitats:</strong>
+              <strong>Total Unitats: </strong>
               <span class="letra">{{ this.contadores[4].TotalUnitats }}</span
               ><br />
               <img src="../assets/ico/Disponible.png" width="20" class="left" />
-              <strong>Disponibles:</strong>
-              <span class="letra">{{ this.contadores[4].Disponible }}</span> <br />
+              <strong> Disponibles: </strong>
+              <span class="letra"> {{ this.contadores[4].Disponible }}</span> <br />
               <img src="../assets/ico/NoDisponible.png" width="20" class="left" />
               <strong> No disponibles:</strong>
               <span class="letra">{{ this.contadores[4].NoDisponible }} </span> <br />
               <img src="../assets/ico/Mantenimiento.png" width="20" class="left" />
-              <strong>En Manteniment:</strong>
+              <strong> En Manteniment: </strong>
               <span class="letra">{{ this.contadores[4].EnManteniment }}</span>
             </p>
           </div>
@@ -167,16 +167,16 @@
           </p>
           <div class="content">
             <p>
-              <strong>Total Unitats:</strong
+              <strong>Total Unitats: </strong
               ><span class="letra">{{ this.contadores[5].TotalUnitats }}</span> <br />
               <img src="../assets/ico/Disponible.png" width="20" class="left" />
-              <strong>Disponibles:</strong>
+              <strong> Disponibles: </strong>
               <span class="letra">{{ this.contadores[5].Disponible }}</span> <br />
               <img src="../assets/ico/NoDisponible.png" width="20" class="left" />
-              <strong> No disponibles:</strong>
+              <strong> No disponibles: </strong>
               <span class="letra">{{ this.contadores[5].NoDisponible }} </span> <br />
               <img src="../assets/ico/Mantenimiento.png" width="20" class="left" />
-              <strong>En Manteniment:</strong>
+              <strong> En Manteniment: </strong>
               <span class="letra">{{ this.contadores[5].EnManteniment }}</span>
             </p>
           </div>
@@ -195,17 +195,17 @@
           </p>
           <div class="content">
             <p>
-              <strong>Total Unitats:</strong
+              <strong>Total Unitats: </strong
               ><span class="letra">{{ this.contadores[6].TotalUnitats }}</span
               ><br />
               <img src="../assets/ico/Disponible.png" width="20" class="left" />
-              <strong>Disponibles:</strong>
+              <strong> Disponibles: </strong>
               <span class="letra">{{ this.contadores[6].Disponible }}</span> <br />
               <img src="../assets/ico/NoDisponible.png" width="20" class="left" />
-              <strong> No disponibles:</strong>
+              <strong> No disponibles: </strong>
               <span class="letra"> {{ this.contadores[6].NoDisponible }} </span> <br />
               <img src="../assets/ico/Mantenimiento.png" width="20" class="left" />
-              <strong>En Manteniment:</strong>
+              <strong> En Manteniment: </strong>
               <span class="letra">{{ this.contadores[6].EnManteniment }}</span>
             </p>
           </div>
@@ -224,16 +224,16 @@
           </p>
           <div class="content">
             <p>
-              <strong>Total Unitats:</strong
+              <strong>Total Unitats: </strong
               ><span class="letra">{{ this.contadores[7].TotalUnitats }}</span> <br />
               <img src="../assets/ico/Disponible.png" width="20" class="left" />
-              <strong>Disponibles:</strong>
+              <strong> Disponibles: </strong>
               <span class="letra">{{ this.contadores[7].Disponible }}</span> <br />
               <img src="../assets/ico/NoDisponible.png" width="20" class="left" />
-              <strong> No disponibles:</strong>
+              <strong> No disponibles: </strong>
               <span class="letra"> {{ this.contadores[7].NoDisponible }} </span> <br />
               <img src="../assets/ico/Mantenimiento.png" width="20" class="left" />
-              <strong>En Manteniment:</strong>
+              <strong> En Manteniment: </strong>
               <span class="letra">{{ this.contadores[7].EnManteniment }}</span>
             </p>
           </div>
@@ -252,16 +252,16 @@
           </p>
           <div class="content">
             <p>
-              <strong>Total Unitats:</strong
+              <strong>Total Unitats: </strong
               ><span class="letra">{{ this.contadores[8].TotalUnitats }}</span> <br />
               <img src="../assets/ico/Disponible.png" width="20" class="left" />
-              <strong>Disponibles:</strong>
+              <strong> Disponibles: </strong>
               <span class="letra">{{ this.contadores[8].Disponible }}</span> <br />
               <img src="../assets/ico/NoDisponible.png" width="20" class="left" />
-              <strong> No disponibles:</strong>
+              <strong> No disponibles: </strong>
               <span class="letra"> {{ this.contadores[8].NoDisponible }} </span> <br />
               <img src="../assets/ico/Mantenimiento.png" width="20" class="left" />
-              <strong>En Manteniment:</strong>
+              <strong> En Manteniment: </strong>
               <span class="letra">{{ this.contadores[8].EnManteniment }}</span>
             </p>
           </div>
@@ -279,17 +279,17 @@
           </p>
           <div class="content">
             <p>
-              <strong>Total Unitats:</strong>
+              <strong>Total Unitats: </strong>
               <span class="letra">{{ this.contadores[9].TotalUnitats }}</span
               ><br />
               <img src="../assets/ico/Disponible.png" width="20" class="left" />
-              <strong>Disponibles:</strong>
+              <strong> Disponibles: </strong>
               <span class="letra">{{ this.contadores[9].Disponible }}</span> <br />
               <img src="../assets/ico/NoDisponible.png" width="20" class="left" />
-              <strong> No disponibles:</strong>
+              <strong> No disponibles: </strong>
               <span class="letra"> {{ this.contadores[9].NoDisponible }} </span> <br />
               <img src="../assets/ico/Mantenimiento.png" width="20" class="left" />
-              <strong>En Manteniment:</strong>
+              <strong> En Manteniment: </strong>
               <span class="letra">{{ this.contadores[9].EnManteniment }}</span>
             </p>
           </div>
