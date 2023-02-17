@@ -4,9 +4,10 @@
       ><img id="logo" alt="logo" src="@/assets/logos/Salut-Campus-tots-RGB.png"
     /></router-link>
   </div>
+  <br/>
   <span class="firma navbar-item"
     ><strong
-      >webmaster: @lberto Blanca Alcaide - {{day}} / {{month}} /{{year}} -- Version 1.7 --</strong
+      >webmaster: @lberto Blanca Alcaide - {{day}}/{{month}}/{{year}} -- Version 1.7 --</strong
     ></span
   >
 </template>
