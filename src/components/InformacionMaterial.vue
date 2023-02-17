@@ -9,7 +9,7 @@
     </div>
     <div class="tile is-child box">
       <p class="title"></p>
-      <img src="@/assets/img/qr-code.png" width="250" title="QR"/>
+      <img :src="material.qr" width="250" title="QR"/>
       <p><a href="">QR NURSE - Muntatge del circuit per Bomba FreeGo Abbott</a> from <a href="https://vimeo.com/vallhebron">Vall d&#039;Hebron Hospital Campus</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
     </div>
   </div>

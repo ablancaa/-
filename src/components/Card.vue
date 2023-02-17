@@ -46,7 +46,7 @@
         <div class="hijo2 estado" v-if="material.estado =='No Disponible'">
           <img src="../assets/ico/NoDisponible.png" class="ico"  title="NO DISPONIBLE"/>
           <span><strong>Estat:</strong><br/> {{material.estado}}</span>
-          <img src="../assets/img/qr-code.png" class="ico qr"  title="CODE QR"/>
+          <img :src="material.qr" class="ico qr"  title="CODE QR"/>
           <i>QR-NURSE</i>
         </div>
         <div class="hijo2 estado" v-if="material.estado =='En Manteniment'">

@@ -114,7 +114,7 @@
               ><span class="letra">{{ this.contadores[3].Disponible }}</span
               ><br />
               <img src="../assets/ico/NoDisponible.png" width="20" class="left" />
-              <strong> No disponibles:</strong>
+              <strong> No disponibles: </strong>
               <span class="letra">{{ this.contadores[3].NoDisponible }} </span> <br />
               <img src="../assets/ico/Mantenimiento.png" width="20" class="left" />
               <strong> En Manteniment:</strong>
