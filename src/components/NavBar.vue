@@ -29,7 +29,6 @@
         <a class="navbar-link">
           <span class="color">Administració</span>
         </a>
-
         <div class="navbar-dropdown">
           <span class="navbar-item">
             <router-link to="/Instrucciones"><span class="color">Afegir material</span></router-link> 
