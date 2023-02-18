@@ -4,7 +4,7 @@
     <div class="tile is-parent">
       <router-link
         :to="{ name: 'VistaListaEspecifica', params: { title: inventario[0].title } }"
-        title="Selecció de material"
+        title="Selecció del material"
       >
         <article class="tile is-child box">
           <p class="title"><img :src="inventario[0].image" width="100" /></p>
@@ -36,7 +36,7 @@
     <div class="tile is-parent">
       <router-link
         :to="{ name: 'VistaListaEspecifica', params: { title: inventario[7].title } }"
-        title="Selecció de material"
+        title="Selecció del material"
       >
         <article class="tile is-child box">
           <p class="title"><img :src="inventario[7].image" width="100" /></p>
@@ -67,7 +67,7 @@
     <div class="tile is-parent">
       <router-link
         :to="{ name: 'VistaListaEspecifica', params: { title: inventario[16].title } }"
-        title="Selecció de material"
+        title="Selecció del material"
       >
         <article class="tile is-child box">
           <p class="title"><img :src="inventario[16].image" width="100" /></p>
@@ -97,7 +97,7 @@
     <div class="tile is-parent">
       <router-link
         :to="{ name: 'VistaListaEspecifica', params: { title: inventario[60].title } }"
-        title="Selecció de material"
+        title="Selecció del material"
       >
         <article class="tile is-child box">
           <p class="title"><img :src="inventario[60].image" width="100" /></p>
@@ -127,7 +127,7 @@
     <div class="tile is-parent">
       <router-link
         :to="{ name: 'VistaListaEspecifica', params: { title: inventario[65].title } }"
-        title="Selecció de material"
+        title="Selecció del material"
       >
         <article class="tile is-child box">
           <p class="title"><img :src="inventario[65].image" width="100" /></p>
@@ -158,7 +158,7 @@
     <div class="tile is-parent">
       <router-link
         :to="{ name: 'VistaListaEspecifica', params: { title: inventario[66].title } }"
-        title="Selecció de material"
+        title="Selecció del material"
       >
         <article class="tile is-child box">
           <p class="title"><img :src="inventario[66].image" width="100" /></p>
@@ -186,7 +186,7 @@
     <div class="tile is-parent">
       <router-link
         :to="{ name: 'VistaListaEspecifica', params: { title: inventario[68].title } }"
-        title="Selecció de material"
+        title="Selecció del material"
       >
         <article class="tile is-child box">
           <p class="title"><img :src="inventario[68].image" width="100" /></p>
@@ -215,7 +215,7 @@
     <div class="tile is-parent">
       <router-link
         :to="{ name: 'VistaListaEspecifica', params: { title: inventario[71].title } }"
-        title="Selecció de material"
+        title="Selecció del material"
       >
         <article class="tile is-child box">
           <p class="title"><img :src="inventario[71].image" width="100" /></p>
@@ -241,36 +241,53 @@
       </router-link>
     </div>
     <div class="tile is-parent">
-      <router-link
-        :to="{ name: 'VistaListaEspecifica', params: { title: inventario[77].title } }"
-        title="Selecció de material"
-      >
+      
         <article class="tile is-child box">
+          <router-link
+        :to="{ name: 'VistaListaEspecifica', params: { title: inventario[77].title } }"
+        title="Selecció del material"
+      >
           <p class="title"><img :src="inventario[77].image" width="100" /></p>
+        
           <p class="subtitle">
             <strong class="subtitle2">{{ inventario[77].title }}</strong>
           </p>
+        </router-link>
+        <br/>
           <div class="content">
             <p>
               <strong>Total Unitats: </strong
-              ><span class="letra">{{ this.contadores[8].TotalUnitats }}</span> <br />
+              ><span class="letra">{{ this.contadores[8].TotalUnitats }}</span> <br /><br/>
+              <router-link
+                :to="{ name: 'VistaListaEspecifica', params: { title: inventario[77].estado } }"
+                title="Material Disponible">
               <img src="../assets/ico/Disponible.png" width="20" class="left" />
               <strong> Disponibles: </strong>
+              </router-link>
               <span class="letra">{{ this.contadores[8].Disponible }}</span> <br />
+              <router-link
+                :to="{ name: 'VistaListaEspecifica', params: { title: inventario[77].estado } }"
+                title="Material No Disponible">
               <img src="../assets/ico/NoDisponible.png" width="20" class="left" />
               <strong> No disponibles: </strong>
+              </router-link>
               <span class="letra"> {{ this.contadores[8].NoDisponible }} </span> <br />
+              <router-link
+                :to="{ name: 'VistaListaEspecifica', params: { title: inventario[77].estado } }"
+                title="Material No Disponible">
               <img src="../assets/ico/Mantenimiento.png" width="20" class="left" />
               <strong> En Manteniment: </strong>
               <span class="letra">{{ this.contadores[8].EnManteniment }}</span>
+              </router-link>
             </p>
           </div>
         </article>
-      </router-link>
+      
     </div>
     <div class="tile is-parent">
       <router-link
         :to="{ name: 'VistaListaEspecifica', params: { title: inventario[80].title } }"
+        title="Selecció del material"
       >
         <article class="tile is-child box">
           <p class="title"><img :src="inventario[80].image" width="100" /></p>
