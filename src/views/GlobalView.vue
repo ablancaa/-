@@ -12,14 +12,14 @@
             <strong class="subtitle2">{{ inventario[0].title }}</strong>
           </p>
           <div class="content">
-            <br />
-            <p>
+            <br/>
               <table>
                 <tr> 
                   <td><strong>Total Unitats </strong></td>
                   <td class="letraTotal">{{ this.contadores[0].TotalUnitats }}</td>
                 </tr>
               </table> 
+       
               <table>
                 <tr>
                   <td>
@@ -48,8 +48,15 @@
                   <td>{{ this.contadores[0].NoDisponible }}</td>
                   <td>{{ this.contadores[0].EnManteniment }}</td>
                 </tr>
+      
               </table>            
-            </p>
+              <div id="graficos">
+            <!-- <figure class="horizontal">100%</figure> -->
+            <figure class="horizontal">75%</figure>
+            <!-- <figure class="horizontal">30%</figure> -->
+            <!-- <figure class="arco">50%</figure>
+            <figure class="arco">75%</figure> -->
+          </div>
             <!-- <p>
               <strong>Total Unitats: </strong
               ><span class="letra">{{ this.contadores[0].TotalUnitats }}</span
@@ -65,7 +72,8 @@
               <strong> En Manteniment: </strong
               ><span class="letra">{{ this.contadores[0].EnManteniment }}</span>
             </p> -->
-          </div>
+            </div>
+          
         </article>
       </router-link>
     </div>
@@ -81,7 +89,7 @@
             <strong class="subtitle2">{{ inventario[7].title }}</strong>
           </p>
           <div class="content">
-            <p>
+           
               <table>
                 <tr> 
                   <td><strong>Total Unitats </strong></td>
@@ -117,7 +125,7 @@
                   <td>{{ this.contadores[1].EnManteniment }}</td>
                 </tr>
               </table>            
-            </p>
+        
             <!-- <p>
               <strong>Total Unitats: </strong
               ><span class="letra">{{ this.contadores[1].TotalUnitats }}</span
@@ -133,6 +141,10 @@
               <strong> En Manteniment: </strong
               ><span class="letra">{{ this.contadores[1].EnManteniment }}</span>
             </p> -->
+            <div id="graficos">
+            <!-- <figure class="horizontal">100%</figure> -->
+            <figure class="horizontal">75%</figure>
+            </div>
           </div>
         </article>
       </router-link>
@@ -202,6 +214,10 @@
               <strong> En Manteniment: </strong>
               <span class="letra">{{ this.contadores[2].EnManteniment }}</span>
             </p> -->
+            <div id="graficos">
+            <!-- <figure class="horizontal">100%</figure> -->
+            <figure class="horizontal">75%</figure>
+            </div>
           </div>
         </article>
       </router-link>
@@ -254,6 +270,10 @@
                 </tr>
               </table>          
             </p>
+            <div id="graficos">
+            <!-- <figure class="horizontal">100%</figure> -->
+            <figure class="horizontal">75%</figure>
+            </div>
             <!-- <p>
               <strong>Total Unitats: </strong>
               <span class="letra">{{ this.contadores[3].TotalUnitats }}</span
@@ -321,6 +341,10 @@
                 </tr>
               </table>            
             </p>
+            <div id="graficos">
+            <!-- <figure class="horizontal">100%</figure> -->
+            <figure class="horizontal">100%</figure>
+            </div>
             <!-- <p>
               <strong>Total Unitats: </strong>
               <span class="letra">{{ this.contadores[4].TotalUnitats }}</span
@@ -389,6 +413,10 @@
                 </tr>
               </table>            
             </p>
+            <div id="graficos">
+            <!-- <figure class="horizontal">100%</figure> -->
+            <figure class="horizontal">100%</figure>
+            </div>
             <!-- <p>
               <strong>Total Unitats: </strong
               ><span class="letra">{{ this.contadores[5].TotalUnitats }}</span> <br />
@@ -454,6 +482,10 @@
                 </tr>
               </table>            
             </p>
+            <div id="graficos">
+            <!-- <figure class="horizontal">100%</figure> -->
+            <figure class="horizontal">100%</figure>
+            </div>
             <!-- <p>
               <strong>Total Unitats: </strong
               ><span class="letra">{{ this.contadores[6].TotalUnitats }}</span
@@ -520,6 +552,10 @@
                 </tr>
               </table>            
             </p>
+            <div id="graficos">
+            <!-- <figure class="horizontal">100%</figure> -->
+            <figure class="horizontal">30%</figure>
+            </div>
             <!-- <p>
               <strong>Total Unitats: </strong
               ><span class="letra">{{ this.contadores[7].TotalUnitats }}</span> <br />
@@ -611,6 +647,10 @@
             </router-link>
               <span class="letra">{{ this.contadores[8].EnManteniment }}</span> -->
             </p>
+            <div id="graficos">
+            <!-- <figure class="horizontal">100%</figure> -->
+            <figure class="horizontal">30%</figure>
+            </div>
           </div>
         </article>
       
@@ -662,6 +702,10 @@
                   <td>{{ this.contadores[9].EnManteniment }}</td>
                 </tr>
               </table> 
+              <div id="graficos">
+            <!-- <figure class="horizontal">100%</figure> -->
+            <figure class="horizontal">30%</figure>
+            </div>
               </div>           
             <!-- <p>
               <strong>Total Unitats: </strong>
@@ -833,6 +877,36 @@ export default {
     this.fetchItems();
     localStorage.setItem("materiales", JSON.stringify(this.inventario));
     this.contadoresIndividuales();
+    function ajusta() {
+    var horizontales = document.querySelectorAll("#graficos .horizontal"); 
+    var arcos = document.querySelectorAll("#graficos .arco"); 
+    var torres = document.querySelectorAll("#graficos #vertical .torre"); 
+
+var elem = 0; 
+while(elem < horizontales.length) {
+horizontales[elem].style.transition = "background-size 3s ease-in-out 2s"; 
+horizontales[elem].style.backgroundSize = horizontales[elem].innerHTML+" 100%"; 
+elem++; 
+} 
+
+elem = 0; 
+while(elem<torres.length) {
+torres[elem].style.transition = "background-size 1s ease-out "+(elem+4)+"s"; 
+torres[elem].style.backgroundSize = "80% "+ torres[elem].innerHTML; 
+elem++; 
+}
+
+elem = 0; 
+while(elem<arcos.length) {
+arcos[elem].style.backgroundImage = "radial-gradient(circle at bottom, white 45%, transparent 47%, transparent 67%, white 70%), linear-gradient("
++ (parseInt(arcos[elem].innerHTML) / 100) * 180 +
+"deg, green 50%, transparent 50%)"; 
+elem++; 
+}
+
+}
+
+onload = ajusta; 
   },
   computed: {},
   methods: {
@@ -1082,4 +1156,42 @@ td {
 table{
 text-align:center;
 }
+#graficos {
+display:contents; 
+margin: .5em auto; 
+padding: 0 .5em .5em; 
+border: .15em solid black; 
+font: 900 2em/1.2 sans-serif; 
+float: left; 
+border-radius: .25em; 
+}
+
+#graficos .horizontal {
+display: block; 
+font: 900 .5em/1 monospace; 
+text-align: left; 
+margin: .2em 0; 
+width: 10em; height: 1em; 
+background-color: gainsboro; 
+padding: 0; 
+border-right: solid 2.5em transparent; /* truco para compensar bg-position */
+background-image: linear-gradient(rgb(0, 68, 255), rgb(0, 60, 255)); 
+background-repeat: no-repeat; 
+background-position: 2.5em 0; 
+background-size: 0 100%; 
+}
+#graficos .arco {
+display: block; 
+font: 900 .8em/6em serif; 
+text-align: center; 
+margin: .2em auto; 
+width: 8em; height: 4em; 
+background-color: gainsboro; 
+padding: 0; 
+background-repeat: no-repeat; 
+background-position: 0 0; 
+background-size: 100% 100%, 100% 200%; 
+}
+
+
 </style>
