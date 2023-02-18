@@ -40,7 +40,7 @@
         <div class="hijo2 estado" v-if="material.estado =='Disponible'">
           <img src="../assets/ico/Disponible.png" class="ico"  title="DISPONIBLE"/>
           <span><strong>Estat:</strong><br/> {{material.estado}}</span>
-          <img src="../assets/img/qr-code.png" class="ico qr"  title="CODE QR"/>
+          <img :src="material.qr" class="ico qr"  title="CODE QR"/>
           <i>QR-NURSE</i>
         </div>
         <div class="hijo2 estado" v-if="material.estado =='No Disponible'">
@@ -52,7 +52,7 @@
         <div class="hijo2 estado" v-if="material.estado =='En Manteniment'">
           <img src="../assets/ico/Mantenimiento.png" class="ico"  title="EN MANTENIMENT"/>
           <span><strong>Estat:</strong><br/> {{material.estado}}</span>
-          <img src="../assets/img/qr-code.png" class="ico qr"  title="CODE QR"/>
+          <img :src="material.qr" class="ico qr"  title="CODE QR"/>
           <i>QR-NURSE</i>
           
         </div>

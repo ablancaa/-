@@ -16,7 +16,7 @@ export default {
   name: "Footer-",
     data(){
         return{
-            dia: '',
+            day: '',
             month:'',
             year:''
         }
