@@ -149,7 +149,7 @@ export default {
               element.datein = "";
         }
       }); 
-      this.showModal = false;     
+      this.showModal = true;     
       return items;
     },
     },
