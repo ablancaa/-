@@ -262,7 +262,7 @@
             "video": "https://www.youtube.com/embed/u6IVAH_pVNs",
             "qr": "https://firebasestorage.googleapis.com/v0/b/inventario-huvh-7e1e2.appspot.com/o/QR%2FQR-Hamilton.png?alt=media&token=aadf58c9-62e7-4c44-8bea-fc8cf1a041b8",
             "estado": "No Disponible",
-            "prestado": false,
+            "prestado": true,
             "dateout": "11/1/2022",
             "datein": ""
         },
@@ -668,7 +668,7 @@
             "video": "https://www.youtube.com/embed/u6IVAH_pVNs",
             "qr": "https://firebasestorage.googleapis.com/v0/b/inventario-huvh-7e1e2.appspot.com/o/QR%2FQR-Hamilton.png?alt=media&token=aadf58c9-62e7-4c44-8bea-fc8cf1a041b8",
             "estado": "En Manteniment",
-            "prestado": false,
+            "prestado": true,
             "dateout": "",
             "datein": "11/1/2022"
         },
@@ -682,7 +682,7 @@
             "video": "https://www.youtube.com/embed/u6IVAH_pVNs",
             "qr": "https://firebasestorage.googleapis.com/v0/b/inventario-huvh-7e1e2.appspot.com/o/QR%2FQR-Hamilton.png?alt=media&token=aadf58c9-62e7-4c44-8bea-fc8cf1a041b8",
             "estado": "En Manteniment",
-            "prestado": false,
+            "prestado": true,
             "dateout": "",
             "datein": "11/01/2022"
         },
