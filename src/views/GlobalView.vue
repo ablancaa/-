@@ -1175,7 +1175,7 @@ width: 10em; height: 1em;
 background-color: gainsboro; 
 padding: 0; 
 border-right: solid 2.5em transparent; /* truco para compensar bg-position */
-background-image: linear-gradient(rgb(0, 68, 255), rgb(0, 60, 255)); 
+background-image: linear-gradient(rgb(198, 212, 250), rgb(0, 60, 255)); 
 background-repeat: no-repeat; 
 background-position: 2.5em 0; 
 background-size: 0 100%; 
