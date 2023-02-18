@@ -9,8 +9,8 @@
       <td> <strong>IMAGE</strong> </td>
       <td> <strong>TITLE</strong> </td>
       <td> <strong>- ESTAT - INVENTARI</strong> </td>
-      <td> <strong>DATA SORTIDA |</strong> </td>
       <td> <strong>DATA ENTRADA</strong> </td>
+      <td> <strong>DATA SORTIDA</strong> </td>
       <td> <strong>DIES FORA</strong> </td>
       <td> <strong>UBICACIÓ</strong> </td>
       <td> <strong>EXTENSIÓ</strong> </td>
@@ -31,8 +31,8 @@
       <br/>
       <span><!--<strong>Inventari:</strong>--> {{ item.numinventari }}</span>
     </td>
-    <td><br/>{{ item.dateout }}</td>
     <td><br/>{{ item.datein }}</td>
+    <td><br/>{{ item.dateout }}</td>
     <td><br/>DIES FORA</td>
     <td><br/>{{ item.ubicacio }}</td>
     <td><br/>{{ item.extensio }}</td>
