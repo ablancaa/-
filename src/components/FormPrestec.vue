@@ -28,19 +28,6 @@
                 <option value="Tallers">Tallers</option>
             </select>
           </div>
-          <!-- <div class="contact-form-item">
-            <label for="extensio">Extensió</label>
-            <input type="text" id="extensio" v-model="material.extensio" />
-          </div> -->
-        <!--  <div class="contact-form-item">
-            <label for="dataOut">Data Out</label>
-            <input type="date" id="date" v-model="material.dataout" />
-          </div> -->
-        <!--  
-          <div class="contact-form-item">
-            <label for="private">Private contact</label>
-            <input type="checkbox" id="private" v-model="contact.private" />
-          </div> -->
           <div class="contact-form-item">
             <button type="submit" @submit.prevent="addPrestec">Préstec</button>
           </div>
@@ -54,7 +41,7 @@
   <script setup>
   import { ref, defineEmits, reactive } from "vue";
 
-  
+ 
   const emit = defineEmits(["add-prestec", "closeModal"]);
   let material = reactive({
     ubicacio: "",
@@ -64,6 +51,7 @@
   const error = ref(false);
   
   const addPrestec = () => {
+
     console.log("addPrectec")
     if (
       material.ubicacio.length === 0 
@@ -110,8 +98,9 @@
         
     }
     //console.log(material)
+    
     emit("add-prestec", material);
-    emit("closeModal", false);
+    emit("closeModal", true);
     resetPrestec();
   };
   

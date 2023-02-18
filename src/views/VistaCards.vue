@@ -2,7 +2,10 @@
   <h1 class="letraTitulo">Llistat de material</h1>
   <SearchBar v-on:showForm="toggleForm" v-on:search="setSearchTerm"/>
   <div id="contenido">
-    <FormPrestec  v-if="showModal" v-on:add-prestec="give" v-on:closeModal="toggleForm"/>
+    <FormPrestec  
+     v-if="showModal"
+     v-on:add-prestec="give" 
+     v-on:closeModal="toggleForm"/>
   <div>
     <table>
       <tr>
@@ -138,7 +141,7 @@ export default {
               element.datein = "";
         }
       }); 
-      this.showModal = false;     
+      this.showModal = true;     
       return items;
     },
     },
