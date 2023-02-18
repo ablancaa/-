@@ -14,6 +14,43 @@
           <div class="content">
             <br />
             <p>
+              <table>
+                <tr> 
+                  <td><strong>Total Unitats </strong></td>
+                  <td class="letraTotal">{{ this.contadores[0].TotalUnitats }}</td>
+                </tr>
+              </table> 
+              <table>
+                <tr>
+                  <td>
+                    <router-link
+                    :to="{ name: 'VistaListaEspecifica', params: { title: inventario[77].estado } }"
+                    title="Material Disponible">
+                      <img src="../assets/ico/Disponible.png" width="30" class="left" />
+              
+                    </router-link></td>
+                  <td> 
+                    <router-link
+                    :to="{ name: 'VistaListaEspecifica', params: { title: inventario[77].estado } }"
+                    title="Material No Disponible">
+                      <img src="../assets/ico/NoDisponible.png" width="30" class="left" />
+                    </router-link>
+                  </td>
+                  <td>
+                    <router-link
+                    :to="{ name: 'VistaListaEspecifica', params: { title: inventario[77].estado } }"
+                    title="Material En Manteniment">
+                      <img src="../assets/ico/Mantenimiento.png" width="30" class="left" />
+                    </router-link></td>
+                </tr>
+                <tr>
+                  <td>{{ this.contadores[0].Disponible }}</td>
+                  <td>{{ this.contadores[0].NoDisponible }}</td>
+                  <td>{{ this.contadores[0].EnManteniment }}</td>
+                </tr>
+              </table>            
+            </p>
+            <!-- <p>
               <strong>Total Unitats: </strong
               ><span class="letra">{{ this.contadores[0].TotalUnitats }}</span
               ><br />
@@ -27,7 +64,7 @@
               <img src="../assets/ico/Mantenimiento.png" width="20" class="left" />
               <strong> En Manteniment: </strong
               ><span class="letra">{{ this.contadores[0].EnManteniment }}</span>
-            </p>
+            </p> -->
           </div>
         </article>
       </router-link>
@@ -45,6 +82,43 @@
           </p>
           <div class="content">
             <p>
+              <table>
+                <tr> 
+                  <td><strong>Total Unitats </strong></td>
+                  <td class="letraTotal">{{ this.contadores[1].TotalUnitats }}</td>
+                </tr>
+              </table> 
+              <table>
+                <tr>
+                  <td>
+                    <router-link
+                    :to="{ name: 'VistaListaEspecifica', params: { title: inventario[77].estado } }"
+                    title="Material Disponible">
+                      <img src="../assets/ico/Disponible.png" width="30" class="left" />
+              
+                    </router-link></td>
+                  <td> 
+                    <router-link
+                    :to="{ name: 'VistaListaEspecifica', params: { title: inventario[77].estado } }"
+                    title="Material No Disponible">
+                      <img src="../assets/ico/NoDisponible.png" width="30" class="left" />
+                    </router-link>
+                  </td>
+                  <td>
+                    <router-link
+                    :to="{ name: 'VistaListaEspecifica', params: { title: inventario[77].estado } }"
+                    title="Material En Manteniment">
+                      <img src="../assets/ico/Mantenimiento.png" width="30" class="left" />
+                    </router-link></td>
+                </tr>
+                <tr>
+                  <td>{{ this.contadores[1].Disponible }}</td>
+                  <td>{{ this.contadores[1].NoDisponible }}</td>
+                  <td>{{ this.contadores[1].EnManteniment }}</td>
+                </tr>
+              </table>            
+            </p>
+            <!-- <p>
               <strong>Total Unitats: </strong
               ><span class="letra">{{ this.contadores[1].TotalUnitats }}</span
               ><br />
@@ -58,7 +132,7 @@
               <img src="../assets/ico/Mantenimiento.png" width="20" class="left" />
               <strong> En Manteniment: </strong
               ><span class="letra">{{ this.contadores[1].EnManteniment }}</span>
-            </p>
+            </p> -->
           </div>
         </article>
       </router-link>
@@ -76,6 +150,44 @@
           </p>
           <div class="content">
             <p>
+              <table>
+                <tr> 
+                  <td><strong>Total Unitats </strong></td>
+                  <td class="letraTotal">{{ this.contadores[2].TotalUnitats }}</td>
+                </tr>
+              </table> 
+              <table>
+                <tr>
+                  <td>
+                    <router-link
+                    :to="{ name: 'VistaListaEspecifica', params: { title: inventario[77].estado } }"
+                    title="Material Disponible">
+                      <img src="../assets/ico/Disponible.png" width="30" class="left" />
+              
+                    </router-link></td>
+                  <td> 
+                    <router-link
+                    :to="{ name: 'VistaListaEspecifica', params: { title: inventario[77].estado } }"
+                    title="Material No Disponible">
+                      <img src="../assets/ico/NoDisponible.png" width="30" class="left" />
+                    </router-link>
+                  </td>
+                  <td>
+                    <router-link
+                    :to="{ name: 'VistaListaEspecifica', params: { title: inventario[77].estado } }"
+                    title="Material En Manteniment">
+                      <img src="../assets/ico/Mantenimiento.png" width="30" class="left" />
+                    </router-link></td>
+                </tr>
+                <tr>
+                  <td>{{ this.contadores[2].Disponible }}</td>
+                  <td>{{ this.contadores[2].NoDisponible }}</td>
+                  <td>{{ this.contadores[2].EnManteniment }}</td>
+                </tr>
+              </table>         
+            </p>
+            
+            <!-- <p>
               <strong>Total Unitats: </strong
               ><span class="letra">{{ this.contadores[2].TotalUnitats }}</span
               ><br />
@@ -89,7 +201,7 @@
               <img src="../assets/ico/Mantenimiento.png" width="20" class="left" />
               <strong> En Manteniment: </strong>
               <span class="letra">{{ this.contadores[2].EnManteniment }}</span>
-            </p>
+            </p> -->
           </div>
         </article>
       </router-link>
@@ -106,6 +218,43 @@
           </p>
           <div class="content">
             <p>
+              <table>
+                <tr> 
+                  <td><strong>Total Unitats </strong></td>
+                  <td class="letraTotal">{{ this.contadores[3].TotalUnitats }}</td>
+                </tr>
+              </table> 
+              <table>
+                <tr>
+                  <td>
+                    <router-link
+                    :to="{ name: 'VistaListaEspecifica', params: { title: inventario[77].estado } }"
+                    title="Material Disponible">
+                      <img src="../assets/ico/Disponible.png" width="30" class="left" />
+              
+                    </router-link></td>
+                  <td> 
+                    <router-link
+                    :to="{ name: 'VistaListaEspecifica', params: { title: inventario[77].estado } }"
+                    title="Material No Disponible">
+                      <img src="../assets/ico/NoDisponible.png" width="30" class="left" />
+                    </router-link>
+                  </td>
+                  <td>
+                    <router-link
+                    :to="{ name: 'VistaListaEspecifica', params: { title: inventario[77].estado } }"
+                    title="Material En Manteniment">
+                      <img src="../assets/ico/Mantenimiento.png" width="30" class="left" />
+                    </router-link></td>
+                </tr>
+                <tr>
+                  <td>{{ this.contadores[3].Disponible }}</td>
+                  <td>{{ this.contadores[3].NoDisponible }}</td>
+                  <td>{{ this.contadores[3].EnManteniment }}</td>
+                </tr>
+              </table>          
+            </p>
+            <!-- <p>
               <strong>Total Unitats: </strong>
               <span class="letra">{{ this.contadores[3].TotalUnitats }}</span
               ><br />
@@ -119,7 +268,7 @@
               <img src="../assets/ico/Mantenimiento.png" width="20" class="left" />
               <strong> En Manteniment:</strong>
               <span class="letra">{{ this.contadores[3].EnManteniment }}</span>
-            </p>
+            </p> -->
           </div>
         </article>
       </router-link>
@@ -136,6 +285,43 @@
           </p>
           <div class="content">
             <p>
+              <table>
+                <tr> 
+                  <td><strong>Total Unitats </strong></td>
+                  <td class="letraTotal">{{ this.contadores[4].TotalUnitats }}</td>
+                </tr>
+              </table> 
+              <table>
+                <tr>
+                  <td>
+                    <router-link
+                    :to="{ name: 'VistaListaEspecifica', params: { title: inventario[77].estado } }"
+                    title="Material Disponible">
+                      <img src="../assets/ico/Disponible.png" width="30" class="left" />
+              
+                    </router-link></td>
+                  <td> 
+                    <router-link
+                    :to="{ name: 'VistaListaEspecifica', params: { title: inventario[77].estado } }"
+                    title="Material No Disponible">
+                      <img src="../assets/ico/NoDisponible.png" width="30" class="left" />
+                    </router-link>
+                  </td>
+                  <td>
+                    <router-link
+                    :to="{ name: 'VistaListaEspecifica', params: { title: inventario[77].estado } }"
+                    title="Material En Manteniment">
+                      <img src="../assets/ico/Mantenimiento.png" width="30" class="left" />
+                    </router-link></td>
+                </tr>
+                <tr>
+                  <td>{{ this.contadores[4].Disponible }}</td>
+                  <td>{{ this.contadores[4].NoDisponible }}</td>
+                  <td>{{ this.contadores[4].EnManteniment }}</td>
+                </tr>
+              </table>            
+            </p>
+            <!-- <p>
               <strong>Total Unitats: </strong>
               <span class="letra">{{ this.contadores[4].TotalUnitats }}</span
               ><br />
@@ -148,7 +334,7 @@
               <img src="../assets/ico/Mantenimiento.png" width="20" class="left" />
               <strong> En Manteniment: </strong>
               <span class="letra">{{ this.contadores[4].EnManteniment }}</span>
-            </p>
+            </p> -->
           </div>
         </article>
       </router-link>
@@ -167,6 +353,43 @@
           </p>
           <div class="content">
             <p>
+              <table>
+                <tr> 
+                  <td><strong>Total Unitats </strong></td>
+                  <td class="letraTotal">{{ this.contadores[5].TotalUnitats }}</td>
+                </tr>
+              </table> 
+              <table>
+                <tr>
+                  <td>
+                    <router-link
+                    :to="{ name: 'VistaListaEspecifica', params: { title: inventario[77].estado } }"
+                    title="Material Disponible">
+                      <img src="../assets/ico/Disponible.png" width="30" class="left" />
+              
+                    </router-link></td>
+                  <td> 
+                    <router-link
+                    :to="{ name: 'VistaListaEspecifica', params: { title: inventario[77].estado } }"
+                    title="Material No Disponible">
+                      <img src="../assets/ico/NoDisponible.png" width="30" class="left" />
+                    </router-link>
+                  </td>
+                  <td>
+                    <router-link
+                    :to="{ name: 'VistaListaEspecifica', params: { title: inventario[77].estado } }"
+                    title="Material En Manteniment">
+                      <img src="../assets/ico/Mantenimiento.png" width="30" class="left" />
+                    </router-link></td>
+                </tr>
+                <tr>
+                  <td>{{ this.contadores[5].Disponible }}</td>
+                  <td>{{ this.contadores[5].NoDisponible }}</td>
+                  <td>{{ this.contadores[5].EnManteniment }}</td>
+                </tr>
+              </table>            
+            </p>
+            <!-- <p>
               <strong>Total Unitats: </strong
               ><span class="letra">{{ this.contadores[5].TotalUnitats }}</span> <br />
               <img src="../assets/ico/Disponible.png" width="20" class="left" />
@@ -178,7 +401,7 @@
               <img src="../assets/ico/Mantenimiento.png" width="20" class="left" />
               <strong> En Manteniment: </strong>
               <span class="letra">{{ this.contadores[5].EnManteniment }}</span>
-            </p>
+            </p> -->
           </div>
         </article>
       </router-link>
@@ -195,6 +418,43 @@
           </p>
           <div class="content">
             <p>
+              <table>
+                <tr> 
+                  <td><strong>Total Unitats </strong></td>
+                  <td class="letraTotal">{{ this.contadores[6].TotalUnitats }}</td>
+                </tr>
+              </table> 
+              <table>
+                <tr>
+                  <td>
+                    <router-link
+                    :to="{ name: 'VistaListaEspecifica', params: { title: inventario[77].estado } }"
+                    title="Material Disponible">
+                      <img src="../assets/ico/Disponible.png" width="30" class="left" />
+              
+                    </router-link></td>
+                  <td> 
+                    <router-link
+                    :to="{ name: 'VistaListaEspecifica', params: { title: inventario[77].estado } }"
+                    title="Material No Disponible">
+                      <img src="../assets/ico/NoDisponible.png" width="30" class="left" />
+                    </router-link>
+                  </td>
+                  <td>
+                    <router-link
+                    :to="{ name: 'VistaListaEspecifica', params: { title: inventario[77].estado } }"
+                    title="Material En Manteniment">
+                      <img src="../assets/ico/Mantenimiento.png" width="30" class="left" />
+                    </router-link></td>
+                </tr>
+                <tr>
+                  <td>{{ this.contadores[6].Disponible }}</td>
+                  <td>{{ this.contadores[6].NoDisponible }}</td>
+                  <td>{{ this.contadores[6].EnManteniment }}</td>
+                </tr>
+              </table>            
+            </p>
+            <!-- <p>
               <strong>Total Unitats: </strong
               ><span class="letra">{{ this.contadores[6].TotalUnitats }}</span
               ><br />
@@ -207,7 +467,7 @@
               <img src="../assets/ico/Mantenimiento.png" width="20" class="left" />
               <strong> En Manteniment: </strong>
               <span class="letra">{{ this.contadores[6].EnManteniment }}</span>
-            </p>
+            </p> -->
           </div>
         </article>
       </router-link>
@@ -224,6 +484,43 @@
           </p>
           <div class="content">
             <p>
+              <table>
+                <tr> 
+                  <td><strong>Total Unitats </strong></td>
+                  <td class="letraTotal">{{ this.contadores[7].TotalUnitats }}</td>
+                </tr>
+              </table> 
+              <table>
+                <tr>
+                  <td>
+                    <router-link
+                    :to="{ name: 'VistaListaEspecifica', params: { title: inventario[77].estado } }"
+                    title="Material Disponible">
+                      <img src="../assets/ico/Disponible.png" width="30" class="left" />
+              
+                    </router-link></td>
+                  <td> 
+                    <router-link
+                    :to="{ name: 'VistaListaEspecifica', params: { title: inventario[77].estado } }"
+                    title="Material No Disponible">
+                      <img src="../assets/ico/NoDisponible.png" width="30" class="left" />
+                    </router-link>
+                  </td>
+                  <td>
+                    <router-link
+                    :to="{ name: 'VistaListaEspecifica', params: { title: inventario[77].estado } }"
+                    title="Material En Manteniment">
+                      <img src="../assets/ico/Mantenimiento.png" width="30" class="left" />
+                    </router-link></td>
+                </tr>
+                <tr>
+                  <td>{{ this.contadores[7].Disponible }}</td>
+                  <td>{{ this.contadores[7].NoDisponible }}</td>
+                  <td>{{ this.contadores[7].EnManteniment }}</td>
+                </tr>
+              </table>            
+            </p>
+            <!-- <p>
               <strong>Total Unitats: </strong
               ><span class="letra">{{ this.contadores[7].TotalUnitats }}</span> <br />
               <img src="../assets/ico/Disponible.png" width="20" class="left" />
@@ -235,7 +532,7 @@
               <img src="../assets/ico/Mantenimiento.png" width="20" class="left" />
               <strong> En Manteniment: </strong>
               <span class="letra">{{ this.contadores[7].EnManteniment }}</span>
-            </p>
+            </p> -->
           </div>
         </article>
       </router-link>
@@ -256,9 +553,43 @@
         <br/>
           <div class="content">
             <p>
-              <strong>Total Unitats: </strong
-              ><span class="letra">{{ this.contadores[8].TotalUnitats }}</span> <br /><br/>
-              <router-link
+              <table>
+                <tr> 
+                  <td><strong>Total Unitats </strong></td>
+                  <td class="letraTotal">{{ this.contadores[8].TotalUnitats }}</td>
+                </tr>
+              </table> 
+              <table>
+                <tr>
+                  <td>
+                    <router-link
+                    :to="{ name: 'VistaListaEspecifica', params: { title: inventario[77].estado } }"
+                    title="Material Disponible">
+                      <img src="../assets/ico/Disponible.png" width="30" class="left" />
+              
+                    </router-link></td>
+                  <td> 
+                    <router-link
+                    :to="{ name: 'VistaListaEspecifica', params: { title: inventario[77].estado } }"
+                    title="Material No Disponible">
+                      <img src="../assets/ico/NoDisponible.png" width="30" class="left" />
+                    </router-link>
+                  </td>
+                  <td>
+                    <router-link
+                    :to="{ name: 'VistaListaEspecifica', params: { title: inventario[77].estado } }"
+                    title="Material En Manteniment">
+                      <img src="../assets/ico/Mantenimiento.png" width="30" class="left" />
+                    </router-link></td>
+                </tr>
+                <tr>
+                  <td>{{ this.contadores[8].Disponible }}</td>
+                  <td>{{ this.contadores[8].NoDisponible }}</td>
+                  <td>{{ this.contadores[8].EnManteniment }}</td>
+                </tr>
+              </table>            
+            
+              <!-- <router-link
                 :to="{ name: 'VistaListaEspecifica', params: { title: inventario[77].estado } }"
                 title="Material Disponible">
               <img src="../assets/ico/Disponible.png" width="20" class="left" />
@@ -277,8 +608,8 @@
                 title="Material No Disponible">
               <img src="../assets/ico/Mantenimiento.png" width="20" class="left" />
               <strong> En Manteniment: </strong>
-              <span class="letra">{{ this.contadores[8].EnManteniment }}</span>
-              </router-link>
+            </router-link>
+              <span class="letra">{{ this.contadores[8].EnManteniment }}</span> -->
             </p>
           </div>
         </article>
@@ -295,7 +626,44 @@
             <strong class="subtitle2">{{ inventario[80].title }}</strong>
           </p>
           <div class="content">
-            <p>
+            <div>
+              <table>
+                <tr> 
+                  <td><strong>Total Unitats </strong></td>
+                  <td class="letraTotal">{{ this.contadores[9].TotalUnitats }}</td>
+                </tr>
+              </table> 
+              <table>
+                <tr>
+                  <td>
+                    <router-link
+                    :to="{ name: 'VistaListaEspecifica', params: { title: inventario[77].estado } }"
+                    title="Material Disponible">
+                      <img src="../assets/ico/Disponible.png" width="30" class="left" />
+              
+                    </router-link></td>
+                  <td> 
+                    <router-link
+                    :to="{ name: 'VistaListaEspecifica', params: { title: inventario[77].estado } }"
+                    title="Material No Disponible">
+                      <img src="../assets/ico/NoDisponible.png" width="30" class="left" />
+                    </router-link>
+                  </td>
+                  <td>
+                    <router-link
+                    :to="{ name: 'VistaListaEspecifica', params: { title: inventario[77].estado } }"
+                    title="Material En Manteniment">
+                      <img src="../assets/ico/Mantenimiento.png" width="30" class="left" />
+                    </router-link></td>
+                </tr>
+                <tr>
+                  <td>{{ this.contadores[9].Disponible }}</td>
+                  <td>{{ this.contadores[9].NoDisponible }}</td>
+                  <td>{{ this.contadores[9].EnManteniment }}</td>
+                </tr>
+              </table> 
+              </div>           
+            <!-- <p>
               <strong>Total Unitats: </strong>
               <span class="letra">{{ this.contadores[9].TotalUnitats }}</span
               ><br />
@@ -308,7 +676,7 @@
               <img src="../assets/ico/Mantenimiento.png" width="20" class="left" />
               <strong> En Manteniment: </strong>
               <span class="letra">{{ this.contadores[9].EnManteniment }}</span>
-            </p>
+            </p> -->
           </div>
         </article>
       </router-link>
@@ -684,7 +1052,8 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+
 .subtitle2 {
   font-size: 16px;
   font-weight: bold;
@@ -699,5 +1068,18 @@ export default {
 .letra {
   font-size: 16px;
   font-weight: bolder;
+}
+.letraRow {
+  font-size: 15px;
+}
+.letraTotal {
+  font-size: 26px;
+  text-align: center;
+}
+td {
+  font-size: 18px;
+}
+table{
+text-align:center;
 }
 </style>
