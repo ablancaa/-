@@ -1,5 +1,5 @@
 <template>
-  <h1 class="letraTitulo">Llistat de material</h1>
+  <h1 class="letraTitulo"><strong>Llistat de material</strong></h1>
   <SearchBar v-on:showForm="toggleForm" v-on:search="setSearchTerm"/>
   <div id="contenido">
     <FormPrestec  
@@ -16,6 +16,7 @@
       <td> <strong>DATA ENTRADA</strong> </td>
       <td> <strong>DIES FORA</strong> </td>
       <td> <strong>UBICACIÓ</strong> </td>
+      <td> <strong>QR</strong> </td>
       <td> <strong>EXTENSIÓ</strong> </td>
       <td></td>
   </tr>
@@ -38,6 +39,8 @@
     <td><br/>{{ item.datein }}</td>
     <td><br/>DIES FORA</td>
     <td><br/>{{ item.ubicacio }}</td>
+    <td><br/><span v-if="item.qr==''"><img src="../assets/img/skeleton.gif" width="100"/></span><span else><img :src="item.qr" width="85"/></span></td>
+    <!-- <td else><br/></td> -->
     <td><br/>{{ item.extensio }}</td>
     <td v-if="item.prestado"><br/><button @click="tornada(item.numinventari)" class="btn1">Tornada</button></td>
     <td v-else><!--A la unitat--><br/> <span v-if="!item.prestado"><button @click="prestec(item.numinventari), give()" class="btn1">Préstec</button></span></td>

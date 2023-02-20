@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1 class="letraTitulo">Fitxes de material</h1>
+    <h1 class="letraTitulo"><strong>Fitxes de material</strong></h1>
     <SearchBar v-on:showForm="toggleForm" v-on:search="setSearchTerm"/>
    <CardList :inventario="itemListFiltered" v-on:tornada-num="tornada" v-on:prestec-num="prestec"/>
   </div>

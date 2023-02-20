@@ -1,5 +1,5 @@
 <template>
-  <h2 class="letraTitulo">Visió global del material</h2>
+  <h2 class="letraTitulo"><strong>Visió global del material</strong></h2>
   <div class="tile is-ancestor">
     <div class="tile is-parent">
       <router-link
@@ -142,7 +142,7 @@
             </p> -->
             <div id="graficos">
             <!-- <figure class="horizontal">100%</figure> -->
-            <figure class="horizontal">75%</figure>
+            <figure class="horizontal">50%</figure>
             </div>
           </div>
         </article>

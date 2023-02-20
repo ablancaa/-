@@ -1,5 +1,5 @@
 <template>
-    <h2 class="letraTitulo">Selecció del material</h2>
+    <h2 class="letraTitulo"><strong>Selecció del material</strong></h2>
   <SearchBar v-on:showForm="toggleForm" v-on:search="setSearchTerm"/>
   <div id="contenido">
     <FormPrestec  v-if="showModal" v-on:add-prestec="give" v-on:closeModal="toggleForm"/>
