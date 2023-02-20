@@ -81,7 +81,7 @@ export default {
               element.extensio = "3856" ,
               element.estado = "Disponible",
               element.prestado = false,
-              element.dateout="",
+              element.dateout="--/--/----",
               element.datein = (`${day}/${month}/${year}`);
         }
       });      
@@ -122,7 +122,7 @@ export default {
               element.estado = estado,
               element.prestado = true,
               element.dateout=(`${day}/${month}/${year}`),
-              element.datein = "";
+              element.datein = "--/--/----";
         }
       });      
       return items;
@@ -132,6 +132,7 @@ export default {
 }
 </script>
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 #contenido{
  width: 1204; margin: 0 auto; 
 }

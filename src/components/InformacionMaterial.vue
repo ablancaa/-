@@ -7,21 +7,39 @@
     <img :src="material.image"/>
       <p class="left">{{ material.info }}</p>
     </div>
-    <div class="tile is-child box">
+    <div class="tile is-child box" v-if="material.qr ==''">
+     <span><img src="../assets/img/trabajando.jpg"  width="250" title="QR"/></span>
+     <br/> 
+     <span> <img src="../assets/img/skeleton.gif" class=""  width="" title="Estem treballant en aquesta secció"/></span>
+    </div>
+    <div class="tile is-child box" v-if="material.qr !=''">
       <p class="title"></p>
-      <img :src="material.qr" width="250" title="QR"/>
-      <p><a href="">QR NURSE - Muntatge del circuit per Bomba FreeGo Abbott</a> from <a href="https://vimeo.com/vallhebron">Vall d&#039;Hebron Hospital Campus</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+     <span><img :src="material.qr" width="250" title="QR"/>
+      <p>QR NURSE - Muntatge del circuit per Bomba FreeGo Abbott from <a href="https://vimeo.com/vallhebron">Vall d&#039;Hebron Hospital Campus</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+      </span>
     </div>
   </div>
-  <div class="tile is-parent">
+  <span v-if="material.qr == ''"> </span>
+  <div class="tile is-parent" v-if="material.video == ''">
     <div class="tile is-child box">
       <p class="title"></p>
-      <iframe :src="material.video" width="560" height="315" class="puntaRedonda"></iframe>
+      <img src="../assets/img/skeleton.gif" title="Estem treballant en aquesta secció"/>
       <br/>
       <p class="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. Morbi maximus, leo sit amet vehicula eleifend, nunc dui porta orci, quis semper odio felis ut quam.</p>
       <p class="left">Suspendisse varius ligula in molestie lacinia. Maecenas varius eget ligula a sagittis. Pellentesque interdum, nisl nec interdum maximus, augue diam porttitor lorem, et sollicitudin felis neque sit amet erat. Maecenas imperdiet felis nisi, fringilla luctus felis hendrerit sit amet. Aenean vitae gravida diam, finibus dignissim turpis. Sed eget varius ligula, at volutpat tortor.</p>
       <p class="left">Integer sollicitudin, tortor a mattis commodo, velit urna rhoncus erat, vitae congue lectus dolor consequat libero. Donec leo ligula, maximus et pellentesque sed, gravida a metus. Cras ullamcorper a nunc ac porta. Aliquam ut aliquet lacus, quis faucibus libero. Quisque non semper leo.</p>
+    </div> 
+  </div>
+  <div class="tile is-parent" v-if="material.video != ''">
+    <div class="tile is-child box">
+      <p class="title"></p>
+      <iframe :src="material.video" width="560" height="315" class="puntaRedonda"></iframe>
+      <br/><br/>
+      <p class="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. Morbi maximus, leo sit amet vehicula eleifend, nunc dui porta orci, quis semper odio felis ut quam.</p>
+      <p class="left">Suspendisse varius ligula in molestie lacinia. Maecenas varius eget ligula a sagittis. Pellentesque interdum, nisl nec interdum maximus, augue diam porttitor lorem, et sollicitudin felis neque sit amet erat. Maecenas imperdiet felis nisi, fringilla luctus felis hendrerit sit amet. Aenean vitae gravida diam, finibus dignissim turpis. Sed eget varius ligula, at volutpat tortor.</p>
+      <p class="left">Integer sollicitudin, tortor a mattis commodo, velit urna rhoncus erat, vitae congue lectus dolor consequat libero. Donec leo ligula, maximus et pellentesque sed, gravida a metus. Cras ullamcorper a nunc ac porta. Aliquam ut aliquet lacus, quis faucibus libero. Quisque non semper leo.</p>
     </div>
+    
   </div>
   
 </div>
@@ -53,7 +71,7 @@ export default {
 }
 .letraTitulo{
   font-size: 35px;
-  margin-top: -15px;
+  margin-top: -5px;
   margin-bottom: 8px;
   background-color: rgb(213, 221, 255);
   border-radius: 10px;

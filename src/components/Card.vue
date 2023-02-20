@@ -40,19 +40,22 @@
         <div class="hijo2 estado" v-if="material.estado =='Disponible'">
           <img src="../assets/ico/Disponible.png" class="ico"  title="DISPONIBLE"/>
           <span><strong>Estat:</strong><br/> {{material.estado}}</span>
-          <img :src="material.qr" class="ico qr"  title="CODE QR"/>
+          <span v-if="material.qr == ''"> <img src="../assets/img/skeleton.gif" class="ico qr"  width="" title="Estem treballant en aquesta secció"/></span>
+          <span v-if="material.qr != ''"> <img :src="material.qr" class="ico qr"  width="" title="CODE QR"/></span>
           <i>QR-NURSE</i>
         </div>
         <div class="hijo2 estado" v-if="material.estado =='No Disponible'">
           <img src="../assets/ico/NoDisponible.png" class="ico"  title="NO DISPONIBLE"/>
           <span><strong>Estat:</strong><br/> {{material.estado}}</span>
-          <img :src="material.qr" class="ico qr"  title="CODE QR"/>
+          <span v-if="material.qr == ''"> <img src="../assets/img/skeleton.gif" class="ico qr"  width="" title="Estem treballant en aquesta secció"/></span>
+          <span v-if="material.qr != ''"> <img :src="material.qr" class="ico qr"  width="" title="CODE QR"/></span>
           <i>QR-NURSE</i>
         </div>
         <div class="hijo2 estado" v-if="material.estado =='En Manteniment'">
           <img src="../assets/ico/Mantenimiento.png" class="ico"  title="EN MANTENIMENT"/>
           <span><strong>Estat:</strong><br/> {{material.estado}}</span>
-          <img :src="material.qr" class="ico qr"  title="CODE QR"/>
+          <span v-if="material.qr == ''"> <img src="../assets/img/skeleton.gif" class="ico qr"  width="" title="Estem treballant en aquesta secció"/></span>
+          <span v-if="material.qr != ''"> <img :src="material.qr" class="ico qr"  width="" title="CODE QR"/></span>
           <i>QR-NURSE</i>
           
         </div>
@@ -64,7 +67,7 @@
     </div> -->
   </div>
   <footer class="card-footer">
-   <span v-if="!material.prestado" class="card-footer-item textoBlanco"><a @click="prestec(material.numinventari)">Préstec</a></span>
+   <span v-if="!material.prestado" class="card-footer-item "><a @click="prestec(material.numinventari)">Préstec</a></span>
    <span v-else  class="card-footer-item"> <a @click="tornada">Tornada</a></span>
     <router-link :to="{name: 'VistaInfo', params: {numinventari:material.numinventari}}"  class="card-footer-item">+ Info</router-link>
   </footer>
@@ -104,7 +107,7 @@ export default {
 </script>
 
 <style>
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 .salida{
   margin-right: 4px;
   float: left;

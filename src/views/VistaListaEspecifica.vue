@@ -107,7 +107,7 @@ export default {
               element.extensio = "3856" ,
               element.estado = "Disponible",
               element.prestado = false,
-              element.dateout="",
+              element.dateout="--/--/----",
               element.datein = (`${day}/${month}/${year}`);
         }
       });      
@@ -146,7 +146,7 @@ export default {
               element.estado = estado,
               element.prestado = true,
               element.dateout=(`${day}/${month}/${year}`),
-              element.datein = "";
+              element.datein = "--/--/----";
         }
       }); 
       this.showModal = true;     
