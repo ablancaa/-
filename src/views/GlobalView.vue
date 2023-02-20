@@ -953,7 +953,7 @@ onload = ajusta;
                 this.contadores[1].NoDisponible = this.contadorNoDisponible1;
                 break;
               case "En Manteniment":
-                this.contadorEnManteniment++;
+                this.contadorEnManteniment1++;
                 this.contadores[1].EnManteniment = this.contadorEnManteniment1;
                 break;
             }
