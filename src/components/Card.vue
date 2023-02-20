@@ -42,21 +42,24 @@
           <span><strong>Estat:</strong><br/> {{material.estado}}</span>
           <span v-if="material.qr == ''"> <img src="../assets/img/skeleton.gif" class="ico qr"  width="" title="Estem treballant en aquesta secció"/></span>
           <span v-if="material.qr != ''"> <img :src="material.qr" class="ico qr"  width="" title="CODE QR"/></span>
-          <i>QR-NURSE</i>
+          <!-- <span v-if="material.qr != ''"><i>QR-NURSE</i></span> -->
+          <i>QR NURSE</i>
         </div>
         <div class="hijo2 estado" v-if="material.estado =='No Disponible'">
           <img src="../assets/ico/NoDisponible.png" class="ico"  title="NO DISPONIBLE"/>
           <span><strong>Estat:</strong><br/> {{material.estado}}</span>
           <span v-if="material.qr == ''"> <img src="../assets/img/skeleton.gif" class="ico qr"  width="" title="Estem treballant en aquesta secció"/></span>
           <span v-if="material.qr != ''"> <img :src="material.qr" class="ico qr"  width="" title="CODE QR"/></span>
-          <i>QR-NURSE</i>
+          <!-- <span v-if="material.qr != ''"><i>QR-NURSE</i></span> -->
+          <i>QR NURSE</i>
         </div>
         <div class="hijo2 estado" v-if="material.estado =='En Manteniment'">
           <img src="../assets/ico/Mantenimiento.png" class="ico"  title="EN MANTENIMENT"/>
           <span><strong>Estat:</strong><br/> {{material.estado}}</span>
           <span v-if="material.qr == ''"> <img src="../assets/img/skeleton.gif" class="ico qr"  width="" title="Estem treballant en aquesta secció"/></span>
           <span v-if="material.qr != ''"> <img :src="material.qr" class="ico qr"  width="" title="CODE QR"/></span>
-          <i>QR-NURSE</i>
+          <!-- <span v-if="material.qr != ''"><i>QR-NURSE</i></span> -->
+          <i>QR NURSE</i>
           
         </div>
   </div>
