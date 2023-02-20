@@ -19,7 +19,6 @@
                   <td class="letraTotal">{{ this.contadores[0].TotalUnitats }}</td>
                 </tr>
               </table> 
-       
               <table>
                 <tr>
                   <td>
