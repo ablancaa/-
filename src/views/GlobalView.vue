@@ -917,7 +917,9 @@ onload = ajusta;
       this.materiales = Inventario.data;
     },
     contadoresIndividuales() {
+      
       this.contadorTotales = 0;
+      
       for (let i = 0; i < this.materiales.length; i++) {
         switch (this.materiales[i].title) {
           case "Bomba FreeGo Abbott":
@@ -1104,18 +1106,18 @@ onload = ajusta;
                 this.contadores[9].NoDisponible = this.contadorNoDisponible9;
                 break;
               case "En Manteniment":
-                this.contadorEnManteniment8++;
+                this.contadorEnManteniment9++;
                 this.contadores[9].EnManteniment = this.contadorEnManteniment9;
                 break;
             }
             break;
         }
 
-        // console.log(this.contadores[0].Disponible)
-        console.log(this.contadores[1].TotalUnitats);
-        console.log(this.contadores[1].Disponible);
-        console.log(this.contadores[1].NoDisponible);
-        console.log(this.contadores[1].EnManteniment);
+        //console.log(this.contadores[0].Disponible)
+        //console.log(this.contadores[1].TotalUnitats);
+        //console.log(this.contadores[1].Disponible);
+        //console.log(this.contadores[1].NoDisponible);
+        //console.log(this.contadores[1].EnManteniment);
       }
       this.contadorDisponible = 0;
       this.contadorNoDisponible = 0;
