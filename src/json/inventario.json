@@ -26,7 +26,7 @@
             "estado": "En Manteniment",
             "prestado": true,
             "dateout": "11/1/2022",
-            "datein": ""
+            "datein": "--/--/----"
         },
         {
             "numinventari": "1149537",
@@ -40,7 +40,7 @@
             "estado": "No Disponible",
             "prestado": true,
             "dateout": "11/1/2022",
-            "datein": ""
+            "datein": "--/--/----"
         },
         {
             "numinventari": "1176212",
@@ -53,7 +53,7 @@
             "qr": "",
             "estado": "Disponible",
             "prestado": false,
-            "dateout": "",
+            "dateout": "--/--/----",
             "datein": "11/1/2022"
         },
         {
@@ -68,7 +68,7 @@
             "estado": "No Disponible",
             "prestado": true,
             "dateout": "01/1/2023",
-            "datein": ""
+            "datein": "--/--/----"
         },
         {
             "numinventari": "1147306",
@@ -81,7 +81,7 @@
             "qr": "",
             "estado": "Disponible",
             "prestado": false,
-            "dateout": "",
+            "dateout": "--/--/----",
             "datein": "11/1/2022"
         },
         {
@@ -95,7 +95,7 @@
             "qr": "",
             "estado": "Disponible",
             "prestado": false,
-            "dateout": "",
+            "dateout": "--/--/----",
             "datein": "11/1/2022"
         },
         {
@@ -109,7 +109,7 @@
             "qr": "",
             "estado": "Disponible",
             "prestado": false,
-            "dateout": "",
+            "dateout": "--/--/----",
             "datein": "11/1/2022"
         },
         {
@@ -124,7 +124,7 @@
             "estado": "No Disponible",
             "prestado": true,
             "dateout": "31/1/2022",
-            "datein": ""
+            "datein": "--/--/----"
         },
         {
             "numinventari": "1116865",
@@ -138,7 +138,7 @@
             "estado": "En Manteniment",
             "prestado": true,
             "dateout": "11/1/2022",
-            "datein": ""
+            "datein": "--/--/----"
         },
         {
             "numinventari": "1118770",
@@ -152,7 +152,7 @@
             "estado": "En Manteniment",
             "prestado": true,
             "dateout": "11/1/2022",
-            "datein": ""
+            "datein": "--/--/----"
         },
         {
             "numinventari": "1116833",
@@ -166,7 +166,7 @@
             "estado": "En Manteniment",
             "prestado": true,
             "dateout": "11/1/2022",
-            "datein": ""
+            "datein": "--/--/----"
         },
         {
             "numinventari": "1116834",
@@ -180,7 +180,7 @@
             "estado": "En Manteniment",
             "prestado": true,
             "dateout": "11/1/2022",
-            "datein": ""
+            "datein": "--/--/----"
         },
         {
             "numinventari": "1116866",
@@ -194,7 +194,7 @@
             "estado": "En Manteniment",
             "prestado": true,
             "dateout": "11/1/2022",
-            "datein": ""
+            "datein": "--/--/----"
         },
         {
             "numinventari": "1116864",
@@ -208,7 +208,7 @@
             "estado": "En Manteniment",
             "prestado": true,
             "dateout": "11/1/2022",
-            "datein": ""
+            "datein": "--/--/----"
         },
         {
             "numinventari": "1116858",
@@ -222,7 +222,7 @@
             "estado": "En Manteniment",
             "prestado": true,
             "dateout": "11/1/2022",
-            "datein": ""
+            "datein": "--/--/----"
         },
         {
             "numinventari": "1116856",
@@ -236,7 +236,7 @@
             "estado": "En Manteniment",
             "prestado": true,
             "dateout": "11/1/2022",
-            "datein": ""
+            "datein": "--/--/----"
         },
         {
             "numinventari": "1118731",
@@ -250,7 +250,7 @@
             "estado": "No Disponible",
             "prestado": true,
             "dateout": "11/1/2022",
-            "datein": ""
+            "datein": "--/--/----"
         },
         {
             "numinventari": "1116349",
@@ -264,7 +264,7 @@
             "estado": "No Disponible",
             "prestado": true,
             "dateout": "11/1/2022",
-            "datein": ""
+            "datein": "--/--/----"
         },
         {
             "numinventari": "1116818",
