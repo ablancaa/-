@@ -7,6 +7,7 @@ import GlobalView from '../views/GlobalView.vue'
 import Instrucciones from '../views/Instrucciones.vue'
 import ListadoTelefonico from '../views/ListadoTelefonico.vue'
 import Inicio from '../views/Inicio.vue'
+import HTrauma from '../views/HTrauma.vue'
 
 const routes = [
   {
@@ -48,6 +49,11 @@ const routes = [
     path: '/Inicio',
     name: 'Inicio',
     component: Inicio
+  },
+  {
+    path: '/HTrauma',
+    name: 'H-Trauma',
+    component: HTrauma
   },
   {
     path: '/about',
