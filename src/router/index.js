@@ -6,6 +6,7 @@ import VistaInfo from '../views/VistaInfo.vue'
 import GlobalView from '../views/GlobalView.vue'
 import Instrucciones from '../views/Instrucciones.vue'
 import ListadoTelefonico from '../views/ListadoTelefonico.vue'
+import Inicio from '../views/Inicio.vue'
 
 const routes = [
   {
@@ -42,6 +43,11 @@ const routes = [
     path: '/ListadoTelefonico',
     name: 'ListadoTelefonico',
     component: ListadoTelefonico
+  },
+  {
+    path: '/Inicio',
+    name: 'Inicio',
+    component: Inicio
   },
   {
     path: '/about',

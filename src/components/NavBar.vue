@@ -14,6 +14,9 @@
 
   <div id="navbarBasicExample" class="navbar-menu">
     <span class="navbar-item">
+        <router-link to="/Inicio"><span class="color">Inicio </span></router-link>
+      </span>
+    <span class="navbar-item">
         <router-link to="/"><span class="color">Home </span></router-link>
       </span>
     <div class="navbar-start">
