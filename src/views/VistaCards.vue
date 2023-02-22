@@ -12,8 +12,8 @@
       <td> <strong>IMAGE</strong> </td>
       <td> <strong>TITLE</strong> </td>
       <td> <strong>- ESTAT - INVENTARI</strong> </td>
-      <td> <strong>DATA SORTIDA |</strong> </td>
-      <td> <strong>DATA ENTRADA</strong> </td>
+      <td> <strong>- DATA - SORTIDA</strong> </td>
+      <td> <strong>- DATA - ENTRADA</strong> </td>
       <td> <strong>DIES FORA</strong> </td>
       <td> <strong>UBICACIÓ</strong> </td>
       <td> <strong>QR</strong> </td>
