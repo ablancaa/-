@@ -1,6 +1,6 @@
 <template>
 <div class="container">
-    <h1 class="letraTitulo">Instruccions</h1>
+    <h1 class="letraTitulo"><strong>Instruccions</strong></h1>
         <div class="columns is-desktop">
             <div class="column"><h1>1</h1><img src="../assets/logos/logo-VH-Master-RGB-blue.png"/></div>
             <div class="column"><h1>2</h1><img src="../assets/logos/logo-VH-Master-RGB-blue.png"/></div>
