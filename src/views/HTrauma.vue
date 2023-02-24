@@ -7,7 +7,7 @@
                 <div v-for="planta in plantas" :key="planta" class="column" v-on:click="show = !show">
                     <div class="card2">
                         <br/>
-                       <span><strong>Planta: </strong> {{ planta-3 }}</span>
+                       <span><strong>Planta: </strong> <span class="numPlanta">{{ planta-3 }}</span></span>
                        <br/>
                        <span>
                         <transition name="slide-fade">
@@ -36,7 +36,12 @@ export default {
 }
 </script>
 
-<style >
+<style>
+
+.numPlanta{
+    font-size: 25px;
+}
+
 .lista-plantas {
     display: grid;
     width: 100%;
