@@ -2,13 +2,18 @@
   <div class="container">
     <h1 class="letraTitulo"><strong>Fitxes de material</strong></h1>
     <SearchBar v-on:showForm="toggleForm" v-on:search="setSearchTerm"/>
-   <CardList :inventario="itemListFiltered" v-on:tornada-num="tornada" v-on:prestec-num="prestec"/>
+    <CardList :inventario="itemListFiltered" v-on:tornada-num="tornada" v-on:prestec-num="prestec"/>
   </div>
   <FormPrestec
       v-if="showModal"
       v-on:closeModal="toggleForm"
       v-on:add-prestec="give" 
     />
+    <div class="go-top-container">
+      <div class="go-top-button">
+        <i class="fas fa-chevron-up"> <img src="../assets/ico/volver-arriba.png" width="90"/></i>
+      </div>
+    </div>
 </template>
 
 <script>
@@ -32,6 +37,22 @@ export default {
   mounted(){
       this.fetchItems();
       localStorage.setItem("materiales", JSON.stringify(this.inventario));
+      
+      window.onscroll = function(){
+        console.log(document.documentElement.scrollTop);
+        if(document.documentElement.scrollTop > 100) {
+          document.querySelector('.go-top-container').classList.add('show');
+        } else {
+          document.querySelector('.go-top-container').classList.remove('show');
+        }
+      } 
+ 
+      document.querySelector('.go-top-container').addEventListener('click', () => {
+        window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+        });
+      });
     },
     computed: {
       itemListFiltered() {
@@ -138,5 +159,69 @@ export default {
 }
 .letraGrande{
   font-size: 16px;
+}
+/* GOTOP */
+ 
+.go-top-container {
+    position: fixed;
+    bottom: 2rem;
+    right: 1rem;
+    width: 2.6rem;
+    height: 2.6rem;
+    z-index: -1;
+}
+ 
+.go-top-button {
+    width: 0rem;
+    height: 0rem;
+    background: #002fff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+ 
+.go-top-button i {
+    position: absolute;
+    font-size: 0rem;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: #fff;
+    transition: 0.2s;
+}
+ 
+.show {
+    z-index: 10;
+}
+ 
+.show .go-top-button {
+    animation: popup 0.3s ease-in-out;
+    width: 2.6rem;
+    height: 2.6rem;
+    z-index: 11;
+}
+ 
+.show i {
+    transform: translate(-50%, -50%) scale(1);
+}
+ 
+@keyframes popup {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    50% {
+        width: 2rem;
+        height: 2rem;
+    }
+    100% {
+        width: 4.6rem;
+        height: 4.6rem;
+    }
 }
 </style>

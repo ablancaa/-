@@ -124,9 +124,13 @@ export default {
 .entrada2{
   margin-right: 4px; 
 }
+.card-footer{
+  border-radius: 15px;
+}
 
 .card-footer-item {
   background: rgb(236, 236, 245);
+  border-radius: 1px;
   
 }
 .textoBlanco {
@@ -171,6 +175,7 @@ export default {
 .card{
   height: auto;
   width: 360px;
+  border-radius: 80px;
   
 }
 

@@ -727,6 +727,11 @@
   </div>
   <br />
   <br />
+  <div class="go-top-container">
+      <div class="go-top-button">
+        <i class="fas fa-chevron-up"> <img src="../assets/ico/volver-arriba.png" width="90"/></i>
+      </div>
+    </div>
 </template>
 
 <script>
@@ -876,36 +881,55 @@ export default {
     this.fetchItems();
     localStorage.setItem("materiales", JSON.stringify(this.inventario));
     this.contadoresIndividuales();
+
+    
+
+
     function ajusta() {
     var horizontales = document.querySelectorAll("#graficos .horizontal"); 
     var arcos = document.querySelectorAll("#graficos .arco"); 
     var torres = document.querySelectorAll("#graficos #vertical .torre"); 
 
-var elem = 0; 
-while(elem < horizontales.length) {
-horizontales[elem].style.transition = "background-size 2s ease-in-out 2s"; 
-horizontales[elem].style.backgroundSize = horizontales[elem].innerHTML+" 100%"; 
-elem++; 
-} 
+    var elem = 0; 
+    while(elem < horizontales.length) {
+    horizontales[elem].style.transition = "background-size 2s ease-in-out 2s"; 
+    horizontales[elem].style.backgroundSize = horizontales[elem].innerHTML+" 100%"; 
+    elem++; 
+    } 
 
-elem = 0; 
-while(elem<torres.length) {
-torres[elem].style.transition = "background-size 1s ease-out "+(elem+4)+"s"; 
-torres[elem].style.backgroundSize = "80% "+ torres[elem].innerHTML; 
-elem++; 
-}
+    elem = 0; 
+    while(elem<torres.length) {
+    torres[elem].style.transition = "background-size 1s ease-out "+(elem+4)+"s"; 
+    torres[elem].style.backgroundSize = "80% "+ torres[elem].innerHTML; 
+    elem++; 
+    }
 
-elem = 0; 
-while(elem<arcos.length) {
-arcos[elem].style.backgroundImage = "radial-gradient(circle at bottom, white 45%, transparent 47%, transparent 67%, white 70%), linear-gradient("
-+ (parseInt(arcos[elem].innerHTML) / 100) * 180 +
-"deg, green 50%, transparent 50%)"; 
-elem++; 
-}
+    elem = 0; 
+    while(elem<arcos.length) {
+    arcos[elem].style.backgroundImage = "radial-gradient(circle at bottom, white 45%, transparent 47%, transparent 67%, white 70%), linear-gradient("
+    + (parseInt(arcos[elem].innerHTML) / 100) * 180 +
+    "deg, green 50%, transparent 50%)"; 
+    elem++; 
+    }
 
-}
+    }
 
-onload = ajusta; 
+    onload = ajusta;
+    window.onscroll = function(){
+        console.log(document.documentElement.scrollTop);
+        if(document.documentElement.scrollTop > 100) {
+          document.querySelector('.go-top-container').classList.add('show');
+        } else {
+          document.querySelector('.go-top-container').classList.remove('show');
+        }
+      } 
+ 
+      document.querySelector('.go-top-container').addEventListener('click', () => {
+        window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+        });
+      });
   },
   computed: {},
   methods: {
@@ -1195,5 +1219,69 @@ background-position: 0 0;
 background-size: 100% 100%, 100% 200%; 
 }
 
+/* GOTOP */
+ 
+.go-top-container {
+    position: fixed;
+    bottom: 2rem;
+    right: 1rem;
+    width: 2.6rem;
+    height: 2.6rem;
+    z-index: -1;
+}
+ 
+.go-top-button {
+    width: 0rem;
+    height: 0rem;
+    background: #002fff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+ 
+.go-top-button i {
+    position: absolute;
+    font-size: 0rem;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: #fff;
+    transition: 0.2s;
+}
+ 
+.show {
+    z-index: 10;
+}
+ 
+.show .go-top-button {
+    animation: popup 0.3s ease-in-out;
+    width: 2.6rem;
+    height: 2.6rem;
+    z-index: 11;
+}
+ 
+.show i {
+    transform: translate(-50%, -50%) scale(1);
+}
+ 
+@keyframes popup {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    50% {
+        width: 2rem;
+        height: 2rem;
+    }
+    100% {
+        width: 4.6rem;
+        height: 4.6rem;
+    }
+}
 
 </style>

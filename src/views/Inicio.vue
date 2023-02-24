@@ -27,7 +27,7 @@ export default {
 
 <style>
 .borderRadius{
-    border-radius: 15px;
+    border-radius: 10px;
     box-shadow: 5px 5px 15px rgb(195, 196, 252);
 }
 

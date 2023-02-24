@@ -44,6 +44,11 @@
 </table>
   </div>
 </div>
+<div class="go-top-container">
+      <div class="go-top-button">
+        <i class="fas fa-chevron-up"> <img src="../assets/ico/volver-arriba.png" width="90"/></i>
+      </div>
+    </div>
 <br/><br/>
 </template>
 
@@ -75,6 +80,21 @@ export default {
     } else {
       this.searchTerm = 0
     }
+    window.onscroll = function(){
+        console.log(document.documentElement.scrollTop);
+        if(document.documentElement.scrollTop > 100) {
+          document.querySelector('.go-top-container').classList.add('show');
+        } else {
+          document.querySelector('.go-top-container').classList.remove('show');
+        }
+      } 
+ 
+      document.querySelector('.go-top-container').addEventListener('click', () => {
+        window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+        });
+      });
 
     },
   
