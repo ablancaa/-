@@ -7,7 +7,7 @@
                 <div v-for="planta in plantas" :key="planta" class="column" v-on:click="show = !show">
                     <div class="card2">
                         <br/>
-                       <span><strong>Planta: </strong> {{ planta }}</span>
+                       <span><strong>Planta: </strong> {{ planta-3 }}</span>
                        <br/>
                        <span>
                         <transition name="slide-fade">
@@ -28,7 +28,7 @@ export default {
     name: "H-Trauma",
     data(){
         return {
-            plantas: 5,
+            plantas: 8,
             show: false,
             
         }

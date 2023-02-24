@@ -43,7 +43,8 @@
     <!-- <td else><br/></td> -->
     <td><br/>{{ item.extensio }}</td>
     <td v-if="item.prestado"><br/><button @click="tornada(item.numinventari)" class="btn1">Tornada</button></td>
-    <td v-else><!--A la unitat--><br/> <span v-if="!item.prestado"><button @click="prestec(item.numinventari), give()" class="btn1">Préstec</button></span></td>
+    <td v-else><!--A la unitat--><br/> <span v-if="!item.prestado"><button @click="prestec(item.numinventari), give()" class="btn1">Préstec</button></span>
+    <!--A la unitat--> <span v-if="!item.prestado"><button @click="prestec(item.numinventari), give()" class="btn1">eliminiar</button></span></td>
    
   </tr>
 </tbody>
@@ -230,9 +231,10 @@ border: none;
       text-transform: uppercase;
 }
 .btn1 {
-      background-color: white; 
+      background-color: rgb(17, 0, 255); 
       color: black; 
-      border: 2px solid #008CBA;
+      border: 2px solid #001aff;
+      margin-top: 5px;
 }
 /* Al poner el curso encima (hover) */
 
